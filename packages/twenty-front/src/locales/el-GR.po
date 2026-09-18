@@ -18,14 +18,6 @@ msgstr ""
 "X-Crowdin-File: /packages/twenty-front/src/locales/en.po\n"
 "X-Crowdin-File-ID: 29\n"
 
-#. js-lingui-id: lndIq/
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid " billed annually"
-msgstr " τιμολογείται ετησίως"
-
 #. js-lingui-id: /8h/VA
 #: src/modules/object-record/spreadsheet-import/utils/getSpreadSheetFieldValidationDefinitions.ts
 msgid " must be one of {ratingValues} values"
@@ -80,11 +72,6 @@ msgstr ": Παρελθόν"
 #: src/modules/object-record/object-filter-dropdown/utils/getOperandLabel.ts
 msgid ": Today{timeZoneAbbreviationSuffix}"
 msgstr ": Σήμερα{timeZoneAbbreviationSuffix}"
-
-#. js-lingui-id: N/lIUf
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid ". The change will be applied the {beautifiedRenewDate}."
-msgstr ". Η αλλαγή θα εφαρμοστεί την {beautifiedRenewDate}."
 
 #. js-lingui-id: 4tCM3o
 #: src/modules/views/components/ViewBarFilterDropdownAnyFieldSearchButtonMenuItem.tsx
@@ -794,10 +781,10 @@ msgstr "/{intervalLabel} μετά τη δοκιμή"
 msgid "/month"
 msgstr "/μήνα"
 
-#. js-lingui-id: AkYLhr
+#. js-lingui-id: AqEd8w
 #: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
-msgid "/month billed yearly"
-msgstr "/μήνας με ετήσια χρέωση"
+msgid "/month billed annually"
+msgstr ""
 
 #. js-lingui-id: oz9P7U
 #: src/modules/settings/billing/components/internal/SettingsBillingPlanComparisonTable.tsx
@@ -838,6 +825,16 @@ msgstr "~ {0} tokens"
 #: src/pages/settings/ai/components/SettingsAiModelTiersPreview.tsx
 msgid "${0} / 1M"
 msgstr "${0} / 1M"
+
+#. js-lingui-id: aWz9JJ
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "${price} per user per month"
+msgstr ""
+
+#. js-lingui-id: uycgB4
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "${price} per user per month, billed annually"
+msgstr ""
 
 #. js-lingui-id: Cx0xl3
 #: src/modules/workflow/workflow-steps/workflow-actions/delay-actions/components/WorkflowEditActionDelay.tsx
@@ -1072,7 +1069,6 @@ msgstr "Ακύρωση"
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectSettings.tsx
 #: src/modules/settings/logic-functions/components/SettingsLogicFunctionNewForm.tsx
 #: src/pages/settings/ai/components/SettingsSkillFormContent.tsx
-#: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationFrontComponentSettingsTab.tsx
 #: src/pages/settings/data-model/SettingsNewObject.tsx
@@ -1331,11 +1327,6 @@ msgstr "Προσθήκη σημείωσης σε αυτήν την εγγραφ�
 msgid "Add a person with an email to this company first"
 msgstr "Προσθέστε πρώτα ένα άτομο με διεύθυνση email σε αυτή την εταιρεία."
 
-#. js-lingui-id: nGv1DN
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-msgid "Add a record"
-msgstr "Προσθέστε μια εγγραφή"
-
 #. js-lingui-id: 4LAQbj
 #: src/modules/activities/calendar/components/CalendarEventComposerTargetsInput.tsx
 msgid "Add a related record"
@@ -1539,27 +1530,21 @@ msgstr "Προσθήκη αντικειμένου / Add item"
 msgid "Add Item"
 msgstr "Προσθήκη στοιχείου"
 
-#. js-lingui-id: cI2ZVO
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNavigationMenuItemEditPage.tsx
-msgid "Add item to folder"
-msgstr "Προσθήκη στοιχείου σε φάκελο"
-
 #. js-lingui-id: gaZXkv
 #: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderDnd.tsx
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderNavigationDrawerItemDropdown.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/navigation-menu-item/edit/components/WorkspaceSectionAddMenuItemButton.tsx
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
 msgid "Add menu item"
 msgstr "Προσθήκη στοιχείου μενού"
 
 #. js-lingui-id: JbORSt
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useNavigationMenuItemEditOrganizeActions.ts
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Add menu item after"
 msgstr "Προσθήκη στοιχείου μενού μετά"
 
 #. js-lingui-id: DKlI/M
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useNavigationMenuItemEditOrganizeActions.ts
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Add menu item before"
 msgstr "Προσθήκη στοιχείου μενού πριν"
 
@@ -1878,6 +1863,11 @@ msgstr "Πίνακας Διαχείρισης - Γενικά"
 msgid "Admin Panel - Health"
 msgstr "Πίνακας Διαχείρισης - Υγεία"
 
+#. js-lingui-id: 82sWFi
+#: src/pages/settings/admin-panel/SettingsAdmin.tsx
+msgid "Administration"
+msgstr ""
+
 #. js-lingui-id: Faptqt
 #: src/modules/settings/admin-panel/components/SettingsAdminServerAdmins.tsx
 msgid "Administrator"
@@ -1981,6 +1971,11 @@ msgstr "Ο Πράκτορας δεν βρέθηκε"
 msgid "Agent roles"
 msgstr ""
 
+#. js-lingui-id: Wfy3rU
+#: src/pages/settings/ai/components/SettingsAgentFormContent.tsx
+msgid "Agent settings"
+msgstr ""
+
 #. js-lingui-id: Nl33Ds
 #: src/modules/ai/components/RoutingDebugDisplay.tsx
 msgid "Agent tokens"
@@ -2027,6 +2022,11 @@ msgstr "AI"
 msgid "AI & Automations"
 msgstr "AI & Αυτοματοποιήσεις"
 
+#. js-lingui-id: e8xNdF
+#: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowEditActionAiAgent.tsx
+msgid "AI agent configuration"
+msgstr ""
+
 #. js-lingui-id: oI7HO0
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowRunStepLogsAiAgentDetail.tsx
 msgid "AI agent run"
@@ -2066,6 +2066,11 @@ msgstr "Κατανάλωση AI με την πάροδο του χρόνου."
 #: src/modules/ai/components/RoutingDebugDisplay.tsx
 msgid "AI request prep"
 msgstr "Προετοιμασία αιτήματος AI"
+
+#. js-lingui-id: Bkwb5U
+#: src/pages/settings/ai/SettingsAI.tsx
+msgid "AI settings"
+msgstr ""
 
 #. js-lingui-id: X5Mx4I
 #: src/modules/logic-functions/utils/getLogicFunctionTriggerLabel.ts
@@ -2290,11 +2295,6 @@ msgstr "Όλα τα Αντικείμενα"
 msgid "All Objects"
 msgstr "Όλα τα Αντικείμενα"
 
-#. js-lingui-id: RoFE84
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectPickerSubView.tsx
-msgid "All objects are already in the sidebar"
-msgstr "Όλα τα αντικείμενα βρίσκονται ήδη στην πλευρική γραμμή"
-
 #. js-lingui-id: /D217u
 #: src/modules/settings/billing/components/SettingsBillingLimitUsageSelect.tsx
 #: src/modules/settings/usage/constants/UsageOperationTypeLabels.ts
@@ -2310,11 +2310,6 @@ msgstr "Όλες οι αιτίες"
 #: src/modules/settings/roles/components/SettingsRolesList.tsx
 msgid "All roles"
 msgstr "Όλοι οι ρόλοι"
-
-#. js-lingui-id: CHvT6e
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemObjectSystemPickerSubPage.tsx
-msgid "All system objects are already in the sidebar"
-msgstr "Όλα τα αντικείμενα συστήματος βρίσκονται ήδη στην πλευρική γραμμή"
 
 #. js-lingui-id: p+lpde
 #: src/modules/activities/tasks/components/TaskGroupsContent.tsx
@@ -2468,10 +2463,10 @@ msgstr "Επιτρεπόμενα URI ανακατεύθυνσης για ροέ�
 msgid "alphabetical"
 msgstr "αλφαβητική"
 
-#. js-lingui-id: eO7HSp
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectMenuItem.tsx
-msgid "Already in navbar"
-msgstr "Ήδη στη γραμμή πλοήγησης"
+#. js-lingui-id: evXcqr
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemSelectableItem.tsx
+msgid "Already in sidebar"
+msgstr ""
 
 #. js-lingui-id: u/DP73
 #: src/modules/advanced-text-editor/constants/AdvancedTextEditorBlockCatalog.ts
@@ -2584,6 +2579,11 @@ msgstr "και"
 #: src/modules/workflow/workflow-steps/filters/components/WorkflowStepFilterLogicalOperatorCell.tsx
 msgid "And"
 msgstr "Και"
+
+#. js-lingui-id: U/L8gq
+#: src/modules/settings/billing/hooks/useBillingWording.ts
+msgid "annual"
+msgstr ""
 
 #. js-lingui-id: YkfDoz
 #: src/modules/settings/billing/components/internal/SettingsBillingPlanComparisonTable.tsx
@@ -2705,11 +2705,6 @@ msgstr "Όνομα API (Πληθυντικός)"
 msgid "API Name (Singular)"
 msgstr "Όνομα API (Ενικός)"
 
-#. js-lingui-id: FXWLlg
-#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
-msgid "API rate limits v2"
-msgstr "Όρια ρυθμού API v2"
-
 #. js-lingui-id: /eZE05
 #: src/modules/settings/usage/constants/UsageOperationTypeLabels.ts
 msgid "API Request"
@@ -2719,6 +2714,11 @@ msgstr "Αίτημα API"
 #: src/modules/settings/data-model/fields/forms/select/components/SettingsDataModelFieldSelectForm.tsx
 msgid "API values"
 msgstr "Τιμές API"
+
+#. js-lingui-id: NfgMq7
+#: src/pages/settings/api-webhooks/SettingsApiWebhooks.tsx
+msgid "APIs and webhooks"
+msgstr ""
 
 #. js-lingui-id: 0UMxlw
 #: src/modules/settings/experience/components/NumberFormatSelect.tsx
@@ -2780,12 +2780,14 @@ msgstr "Εφαρμογή"
 #. js-lingui-id: IrC12v
 #: src/modules/settings/billing/constants/UsageLimitSpenderGroups.ts
 #: src/modules/settings/billing/constants/UsageLimitSpenderTypeLabels.ts
+#: src/modules/settings/domains/components/SettingPublicDomain.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/utils/getActionHeaderTypeOrThrow.ts
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 msgid "Application"
 msgstr "Εφαρμογή"
 
 #. js-lingui-id: vdieHo
+#: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
 msgid "Application details"
@@ -2805,6 +2807,12 @@ msgstr "Αρχεία καταγραφής εφαρμογής"
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
 msgid "Application not listed on the marketplace. It was shared via a direct link"
 msgstr "Η εφαρμογή δεν είναι καταχωρημένη στο marketplace. Κοινοποιήθηκε μέσω απευθείας συνδέσμου"
+
+#. js-lingui-id: Ko+Gd2
+#: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDetail.tsx
+#: src/pages/settings/applications/SettingsApplicationRegistrationDetails.tsx
+msgid "Application registration"
+msgstr ""
 
 #. js-lingui-id: +tE2x9
 #: src/modules/settings/applications/hooks/useUninstallApplication.ts
@@ -2826,6 +2834,7 @@ msgstr "μεταβλητή εφαρμογής"
 #: src/pages/settings/applications/SettingsApplicationCommandMenuItemDetail.tsx
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 #: src/pages/settings/applications/SettingsApplicationFrontComponentDetail.tsx
+#: src/pages/settings/applications/SettingsApplications.tsx
 #: src/pages/settings/applications/SettingsApplications.tsx
 #: src/pages/settings/applications/SettingsApplications.tsx
 #: src/pages/settings/applications/SettingsApplicationTimelineActivityTypeDetail.tsx
@@ -3096,6 +3105,11 @@ msgstr ""
 msgid "Asymmetric public keys used to sign and verify access tokens. Revoking a key immediately invalidates every JWT signed with it."
 msgstr "Ασύμμετρα δημόσια κλειδιά που χρησιμοποιούνται για την υπογραφή και επαλήθευση διακριτικών πρόσβασης. Η ανάκληση ενός κλειδιού ακυρώνει άμεσα κάθε JWT που έχει υπογραφεί με αυτό."
 
+#. js-lingui-id: uJmPzF
+#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
+msgid "Async CSV export"
+msgstr ""
+
 #. js-lingui-id: UHs3Ds
 #: src/modules/workflow/workflow-trigger/utils/cron-to-human/descriptors/getHoursDescription.ts
 msgid "at {firstTime} and {secondTime}"
@@ -3274,6 +3288,11 @@ msgstr "Το εξουσιοδοτημένο URL αντιγράφηκε στο π
 msgid "Authorizing..."
 msgstr "Γίνεται εξουσιοδότηση..."
 
+#. js-lingui-id: KqBvMG
+#: src/pages/settings/applications/tabs/SettingsApplicationAutoUpdateSection.tsx
+msgid "Auto update"
+msgstr ""
+
 #. js-lingui-id: 2zJkmL
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelDetails.tsx
 msgid "Auto-creation"
@@ -3285,7 +3304,7 @@ msgid "Auto-generated role for {agentDisplayName}"
 msgstr ""
 
 #. js-lingui-id: /nv0ml
-#: src/pages/settings/applications/tabs/SettingsApplicationGeneralSection.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationAutoUpdateSection.tsx
 msgid "Auto-upgrade"
 msgstr "Αυτόματη αναβάθμιση"
 
@@ -3321,7 +3340,7 @@ msgid "Automatically selected by Twenty for this mode."
 msgstr "Επιλέγεται αυτόματα από το Twenty για αυτήν τη λειτουργία."
 
 #. js-lingui-id: XFGV21
-#: src/pages/settings/applications/tabs/SettingsApplicationGeneralSection.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationAutoUpdateSection.tsx
 msgid "Automatically upgrade this application when a new version is published"
 msgstr "Αναβάθμιση αυτής της εφαρμογής αυτόματα όταν δημοσιεύεται μια νέα έκδοση"
 
@@ -3335,6 +3354,11 @@ msgstr "Αυτοματοποίηση, AI και πρόσβαση που παρέ
 #: src/pages/settings/applications/tabs/SettingsApplicationCommandMenuItemSettingsTab.tsx
 msgid "Availability"
 msgstr "Διαθεσιμότητα"
+
+#. js-lingui-id: tSW2mq
+#: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
+msgid "Available application details"
+msgstr ""
 
 #. js-lingui-id: oD38t2
 #: src/modules/ai/components/RoutingDebugDisplay.tsx
@@ -3523,6 +3547,11 @@ msgstr "Περίοδος χρέωσης"
 #: src/modules/settings/billing/hooks/useBillingPortalSession.ts
 msgid "Billing portal session error. Please retry or contact Twenty team"
 msgstr "Σφάλμα συνεδρίας πύλης χρέωσης. Δοκιμάστε ξανά ή επικοινωνήστε με την ομάδα Twenty"
+
+#. js-lingui-id: H++SIW
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Billing stays {upcomingIntervalAdjective}. To switch to {selectedIntervalAdjective} billing, confirm this change first, then switch the billing interval as a second step."
+msgstr ""
 
 #. js-lingui-id: 8kIU+G
 #: src/modules/advanced-text-editor/constants/AdvancedTextEditorBlockCatalog.ts
@@ -3796,6 +3825,11 @@ msgstr "Ημερολόγιο"
 msgid "Calendar access needs approval"
 msgstr "Η πρόσβαση στο ημερολόγιο χρειάζεται έγκριση"
 
+#. js-lingui-id: xs1oZl
+#: src/pages/settings/accounts/SettingsAccountsCalendars.tsx
+msgid "Calendar accounts"
+msgstr ""
+
 #. js-lingui-id: 6kmXOY
 #: src/modules/activities/calendar/hooks/useCreateCalendarEvent.ts
 msgid "Calendar event created successfully"
@@ -3936,6 +3970,8 @@ msgstr "Δεν μπορείτε να σαρώσετε; Αντιγράψτε το
 #: src/modules/settings/billing/components/UpdatePaymentMethodModal.tsx
 #: src/modules/settings/components/SaveAndCancelButtons/CancelButton.tsx
 #: src/modules/settings/components/SaveAndCancelButtons/CancelButton.tsx
+#: src/modules/settings/config-variables/components/ConfigVariableEdit.tsx
+#: src/modules/settings/profile/components/EmailField.tsx
 #: src/modules/spreadsheet-import/provider/components/SpreadsheetImport.tsx
 #: src/modules/spreadsheet-import/steps/components/ImportDataStep.tsx
 #: src/modules/spreadsheet-import/steps/components/MatchColumnsStep/MatchColumnsStep.tsx
@@ -3943,7 +3979,7 @@ msgstr "Δεν μπορείτε να σαρώσετε; Αντιγράψτε το
 #: src/modules/spreadsheet-import/steps/components/ValidationStep/ValidationStep.tsx
 #: src/modules/ui/feedback/toast/components/__tests__/AppToaster.test.tsx
 #: src/modules/ui/feedback/toast/utils/getLocalizedToastProps.ts
-#: src/modules/ui/layout/modal/components/ConfirmationModal.tsx
+#: src/modules/ui/layout/dialog/components/ConfirmationDialog.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDangerZone.tsx
 msgid "Cancel"
 msgstr "Ακύρωση"
@@ -3966,11 +4002,12 @@ msgstr "Ακύρωση αλλαγής πακέτου πιστώσεων;"
 
 #. js-lingui-id: dV4HC5
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCardHeaderActions.tsx
+#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
 msgid "Cancel interval switching"
 msgstr "Ακύρωση αλλαγής περιόδου"
 
 #. js-lingui-id: M5CqkG
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
 msgid "Cancel interval switching?"
 msgstr "Ακύρωση αλλαγής περιόδου;"
 
@@ -3982,11 +4019,12 @@ msgstr "Ακύρωση σχεδίου"
 
 #. js-lingui-id: 8eSMLX
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCardHeaderActions.tsx
+#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
 msgid "Cancel plan switching"
 msgstr "Ακύρωση αλλαγής προγράμματος"
 
 #. js-lingui-id: f6KFEf
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
 msgid "Cancel plan switching?"
 msgstr "Ακύρωση αλλαγής προγράμματος;"
 
@@ -4042,6 +4080,11 @@ msgstr "Δεν είναι δυνατή η διαγραφή της μοναδικ
 #: src/pages/settings/members/SettingsWorkspaceMember.tsx
 msgid "Cannot impersonate selected user"
 msgstr "Δεν είναι δυνατή η αντιγραφή του επιλεγμένου χρήστη"
+
+#. js-lingui-id: lbmcW3
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
+msgid "Cannot nest folders into folders"
+msgstr ""
 
 #. js-lingui-id: H1Ddy9
 #: src/modules/object-record/record-field/ui/meta-types/input/components/FilesFieldInput.tsx
@@ -4123,6 +4166,11 @@ msgstr "Αλλαγή κόμβου"
 msgid "Change node type"
 msgstr "Αλλαγή τύπου κόμβου"
 
+#. js-lingui-id: VYPUgO
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemObjectColorEditor.tsx
+msgid "Change object color"
+msgstr ""
+
 #. js-lingui-id: GptGxg
 #: src/modules/settings/accounts/components/SettingsAccountsPasswordController.tsx
 msgid "Change password"
@@ -4153,26 +4201,6 @@ msgstr "Αλλαγή θέματος σε ανοιχτό"
 #: src/modules/command-menu-item/display/hooks/useCommandMenuAppActions.ts
 msgid "Change theme to system"
 msgstr "Αλλαγή θέματος σε σύστημα"
-
-#. js-lingui-id: 9m7pJA
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
-msgid "Change to Monthly?"
-msgstr "Αλλαγή σε Μηνιαίο;"
-
-#. js-lingui-id: C8G9Mq
-#: src/modules/settings/billing/components/internal/SettingsBillingPlansWithSubscription.tsx
-msgid "Change to Organization Plan?"
-msgstr "Αλλαγή σε οργανωτικό σχέδιο;"
-
-#. js-lingui-id: t7uUc+
-#: src/modules/settings/billing/components/internal/SettingsBillingPlansWithSubscription.tsx
-msgid "Change to Pro Plan?"
-msgstr "Αλλαγή σε Επαγγελματικό Πρόγραμμα;"
-
-#. js-lingui-id: N8mUQE
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
-msgid "Change to Yearly?"
-msgstr "Αλλαγή σε ετήσια;"
 
 #. js-lingui-id: lfFsZ4
 #: src/modules/settings/workspace/components/SettingsWorkspaceEmailGroupSection.tsx
@@ -4320,6 +4348,11 @@ msgstr "Επιλέξτε μεταξύ Συντόμου και Πλήρους"
 #: src/modules/settings/components/__stories__/SettingsRadioCards.stories.tsx
 msgid "Choose folders to sync"
 msgstr "Επιλέξτε φακέλους για συγχρονισμό"
+
+#. js-lingui-id: SJ1Aum
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemInlineEditor.tsx
+msgid "Choose icon and color"
+msgstr ""
 
 #. js-lingui-id: 5EMoSo
 #: src/modules/settings/billing/components/internal/SettingsBillingPlansWithoutSubscription.tsx
@@ -4491,6 +4524,11 @@ msgstr "Κάντε κλικ στο σημάδι επιλογής για να ε�
 msgid "Click to add your first widget"
 msgstr "Κάντε κλικ για να προσθέσετε το πρώτο σας widget"
 
+#. js-lingui-id: cwMTjO
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+msgid "Click to edit"
+msgstr ""
+
 #. js-lingui-id: d0rtA5
 #: src/modules/page-layout/widgets/graph/components/GraphWidgetTooltip.tsx
 msgid "Click to see data"
@@ -4563,15 +4601,41 @@ msgstr "Κλείσιμο"
 msgid "Close banner"
 msgstr "Κλείσιμο banner"
 
+#. js-lingui-id: c2EYjZ
+#: src/modules/spreadsheet-import/components/SpreadSheetImportModalCloseButton.tsx
+msgid "Close import"
+msgstr ""
+
+#. js-lingui-id: aYX0za
+#: src/modules/keyboard-shortcut-menu/components/KeyboardShortcutMenuDialog.tsx
+msgid "Close keyboard shortcuts"
+msgstr ""
+
 #. js-lingui-id: vcpc5o
 #: src/modules/blocknote-editor/components/BlockEditor.tsx
 msgid "Close menu"
 msgstr "Κλείσιμο μενού"
 
+#. js-lingui-id: sUQBA7
+#: src/modules/settings/data-model/graph-overview/components/SettingsDataModelOverview.tsx
+msgid "Close overview"
+msgstr ""
+
+#. js-lingui-id: fJGhA7
+#: src/modules/activities/files/components/AttachmentList.tsx
+#: src/modules/ui/field/display/components/GlobalFilePreviewModal.tsx
+msgid "Close preview"
+msgstr ""
+
 #. js-lingui-id: saip/v
 #: src/modules/side-panel/components/SidePanelCloseButton.tsx
 msgid "Close side panel"
 msgstr "Κλείσιμο πλευρικού πάνελ"
+
+#. js-lingui-id: H4meUz
+#: src/modules/settings/components/SettingsCustomizeVideoModal.tsx
+msgid "Close video"
+msgstr ""
 
 #. js-lingui-id: 1Lxtdt
 #: src/modules/advanced-text-editor/constants/AdvancedTextEditorBlockCatalog.ts
@@ -4604,6 +4668,11 @@ msgstr "Εκτέλεση κώδικα"
 msgid "Code Interpreter"
 msgstr "Διερμηνευτής κώδικα"
 
+#. js-lingui-id: FXSsRm
+#: src/modules/workflow/workflow-steps/workflow-actions/code-action/components/WorkflowEditActionCode.tsx
+msgid "Code step"
+msgstr ""
+
 #. js-lingui-id: bKJYIa
 #: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionCodeEditorTab.tsx
 msgid "Code your function"
@@ -4635,6 +4704,7 @@ msgid "Collapse details"
 msgstr "Σύμπτυξη λεπτομερειών"
 
 #. js-lingui-id: 086gvz
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderChevronButton.tsx
 #: src/modules/settings/accounts/components/message-folders/SettingsMessageFoldersTreeItem.tsx
 msgid "Collapse folder"
 msgstr "Σύμπτυξη φακέλου"
@@ -4646,7 +4716,6 @@ msgstr "Σύμπτυξη πλαϊνής γραμμής"
 
 #. js-lingui-id: jZlrte
 #: src/modules/advanced-text-editor/constants/AdvancedTextEditorBlockCatalog.ts
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditColorOption.tsx
 msgid "Color"
 msgstr "Χρώμα"
 
@@ -4875,7 +4944,6 @@ msgstr "Διαμορφώσιμα πεδία αναζήτησης"
 
 #. js-lingui-id: ywFj2D
 #: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/WorkflowEditActionHttpRequest.tsx
-#: src/pages/settings/applications/tabs/SettingsApplicationDetailEnvironmentVariablesTable.tsx
 msgid "Configuration"
 msgstr "Διαμόρφωση"
 
@@ -4992,7 +5060,6 @@ msgstr "Ρυθμισμένο"
 #: src/modules/settings/admin-panel/components/SettingsAdminServerAdminAccess.tsx
 #: src/modules/settings/billing/components/internal/ResourceCreditPackagePickerModal.tsx
 #: src/modules/settings/billing/components/internal/SettingsBillingPlansWithSubscription.tsx
-#: src/modules/settings/billing/components/internal/SettingsBillingPlansWithSubscription.tsx
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
@@ -5003,7 +5070,7 @@ msgstr "Ρυθμισμένο"
 #: src/modules/settings/roles/role-assignment/components/SettingsRoleAssignmentConfirmationModal.tsx
 #: src/modules/settings/roles/role-settings/components/SettingsRoleSettingsDeleteRoleConfirmationModal.tsx
 #: src/modules/spreadsheet-import/steps/components/ValidationStep/ValidationStep.tsx
-#: src/modules/ui/layout/modal/components/ConfirmationModal.tsx
+#: src/modules/ui/layout/dialog/components/ConfirmationDialog.tsx
 msgid "Confirm"
 msgstr "Επιβεβαίωση"
 
@@ -5187,7 +5254,6 @@ msgid "Contains"
 msgstr "Περιλαμβάνει"
 
 #. js-lingui-id: 4b3oEV
-#: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
 msgid "Content"
 msgstr "Περιεχόμενο"
@@ -5589,6 +5655,11 @@ msgstr "Δεν ήταν δυνατή η αντιγραφή στο πρόχειρ
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationInstalledWorkspaces.tsx
 msgid "Couldn't load installed workspaces"
 msgstr "Δεν ήταν δυνατή η φόρτωση των εγκατεστημένων χώρων εργασίας"
+
+#. js-lingui-id: zaNpE4
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+msgid "Couldn't load pages"
+msgstr ""
 
 #. js-lingui-id: kjbTwZ
 #: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemEditController.ts
@@ -6182,6 +6253,11 @@ msgstr "Προσαρμοσμένο Όνομα Τομέα"
 msgid "Custom domain (crm.yourco.com)"
 msgstr "Προσαρμοσμένος τομέας (crm.yourco.com)"
 
+#. js-lingui-id: +ub6QN
+#: src/modules/settings/domains/components/SettingPublicDomain.tsx
+msgid "Custom domain not found"
+msgstr ""
+
 #. js-lingui-id: Lo/oRJ
 #: src/modules/settings/domains/components/SettingPublicDomain.tsx
 msgid "Custom domain successfully created"
@@ -6280,9 +6356,6 @@ msgid "Customization"
 msgstr "Προσαρμογή"
 
 #. js-lingui-id: srRMnJ
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditLinkItemView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditObjectViewBase.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNavigationMenuItemEditPage.tsx
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectLayout.tsx
 #: src/pages/settings/layout/SettingsLayout.tsx
 msgid "Customize"
@@ -6399,7 +6472,6 @@ msgid "Dashboard duplicated successfully"
 msgstr "Ο πίνακας ελέγχου αντιγράφηκε με επιτυχία"
 
 #. js-lingui-id: HKH+W+
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
 #: src/modules/side-panel/pages/page-layout/constants/ChartSettingsHeadings.ts
 #: src/modules/side-panel/pages/workflow/action/components/SidePanelWorkflowSelectAction.tsx
 #: src/modules/side-panel/pages/workflow/trigger-type/components/SidePanelWorkflowSelectTriggerTypeContent.tsx
@@ -6639,6 +6711,11 @@ msgstr "Πληροφορίες αποσφαλμάτωσης"
 msgid "Decide which Sub-address fields you want to display"
 msgstr "Αποφασίστε ποια πεδία Υπο-διευθύνσεων θέλετε να εμφανίζονται"
 
+#. js-lingui-id: NdfaZV
+#: src/modules/settings/components/SettingsCounter.tsx
+msgid "Decrease value"
+msgstr ""
+
 #. js-lingui-id: ovBPCi
 #: src/modules/ai/components/AiModelTierInformationButton.tsx
 #: src/modules/settings/ai/components/AiModelPinSelect.tsx
@@ -6740,7 +6817,6 @@ msgstr "διαγραφή"
 #: src/modules/ai/components/AiChatThreadDeleteConfirmationModal.tsx
 #: src/modules/ai/components/AiChatThreadItemMenu.tsx
 #: src/modules/blocknote-editor/components/CustomSideMenu.tsx
-#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderNavigationDrawerItemDropdown.tsx
 #: src/modules/object-record/record-field-list/record-detail-section/relation/components/RecordDetailRelationRecordsListItem.tsx
 #: src/modules/object-record/record-field/ui/meta-types/input/components/MultiItemFieldMenuItem.tsx
 #: src/modules/page-layout/widgets/fields/components/FieldsConfigurationGroupDropdown.tsx
@@ -6755,8 +6831,11 @@ msgstr "διαγραφή"
 #: src/modules/settings/data-model/objects/components/SettingsObjectInactiveMenuDropDown.tsx
 #: src/modules/settings/developers/components/SettingsDevelopersWebhookForm.tsx
 #: src/modules/settings/developers/components/SettingsDevelopersWebhookForm.tsx
+#: src/modules/settings/domains/components/SettingPublicDomain.tsx
 #: src/modules/settings/domains/components/SettingPublicDomainRowDropdownMenu.tsx
+#: src/modules/settings/domains/components/SettingsCustomDomain.tsx
 #: src/modules/settings/security/components/sso/SettingsSecuritySsoRowDropdownMenu.tsx
+#: src/modules/side-panel/pages/page-layout/components/record-table-settings/RecordTableSettingsSortsContent.tsx
 #: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
 #: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
 #: src/modules/views/view-picker/components/ViewPickerCreateButton.tsx
@@ -6764,6 +6843,9 @@ msgstr "διαγραφή"
 #: src/modules/views/view-picker/components/ViewPickerOptionDropdown.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowStepFooter.tsx
 #: src/modules/workflow/workflow-steps/filters/components/WorkflowStepFilterOptionsDropdown.tsx
+#: src/modules/workflow/workflow-steps/workflow-actions/find-records-action/components/WorkflowFindRecordsSorts.tsx
+#: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/KeyValuePairInput.tsx
+#: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/KeyValuePairInput.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDangerZone.tsx
 #: src/pages/settings/ai/components/SettingsAgentEvalsTab.tsx
 #: src/pages/settings/ai/components/SettingsAgentEvalsTab.tsx
@@ -7418,8 +7500,14 @@ msgstr "Λήψη"
 msgid "Download {filename}"
 msgstr "Λήψη {filename}"
 
+#. js-lingui-id: ueLv9s
+#: src/modules/activities/files/components/AttachmentList.tsx
+msgid "Download attachment"
+msgstr ""
+
 #. js-lingui-id: WcWS//
 #: src/modules/settings/security/components/sso/SettingsSsoSamlForm.tsx
+#: src/modules/ui/field/display/components/GlobalFilePreviewModal.tsx
 msgid "Download file"
 msgstr "Λήψη αρχείου"
 
@@ -7479,11 +7567,6 @@ msgstr "Γίνεται σύνταξη email"
 #: src/modules/activities/files/components/DropZone.tsx
 msgid "Drag and Drop Here"
 msgstr "Σύρετε και αποθέστε εδώ"
-
-#. js-lingui-id: oSoaUV
-#: src/modules/side-panel/components/SidePanelItemWithAddToNavigationDrag.tsx
-msgid "Drag to add to navbar"
-msgstr "Σύρετε για προσθήκη στη γραμμή πλοήγησης"
 
 #. js-lingui-id: VIbDgE
 #: src/modules/page-layout/widgets/fields/components/FieldsConfigurationGroupEditor.tsx
@@ -7637,15 +7720,16 @@ msgstr "eddy@gmail.com, @apple.com"
 
 #. js-lingui-id: ePK91l
 #: src/modules/activities/emails/recipients/components/EmailRecipientChipMenuContent.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useNavigationMenuItemEditOrganizeActions.ts
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderNavigationDrawerItemDropdown.tsx
 #: src/modules/object-record/record-field/ui/form-types/components/FormMultiSelectFieldInput.tsx
 #: src/modules/object-record/record-field/ui/meta-types/input/components/MultiItemFieldMenuItem.tsx
 #: src/modules/object-record/record-group/hooks/useRecordGroupActions.ts
+#: src/modules/settings/config-variables/components/ConfigVariableEdit.tsx
 #: src/modules/settings/data-model/object-details/components/SettingsObjectFieldDisabledActionDropdown.tsx
 #: src/modules/settings/data-model/objects/components/SettingsObjectInactiveMenuDropDown.tsx
+#: src/modules/settings/profile/components/EmailField.tsx
 #: src/modules/settings/roles/role-permissions/object-level-permissions/components/SettingsRolePermissionsObjectLevelTableRowOptionsDropdown.tsx
 #: src/modules/settings/roles/role-permissions/object-level-permissions/field-permissions/components/SettingsRolePermissionsObjectLevelObjectFieldPermissionTable.tsx
-#: src/modules/side-panel/hooks/useSidePanelMenu.ts
 #: src/modules/views/view-picker/components/ViewPickerOptionDropdown.tsx
 msgid "Edit"
 msgstr "Επεξεργασία"
@@ -7678,6 +7762,11 @@ msgstr "Επεξεργασία δομής δεδομένων και πεδίων
 msgid "Edit each side"
 msgstr "Επεξεργασία κάθε πλευράς"
 
+#. js-lingui-id: 48e2R8
+#: src/modules/settings/profile/components/EmailField.tsx
+msgid "Edit email"
+msgstr ""
+
 #. js-lingui-id: 9QCQIc
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownHiddenRecordGroupsContent.tsx
 msgid "Edit field values"
@@ -7689,13 +7778,6 @@ msgstr "Επεξεργασία τιμών πεδίων"
 #: src/modules/side-panel/hooks/useOpenWidgetSettingsInSidePanel.ts
 msgid "Edit Fields"
 msgstr "Επεξεργασία πεδίων"
-
-#. js-lingui-id: uPHscS
-#: src/modules/navigation-menu-item/display/dnd/hooks/useHandleAddToNavigationDrop.ts
-#: src/modules/navigation-menu-item/display/sections/workspace/components/WorkspaceSection.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useAddFolderToNavigationMenu.ts
-msgid "Edit folder"
-msgstr "Επεξεργασία φακέλου"
 
 #. js-lingui-id: JTcEch
 #: src/modules/side-panel/hooks/useOpenWidgetSettingsInSidePanel.ts
@@ -7714,9 +7796,7 @@ msgid "Edit limit"
 msgstr "Επεξεργασία ορίου"
 
 #. js-lingui-id: /PoNoq
-#: src/modules/navigation-menu-item/display/dnd/hooks/useHandleAddToNavigationDrop.ts
-#: src/modules/navigation-menu-item/display/sections/workspace/components/WorkspaceSection.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useAddLinkToNavigationMenu.ts
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemInlineEditor.tsx
 msgid "Edit link"
 msgstr "Επεξεργασία συνδέσμου"
 
@@ -7724,11 +7804,6 @@ msgstr "Επεξεργασία συνδέσμου"
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useActionRolePermissionFlagConfig.ts
 msgid "Edit own profile information"
 msgstr ""
-
-#. js-lingui-id: QNi+Eq
-#: src/modules/navigation-menu-item/display/sections/workspace/components/WorkspaceSection.tsx
-msgid "Edit page"
-msgstr "Επεξεργασία σελίδας"
 
 #. js-lingui-id: h2KoTu
 #: src/modules/settings/billing/components/SettingsBillingContent.tsx
@@ -7767,6 +7842,11 @@ msgstr "Επεξεργασία σχέσης"
 #: src/modules/settings/translations/components/SettingsTranslationsButton.tsx
 msgid "Edit translations"
 msgstr "Επεξεργασία μεταφράσεων"
+
+#. js-lingui-id: 8TA4hU
+#: src/modules/settings/config-variables/components/ConfigVariableEdit.tsx
+msgid "Edit variable"
+msgstr ""
 
 #. js-lingui-id: eMFB6/
 #: src/modules/views/view-picker/components/ViewPickerContentEditMode.tsx
@@ -7828,6 +7908,11 @@ msgstr "αλλιώς εάν"
 #: src/pages/settings/profile/SettingsProfile.tsx
 msgid "Email"
 msgstr "Ηλεκτρονικό ταχυδρομείο"
+
+#. js-lingui-id: 6SIWKr
+#: src/pages/settings/accounts/SettingsAccountsEmails.tsx
+msgid "Email accounts"
+msgstr ""
 
 #. js-lingui-id: ATGYL1
 #: src/modules/settings/unsubscribers/components/SettingsUnsubscribersList.tsx
@@ -8181,6 +8266,11 @@ msgstr "Εισάγετε έναν αριθμό"
 #: src/modules/object-record/record-field/ui/form-types/components/FormUuidFieldInput.tsx
 msgid "Enter a UUID"
 msgstr "Εισάγετε ένα UUID"
+
+#. js-lingui-id: DXBlEM
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemLinkEditor.tsx
+msgid "Enter a valid URL"
+msgstr ""
 
 #. js-lingui-id: oiVP/+
 #: src/modules/settings/admin-panel/config-variables/components/ConfigVariableValueInput.tsx
@@ -8558,12 +8648,12 @@ msgid "Error while cancelling credit pack switching."
 msgstr "Σφάλμα κατά την ακύρωση αλλαγής πακέτου πιστώσεων."
 
 #. js-lingui-id: pt7mmi
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
 msgid "Error while cancelling interval switching."
 msgstr "Σφάλμα κατά την ακύρωση αλλαγής περιόδου."
 
 #. js-lingui-id: FS6DQK
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
 msgid "Error while cancelling plan switching."
 msgstr "Σφάλμα κατά την ακύρωση αλλαγής προγράμματος."
 
@@ -8578,9 +8668,7 @@ msgid "Error while saving the name"
 msgstr ""
 
 #. js-lingui-id: QPJi2W
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
 msgid "Error while switching subscription."
 msgstr "Σφάλμα κατά την αλλαγή συνδρομής."
 
@@ -8789,6 +8877,7 @@ msgid "Expand details"
 msgstr "Ανάπτυξη λεπτομερειών"
 
 #. js-lingui-id: /QYKta
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderChevronButton.tsx
 #: src/modules/settings/accounts/components/message-folders/SettingsMessageFoldersTreeItem.tsx
 msgid "Expand folder"
 msgstr "Ανάπτυξη φακέλου"
@@ -9219,6 +9308,11 @@ msgstr "Δεν ήταν δυνατή η αποθήκευση της προσαρ
 msgid "Failed to save role permissions: {errorMessage}"
 msgstr ""
 
+#. js-lingui-id: bH624/
+#: src/pages/settings/applications/hooks/useApplicationVariablesDraft.ts
+msgid "Failed to save the app settings."
+msgstr ""
+
 #. js-lingui-id: LxqS9I
 #: src/modules/activities/emails/hooks/usePersistedCampaignDraft.ts
 msgid "Failed to save the campaign"
@@ -9261,7 +9355,7 @@ msgid "Failed to transfer ownership. Check that the subdomain is correct."
 msgstr "Αποτυχία μεταβίβασης κυριότητας. Ελέγξτε ότι ο υποτομέας είναι σωστός."
 
 #. js-lingui-id: UNwpjb
-#: src/pages/settings/applications/tabs/SettingsApplicationGeneralSection.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationAutoUpdateSection.tsx
 msgid "Failed to update auto-upgrade setting."
 msgstr "Αποτυχία ενημέρωσης ρύθμισης αυτόματης αναβάθμισης."
 
@@ -9577,6 +9671,11 @@ msgstr "Ετικέτα αρχείου"
 msgid "File no longer exists - {label}"
 msgstr "Το αρχείο δεν υπάρχει πλέον - {label}"
 
+#. js-lingui-id: OyBE3I
+#: src/modules/ui/field/display/components/GlobalFilePreviewModal.tsx
+msgid "File preview"
+msgstr ""
+
 #. js-lingui-id: BZGmTs
 #: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionTestTab.tsx
 msgid "Fill with sample input from"
@@ -9775,17 +9874,13 @@ msgid "Flow"
 msgstr "Ροή"
 
 #. js-lingui-id: kNqMMd
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
-#: src/modules/side-panel/components/SidePanelFolderInfo.tsx
 msgid "Folder"
 msgstr "Φάκελος"
-
-#. js-lingui-id: cqQyPB
-#: src/modules/side-panel/components/SidePanelFolderInfo.tsx
-msgid "Folder name"
-msgstr "Όνομα φακέλου"
 
 #. js-lingui-id: wdVyxi
 #: src/modules/settings/billing/constants/SettingsBillingPlanComparisonRows.ts
@@ -9793,7 +9888,6 @@ msgid "Folder/Label import"
 msgstr "Εισαγωγή φακέλων/ετικετών"
 
 #. js-lingui-id: HSh8u/
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditFolderPickerSubPage.tsx
 #: src/modules/settings/accounts/components/message-folders/SettingsAccountsMessageFoldersCard.tsx
 msgid "Folders"
 msgstr "Φάκελοι"
@@ -9911,6 +10005,12 @@ msgstr "Γαλλικά"
 msgid "From"
 msgstr "Από"
 
+#. js-lingui-id: DHlfWg
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "From {0}, you will be charged {priceLabel}."
+msgstr ""
+
 #. js-lingui-id: qR8gT9
 #: src/modules/workflow/workflow-trigger/utils/cron-to-human/descriptors/getDayOfWeekDescription.ts
 msgid "from {startDay} to {endDay}"
@@ -9928,6 +10028,11 @@ msgstr "στοιχείο διεπαφής χρήστη"
 #: src/pages/settings/applications/tabs/SettingsApplicationTimelineActivityTypeSettingsTab.tsx
 msgid "Front component"
 msgstr "Στοιχείο διεπαφής χρήστη"
+
+#. js-lingui-id: NEVf2d
+#: src/pages/settings/applications/SettingsApplicationFrontComponentDetail.tsx
+msgid "Front component details"
+msgstr ""
 
 #. js-lingui-id: IvIKDS
 #: src/pages/settings/applications/SettingsApplicationFrontComponentDetail.tsx
@@ -9984,6 +10089,16 @@ msgstr "Πλήρως προσαρμόσιμο"
 msgid "Function"
 msgstr "Συνάρτηση"
 
+#. js-lingui-id: 3KlJeH
+#: src/pages/settings/logic-functions/SettingsLogicFunctionDetail.tsx
+msgid "Function details"
+msgstr ""
+
+#. js-lingui-id: Gr1GVh
+#: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionCodeEditorTab.tsx
+msgid "Function files"
+msgstr ""
+
 #. js-lingui-id: AHOl4W
 #: src/modules/settings/logic-functions/components/SettingsLogicFunctionLabelContainer.tsx
 msgid "Function name"
@@ -9993,6 +10108,11 @@ msgstr "Όνομα συνάρτησης"
 #: src/modules/workflow/workflow-steps/workflow-actions/code-action/components/WorkflowRunStepLogsCodeDetail.tsx
 msgid "Function run"
 msgstr "Εκτέλεση συνάρτησης"
+
+#. js-lingui-id: Tn94cL
+#: src/modules/workflow/workflow-steps/workflow-actions/logic-function-action/components/WorkflowEditActionLogicFunction.tsx
+msgid "Function step"
+msgstr ""
 
 #. js-lingui-id: tkr79G
 #: src/utils/title-utils.ts
@@ -10014,8 +10134,8 @@ msgstr "Gemini CLI"
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDetail.tsx
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationGeneralInfo.tsx
+#: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsApplicationRegistrationDetails.tsx
-#: src/pages/settings/applications/tabs/SettingsApplicationGeneralSection.tsx
 #: src/pages/settings/general/SettingsGeneral.tsx
 #: src/pages/settings/general/SettingsGeneral.tsx
 #: src/pages/settings/general/SettingsGeneral.tsx
@@ -10027,10 +10147,20 @@ msgstr "Γενικά"
 msgid "General - Settings"
 msgstr "Γενικά - Ρυθμίσεις"
 
+#. js-lingui-id: Ye6I4I
+#: src/pages/settings/general/SettingsGeneral.tsx
+msgid "General settings"
+msgstr ""
+
 #. js-lingui-id: ziAjHi
 #: src/pages/settings/legal/SettingsLegalDpaNew.tsx
 msgid "Generate"
 msgstr "Δημιουργία"
+
+#. js-lingui-id: /Sq+WF
+#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
+msgid "Generate CSV exports in the background with progress and automatic downloads."
+msgstr ""
 
 #. js-lingui-id: H3rta9
 #: src/pages/settings/legal/SettingsLegalDpa.tsx
@@ -10070,6 +10200,7 @@ msgid "Get more credits"
 msgstr "Αποκτήστε περισσότερες πιστώσεις"
 
 #. js-lingui-id: AvbPI1
+#: src/modules/settings/enterprise/components/EnterprisePlanModal.tsx
 #: src/modules/settings/enterprise/components/EnterprisePlanModal.tsx
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
@@ -10116,7 +10247,6 @@ msgid "Go back"
 msgstr "Επιστροφή"
 
 #. js-lingui-id: y0SPQU
-#: src/modules/settings/billing/hooks/useWaitForPaymentRecovery.tsx
 #: src/modules/settings/billing/hooks/useWaitForPaymentRecovery.tsx
 msgid "Go to billing"
 msgstr "Μετάβαση στη χρέωση"
@@ -10649,6 +10779,7 @@ msgid "HTTP Method"
 msgstr "Μέθοδος HTTP"
 
 #. js-lingui-id: PmknJS
+#: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/WorkflowEditActionHttpRequest.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/WorkflowRunStepLogsHttpRequestDetail.tsx
 msgid "HTTP request"
 msgstr "Αίτηση HTTP"
@@ -10905,6 +11036,11 @@ msgstr "Εισαγωγή όλων των email"
 msgid "Import CSV"
 msgstr "Εισαγωγή CSV"
 
+#. js-lingui-id: CKnl/+
+#: src/modules/spreadsheet-import/components/SpreadSheetImportModalWrapper.tsx
+msgid "Import data"
+msgstr ""
+
 #. js-lingui-id: D5QSQM
 #: src/modules/settings/accounts/components/SettingsAccountsMessageFolderCard.tsx
 msgid "Import only selected folders/labels"
@@ -10993,6 +11129,11 @@ msgstr "Ελλιπές - έχει λήξει"
 #: src/modules/settings/billing/components/internal/ResourceCreditPriceSelector.tsx
 msgid "Increase to ${priceDisplay}"
 msgstr "Αύξηση σε ${priceDisplay}"
+
+#. js-lingui-id: lUmbtf
+#: src/modules/settings/components/SettingsCounter.tsx
+msgid "Increase value"
+msgstr ""
 
 #. js-lingui-id: O5wNUa
 #: src/modules/metadata-error-handler/hooks/useMetadataErrorHandler.ts
@@ -11127,6 +11268,7 @@ msgstr "Εγκατάσταση"
 
 #. js-lingui-id: XOHdRf
 #: src/modules/marketplace/components/SettingsApplicationInstallPermissionValidationModal.tsx
+#: src/modules/marketplace/components/SettingsApplicationInstallPermissionValidationModal.tsx
 msgid "Install {appDisplayName} on your workspace"
 msgstr "Εγκατάσταση του {appDisplayName} στον χώρο εργασίας σας"
 
@@ -11170,7 +11312,6 @@ msgid "Installation"
 msgstr "Εγκατάσταση"
 
 #. js-lingui-id: eQkgKV
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationGeneralInfo.tsx
 #: src/pages/settings/applications/SettingsApplications.tsx
 msgid "Installed"
@@ -11236,7 +11377,7 @@ msgid "Internet accounts per user"
 msgstr "Λογαριασμοί Internet ανά χρήστη"
 
 #. js-lingui-id: jyjroS
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
 msgid "Interval switching has been cancelled."
 msgstr "Η αλλαγή περιόδου ακυρώθηκε."
 
@@ -12221,10 +12362,10 @@ msgid "link"
 msgstr "σύνδεσμος"
 
 #. js-lingui-id: yzF66j
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/admin-panel/health-status/maintenance-mode/components/SettingsAdminMaintenanceMode.tsx
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
-#: src/modules/side-panel/components/SidePanelLinkInfo.tsx
 msgid "Link"
 msgstr "Σύνδεσμος"
 
@@ -12247,12 +12388,7 @@ msgid "Link copied to clipboard"
 msgstr "Ο σύνδεσμος αντιγράφηκε στο πρόχειρο"
 
 #. js-lingui-id: vH3ZQY
-#: src/modules/navigation-menu-item/display/dnd/hooks/useHandleAddToNavigationDrop.ts
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditLinkItemView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useAddLinkToNavigationMenu.ts
-#: src/modules/side-panel/components/SidePanelLinkInfo.tsx
-#: src/modules/side-panel/components/SidePanelLinkInfo.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemLinkEditor.tsx
 msgid "Link label"
 msgstr "Ετικέτα συνδέσμου"
 
@@ -12416,6 +12552,8 @@ msgstr "Φόρτωση νήματος"
 #. js-lingui-id: Z3FXyt
 #: src/modules/activities/timeline-activities/rows/calendar/components/EventCardCalendarEvent.tsx
 #: src/modules/activities/timeline-activities/rows/message/components/EventCardMessage.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminVersionDisplay.tsx
 #: src/modules/settings/roles/role-assignment/components/SettingsRoleAssignmentEntityPickerDropdown.tsx
 #: src/modules/views/hooks/useComputeRecordRelationFilterDisplayValue.tsx
@@ -12846,6 +12984,11 @@ msgstr "Μεσαίο"
 msgid "Medium section heading"
 msgstr ""
 
+#. js-lingui-id: lXyaAg
+#: src/pages/settings/members/SettingsWorkspaceMember.tsx
+msgid "Member details"
+msgstr ""
+
 #. js-lingui-id: Sma10A
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/components/WorkspacesForSignIn.tsx
 msgid "Member of"
@@ -12887,6 +13030,11 @@ msgstr "Μέλη - Ρυθμίσεις"
 msgid "Members & invitees"
 msgstr "Μέλη & προσκεκλημένοι"
 
+#. js-lingui-id: hFJP7z
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemRowActions.tsx
+msgid "Menu item actions"
+msgstr ""
+
 #. js-lingui-id: UODtG8
 #: src/modules/object-record/record-merge/components/MergeRecordsFooter.tsx
 msgid "Merge"
@@ -12898,6 +13046,7 @@ msgid "Merge preview"
 msgstr "Προεπισκόπηση συγχώνευσης"
 
 #. js-lingui-id: Cmeamd
+#: src/modules/object-record/record-merge/components/MergeRecordsContainer.tsx
 #: src/modules/side-panel/hooks/useOpenMergeRecordsPageInSidePanel.tsx
 msgid "Merge records"
 msgstr "Συγχώνευση εγγραφών"
@@ -13208,7 +13357,7 @@ msgid "Mostly empty"
 msgstr "Κυρίως κενό"
 
 #. js-lingui-id: 3Ib6FN
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Move down"
 msgstr "Μετακίνηση προς τα κάτω"
 
@@ -13231,23 +13380,19 @@ msgstr "Μετακίνηση αριστερά"
 msgid "Move right"
 msgstr "Μετακίνηση δεξιά"
 
-#. js-lingui-id: 6qDVmw
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-msgid "Move to a folder"
-msgstr "Μετακίνηση σε έναν φάκελο"
-
 #. js-lingui-id: TH+XKl
 #: src/modules/side-panel/pages/page-layout/components/WidgetSettingsPlacementSection.tsx
 msgid "Move to another tab"
 msgstr "Μετακίνηση σε άλλη καρτέλα"
 
 #. js-lingui-id: JCPOml
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Move to folder"
 msgstr "Μετακίνηση σε φάκελο"
 
 #. js-lingui-id: QyioBP
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Move up"
 msgstr "Μετακίνηση προς τα πάνω"
 
@@ -13550,11 +13695,6 @@ msgstr "Νέο Email"
 msgid "New Email Channel"
 msgstr "Νέο Κανάλι Email"
 
-#. js-lingui-id: k6B3QD
-#: src/modules/navigation-menu-item/display/sections/favorites/components/FavoritesSection.tsx
-msgid "New favorite"
-msgstr "Νέο αγαπημένο"
-
 #. js-lingui-id: kV1LSq
 #: src/pages/settings/data-model/new-field/SettingsObjectNewFieldConfigure.tsx
 #: src/pages/settings/data-model/new-field/SettingsObjectNewFieldSelect.tsx
@@ -13568,9 +13708,7 @@ msgid "New Field"
 msgstr "Νέο Πεδίο"
 
 #. js-lingui-id: 96G6Re
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useAddFolderToNavigationMenu.ts
-#: src/modules/side-panel/components/SidePanelFolderInfo.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 msgid "New folder"
 msgstr "Νέος φάκελος"
 
@@ -13608,14 +13746,6 @@ msgstr "Νέο Κλειδί"
 #: src/pages/settings/billing/SettingsBillingNewLimit.tsx
 msgid "New limit"
 msgstr "Νέο όριο"
-
-#. js-lingui-id: K2wBR9
-#: src/modules/navigation-menu-item/display/sections/workspace/components/WorkspaceSection.tsx
-#: src/modules/navigation-menu-item/edit/components/WorkspaceSectionAddMenuItemButton.tsx
-#: src/modules/navigation-menu-item/edit/hooks/useOpenAddItemToFolderPage.ts
-#: src/modules/side-panel/hooks/useSidePanelMenu.ts
-msgid "New menu item"
-msgstr "Νέο στοιχείο μενού"
 
 #. js-lingui-id: ROxeMs
 #: src/pages/settings/admin-panel/SettingsAdminNewAiModel.tsx
@@ -13718,6 +13848,11 @@ msgstr "Επόμενο"
 #: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
 msgid "Next charge {totalRenewDate}. Invoice amount may vary if you add members or credits between periods"
 msgstr "Επόμενη χρέωση {totalRenewDate}. Το ποσό του τιμολογίου ενδέχεται να διαφέρει αν προσθέσετε μέλη ή πιστώσεις μεταξύ περιόδων"
+
+#. js-lingui-id: LTn6w8
+#: src/modules/workflow/workflow-steps/workflow-actions/iterator-action/components/WorkflowIteratorSubStepSwitcher.tsx
+msgid "Next iteration"
+msgstr ""
 
 #. js-lingui-id: 8+lM81
 #: src/modules/object-record/record-calendar/components/RecordCalendarTopBar.tsx
@@ -13987,11 +14122,6 @@ msgstr "Δεν έχει καταγραφεί κατανάλωση πιστώσε
 msgid "No currency"
 msgstr "Χωρίς νόμισμα"
 
-#. js-lingui-id: DKVJFE
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewPickerSubView.tsx
-msgid "No custom views available"
-msgstr "Δεν υπάρχουν διαθέσιμες προσαρμοσμένες προβολές"
-
 #. js-lingui-id: plhHQt
 #: src/modules/page-layout/widgets/graph/components/GraphWidgetTooltip.tsx
 #: src/modules/page-layout/widgets/graph/components/NoDataLayer.tsx
@@ -14110,16 +14240,6 @@ msgstr "Δεν υπάρχουν πεδία προς εμφάνιση"
 msgid "No Files"
 msgstr "Χωρίς αρχεία"
 
-#. js-lingui-id: pYblOw
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditFolderPickerSubPage.tsx
-msgid "No folder"
-msgstr "Κανένας φάκελος"
-
-#. js-lingui-id: 6XMhqL
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditFolderPickerSubPage.tsx
-msgid "No folders available"
-msgstr "Δεν υπάρχουν διαθέσιμοι φάκελοι"
-
 #. js-lingui-id: 1jgsYC
 #: src/modules/settings/accounts/components/message-folders/SettingsMessageFoldersEmptyStateCard.tsx
 msgid "No folders found for this account"
@@ -14219,6 +14339,11 @@ msgstr ""
 msgid "No messages found."
 msgstr "Δεν βρέθηκαν μηνύματα."
 
+#. js-lingui-id: KPWxKD
+#: src/modules/page-layout/widgets/email-thread/components/EmailThreadWidget.tsx
+msgid "No messages to show"
+msgstr ""
+
 #. js-lingui-id: 0NudpV
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminWorkerMetricsGraph.tsx
 msgid "No metrics data available"
@@ -14243,11 +14368,6 @@ msgstr "Δεν υπάρχει διαθέσιμο μοντέλο για αυτή�
 #: src/modules/activities/notes/components/NotesCardContent.tsx
 msgid "No notes"
 msgstr "Δεν υπάρχουν σημειώσεις"
-
-#. js-lingui-id: YFHO2u
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewObjectPickerSubView.tsx
-msgid "No objects with views found"
-msgstr "Δεν βρέθηκαν αντικείμενα με προβολές"
 
 #. js-lingui-id: daCzI1
 #: src/modules/ui/field/input/components/MultiSelectInput.tsx
@@ -14276,11 +14396,6 @@ msgstr "Χωρίς παραμέτρους"
 #: src/modules/settings/billing/hooks/useEndSubscriptionTrialPeriod.ts
 msgid "No payment method found. Please update your billing details."
 msgstr "Δεν βρέθηκε μέθοδος πληρωμής. Ενημερώστε τα στοιχεία χρέωσής σας."
-
-#. js-lingui-id: orE/ux
-#: src/pages/settings/applications/SettingsApplicationDetails.tsx
-msgid "No permission defined for this application"
-msgstr "Δεν έχουν οριστεί δικαιώματα για αυτήν την εφαρμογή"
 
 #. js-lingui-id: Od1X93
 #: src/pages/settings/applications/tabs/SettingsApplicationPermissionsTab.tsx
@@ -14371,14 +14486,7 @@ msgid "No Results"
 msgstr "Χωρίς αποτελέσματα"
 
 #. js-lingui-id: AxPAXW
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditFolderPickerSubPage.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemRecordSubPage.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemSearchResults.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewSystemSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelSystemObjectPickerSubView.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/side-panel/components/SidePanelList.tsx
 msgid "No results found"
 msgstr "Δεν βρέθηκαν αποτελέσματα"
@@ -14424,16 +14532,6 @@ msgstr "Δεν βρέθηκαν διαχειριστές διακομιστή."
 #: src/modules/side-panel/pages/send-campaign/components/SendCampaignForm.tsx
 msgid "No subject"
 msgstr "Χωρίς θέμα"
-
-#. js-lingui-id: RQ6tfU
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelSystemObjectPickerSubView.tsx
-msgid "No system objects available"
-msgstr "Δεν υπάρχουν διαθέσιμα αντικείμενα συστήματος"
-
-#. js-lingui-id: Yf4rVG
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewSystemSubView.tsx
-msgid "No system objects with views found"
-msgstr "Δεν βρέθηκαν αντικείμενα συστήματος με προβολές"
 
 #. js-lingui-id: L4Miic
 #: src/modules/side-panel/pages/page-layout/components/dropdown-content/ChartGroupByFieldSelectionMorphRelationFieldView.tsx
@@ -14531,7 +14629,7 @@ msgid "No variables found"
 msgstr "Δεν βρέθηκαν μεταβλητές"
 
 #. js-lingui-id: OCektF
-#: src/pages/settings/applications/tabs/SettingsApplicationDetailEnvironmentVariablesTable.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailVariablesTab.tsx
 msgid "No variables to set for this application"
 msgstr "Δεν υπάρχουν μεταβλητές προς ρύθμιση για αυτήν την εφαρμογή"
 
@@ -14757,11 +14855,6 @@ msgstr "Δεν έχει υπολογιστεί ακόμη τίποτα σε αυ
 msgid "Nothing has gone out yet. The campaign returns to your drafts and you can edit or schedule it again."
 msgstr "Δεν έχει σταλεί ακόμη τίποτα. Η καμπάνια επιστρέφει στα πρόχειρά σας και μπορείτε να την επεξεργαστείτε ή να την προγραμματίσετε ξανά."
 
-#. js-lingui-id: VngD1z
-#: src/pages/settings/applications/SettingsApplicationDetails.tsx
-msgid "Nothing to configure for this application"
-msgstr "Δεν υπάρχει τίποτα προς ρύθμιση για αυτήν την εφαρμογή"
-
 #. js-lingui-id: DYCPYF
 #: src/modules/page-layout/widgets/components/StandaloneWidgetPlaceholder.tsx
 msgid "Nothing to see"
@@ -14861,11 +14954,12 @@ msgid "object"
 msgstr "αντικείμενο"
 
 #. js-lingui-id: W0i24j
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
 #: src/modules/settings/developers/components/WebhookEntitySelect.tsx
 #: src/modules/side-panel/components/SidePanelObjectFilterDropdownContent.tsx
-#: src/modules/side-panel/components/SidePanelObjectViewRecordInfo.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionCreateRecord.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionDeleteRecord.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionUpdateRecord.tsx
@@ -14916,6 +15010,11 @@ msgstr "δικαίωμα αντικειμένου"
 msgid "Object permission options"
 msgstr "Επιλογές δικαιωμάτων αντικειμένου"
 
+#. js-lingui-id: HN7O/H
+#: src/pages/settings/data-model/SettingsObjectDetailPage.tsx
+msgid "Object settings"
+msgstr ""
+
 #. js-lingui-id: gaqIMK
 #: src/modules/settings/event-logs/components/EventLogFilters.tsx
 msgid "Object type"
@@ -14933,9 +15032,7 @@ msgid "Object-Level"
 msgstr "Επίπεδο αντικειμένου"
 
 #. js-lingui-id: B3toQF
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemSearchResults.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectPickerSubView.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/roles/role-permissions/objects-permissions/components/SettingsRolePermissionsObjectsSection.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowAiAgentPermissionsObjectsList.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationDetailContentTab.tsx
@@ -15252,6 +15349,16 @@ msgstr "Ανοίξτε τις εγγραφές σε ξεχωριστή σελί�
 msgid "Open Replit with the Twenty remote server config."
 msgstr "Ανοίξτε το Replit με τη ρύθμιση απομακρυσμένου διακομιστή Twenty."
 
+#. js-lingui-id: Yp+Hi/
+#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+msgid "Open settings"
+msgstr ""
+
+#. js-lingui-id: bY2Xkv
+#: src/modules/sign-in-background-mock/components/BackgroundMockPage.tsx
+msgid "Open side panel"
+msgstr ""
+
 #. js-lingui-id: sBd/cl
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Open Twenty's official ChatGPT integration for your workspace."
@@ -15346,9 +15453,7 @@ msgstr ""
 #: src/modules/settings/admin-panel/hooks/useSettingsAdminTabs.ts
 #: src/modules/settings/billing/components/internal/PlansTags.tsx
 #: src/modules/settings/billing/components/internal/SettingsBillingPlanComparisonTable.tsx
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
 #: src/modules/settings/billing/hooks/useBillingWording.ts
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
 #: src/pages/settings/enterprise/components/OrganizationAdornment.tsx
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
@@ -15396,16 +15501,11 @@ msgstr "πλάνο οργανισμού"
 msgid "Organization plan"
 msgstr "Πλάνο Οργανισμού"
 
-#. js-lingui-id: nV6twc
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
-msgid "Organize"
-msgstr "Οργάνωση"
-
 #. js-lingui-id: /IX/7x
 #: src/modules/ai/components/internal/AiChatQuestionOtherOption.tsx
 #: src/modules/command-menu-item/display/components/SidePanelCommandMenuItemDisplayPage.tsx
 #: src/modules/command-menu-item/edit/components/SidePanelCommandMenuItemEditPage.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminChatAskQuestionsQuestion.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
 #: src/modules/settings/security/components/SettingsSecuritySettings.tsx
@@ -15509,7 +15609,6 @@ msgid "Overview"
 msgstr "Επισκόπηση"
 
 #. js-lingui-id: LtI9AS
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOwnerSection.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationClaims.tsx
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationGeneralInfo.tsx
 #: src/pages/settings/applications/SettingsApplicationRegistrationDetails.tsx
@@ -15561,6 +15660,9 @@ msgid "Padding"
 msgstr "Εσωτερικό περιθώριο"
 
 #. js-lingui-id: 6WdDG7
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "Page"
 msgstr "Σελίδα"
@@ -15620,6 +15722,7 @@ msgid "Page Views"
 msgstr "Προβολές σελίδας"
 
 #. js-lingui-id: wRR604
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/layout/components/SettingsLayoutItemsStats.tsx
 msgid "Pages"
 msgstr "Σελίδες"
@@ -15820,7 +15923,6 @@ msgstr "σημαία δικαιώματος"
 #. js-lingui-id: 9cDpsw
 #: src/modules/settings/roles/role/components/SettingsRole.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowEditActionAiAgent.tsx
-#: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
 #: src/pages/settings/members/SettingsWorkspaceMember.tsx
 msgid "Permissions"
@@ -15871,21 +15973,10 @@ msgstr "Επιλέξτε μια εγγραφή {0}"
 msgid "Pick a send time in the future."
 msgstr "Επιλέξτε μια μελλοντική ώρα αποστολής."
 
-#. js-lingui-id: JqqNlC
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-msgid "Pick a view"
-msgstr "Επιλέξτε μια προβολή"
-
 #. js-lingui-id: rV71K7
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionEmailBase.tsx
 msgid "Pick an address to send from or set a workspace member as variable"
 msgstr "Επιλέξτε μια διεύθυνση αποστολής ή ορίστε μέλος του χώρου εργασίας ως μεταβλητή"
-
-#. js-lingui-id: Wlba2h
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-msgid "Pick an object"
-msgstr "Επιλέξτε ένα αντικείμενο"
 
 #. js-lingui-id: c1JeA3
 #: src/modules/workflow/workflow-steps/workflow-actions/pick-record-action/components/WorkflowEditActionPickRecord.tsx
@@ -15971,7 +16062,7 @@ msgid "Plan"
 msgstr "Σχέδιο"
 
 #. js-lingui-id: XduPHC
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
 msgid "Plan switching has been cancelled."
 msgstr "Η αλλαγή προγράμματος ακυρώθηκε."
 
@@ -16040,7 +16131,7 @@ msgid "Please type \"{confirmationValue}\" to confirm you want to delete this ap
 msgstr "Πληκτρολογήστε \"{confirmationValue}\" για να επιβεβαιώσετε ότι θέλετε να διαγράψετε αυτήν την εφαρμογή. Όλες οι εγκαταστάσεις χώρου εργασίας που συνδέονται με αυτήν θα χάσουν τα διαπιστευτήρια OAuth τους."
 
 #. js-lingui-id: L0SEpC
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
 msgid "Please type \"{confirmationValue}\" to confirm you want to uninstall this application."
 msgstr ""
 
@@ -16143,6 +16234,11 @@ msgstr "Πρόθεμα"
 msgid "Preparing Transcript"
 msgstr "Προετοιμασία απομαγνητοφώνησης"
 
+#. js-lingui-id: FA0aDS
+#: src/modules/command-menu-item/utils/getCommandMenuItemProgressLabel.ts
+msgid "Preparing…"
+msgstr ""
+
 #. js-lingui-id: NwnQoz
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Preset link"
@@ -16182,6 +16278,11 @@ msgstr "Προηγούμενο"
 #: src/modules/ai/utils/groupThreadsByDate.ts
 msgid "Previous 7 days"
 msgstr "Προηγούμενες 7 ημέρες"
+
+#. js-lingui-id: +Qcc/o
+#: src/modules/workflow/workflow-steps/workflow-actions/iterator-action/components/WorkflowIteratorSubStepSwitcher.tsx
+msgid "Previous iteration"
+msgstr ""
 
 #. js-lingui-id: KaMwgJ
 #: src/modules/object-record/record-calendar/components/RecordCalendarTopBar.tsx
@@ -16245,9 +16346,7 @@ msgstr "Ιδιωτικό"
 
 #. js-lingui-id: 3fPjUY
 #: src/modules/settings/billing/components/internal/PlansTags.tsx
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
 #: src/modules/settings/billing/hooks/useBillingWording.ts
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
 msgid "Pro"
 msgstr "Pro"
 
@@ -16649,7 +16748,10 @@ msgstr "εγγραφή"
 
 #. js-lingui-id: w80YWM
 #: src/modules/navigation-menu-item/display/object/components/NavigationDrawerItemForObjectMetadataItem.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
 #: src/modules/side-panel/pages/page-layout/components/dropdown-content/ChartGroupByFieldSelectionTargetObjectFieldsView.tsx
@@ -16663,11 +16765,6 @@ msgstr "Εγγραφή"
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionUpsertRecord.tsx
 msgid "Record (ID)"
 msgstr "Εγγραφή (ID)"
-
-#. js-lingui-id: zod7Md
-#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
-msgid "Record creation form"
-msgstr "Φόρμα δημιουργίας εγγραφής"
 
 #. js-lingui-id: 2CUci6
 #: src/modules/object-record/hooks/useBatchCreateManyRecords.ts
@@ -16750,7 +16847,7 @@ msgid "Recording Scheduled"
 msgstr "Προγραμματισμένη εγγραφή"
 
 #. js-lingui-id: PWlTvh
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemSearchResults.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/billing/constants/SettingsBillingPlanComparisonRows.ts
 #: src/modules/settings/roles/role-permissions/object-level-permissions/components/SettingsRolePermissionsObjectLevelTableHeader.tsx
 #: src/pages/settings/data-model/constants/SettingsObjectTableMetadata.ts
@@ -16974,10 +17071,21 @@ msgstr "Αφαίρεση πεδίου"
 msgid "Remove filter"
 msgstr "Αφαίρεση φίλτρου"
 
+#. js-lingui-id: bKjweg
+#: src/modules/settings/accounts/components/SettingsAccountsBlocklistTableRow.tsx
+msgid "Remove from blocklist"
+msgstr ""
+
 #. js-lingui-id: 9VZ6f0
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderNavigationDrawerItemDropdown.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Remove from sidebar"
 msgstr "Κατάργηση από την πλευρική γραμμή"
+
+#. js-lingui-id: np3jVO
+#: src/pages/settings/members/tabs/SettingsWorkspaceMembersInviteTab.tsx
+msgid "Remove invitation"
+msgstr ""
 
 #. js-lingui-id: O90CN2
 #: src/modules/auth/sign-in-up/components/internal/SignInUpWorkspaceCreationForm.tsx
@@ -16993,6 +17101,11 @@ msgstr "Αφαίρεση μέλους"
 #: src/pages/settings/members/SettingsWorkspaceMember.tsx
 msgid "Remove member from workspace"
 msgstr "Αφαίρεση μέλους από τον χώρο εργασίας"
+
+#. js-lingui-id: RlqUBz
+#: src/modules/settings/ai/components/SettingsAiModelsTable.tsx
+msgid "Remove model"
+msgstr ""
 
 #. js-lingui-id: FeQ/sf
 #. placeholder {0}: modelToRemove?.label ?? ''
@@ -17015,6 +17128,11 @@ msgstr "Αφαίρεση παρόχου"
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
 msgid "Remove provider \"{0}\""
 msgstr "Αφαίρεση παρόχου \"{0}\""
+
+#. js-lingui-id: PhLz3E
+#: src/pages/settings/applications/components/SettingsApplicationRegistrationRedirectURIsTable.tsx
+msgid "Remove redirect URI"
+msgstr ""
 
 #. js-lingui-id: SjxzXf
 #: src/modules/object-record/advanced-filter/components/AdvancedFilterRecordFilterOptionsDropdown.tsx
@@ -17053,15 +17171,20 @@ msgstr "Καταργήστε αυτόν τον πάροχο και αποσυν�
 msgid "Remove variable"
 msgstr "Αφαίρεση μεταβλητής"
 
+#. js-lingui-id: Rkg5R1
+#: src/modules/page-layout/widgets/widget-card/components/WidgetCardHeader.tsx
+msgid "Remove widget"
+msgstr ""
+
 #. js-lingui-id: 2wxgft
 #: src/modules/activities/files/components/AttachmentDropdown.tsx
 #: src/modules/ai/components/AiChatThreadItemMenu.tsx
-#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderNavigationDrawerItemDropdown.tsx
 #: src/modules/page-layout/widgets/fields/components/FieldsConfigurationGroupDropdown.tsx
 msgid "Rename"
 msgstr "Μετονομασία"
 
 #. js-lingui-id: 6PsaMr
+#: src/modules/ai/components/AiChatPageThreadHeader.tsx
 #: src/modules/ai/components/AiChatThreadListItem.tsx
 msgid "Rename chat"
 msgstr "Μετονομασία συνομιλίας"
@@ -17173,6 +17296,11 @@ msgstr "Ερευνήστε αυτήν την εταιρεία και συνοψ�
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "Resend email"
 msgstr "Επαναποστολή email"
+
+#. js-lingui-id: wIa8Qe
+#: src/pages/settings/members/tabs/SettingsWorkspaceMembersInviteTab.tsx
+msgid "Resend invitation"
+msgstr ""
 
 #. js-lingui-id: OfhWJH
 #: src/modules/layout-customization/components/LayoutCustomizationBarResetConfirmationModal.tsx
@@ -17311,7 +17439,6 @@ msgid "Result"
 msgstr "Αποτέλεσμα"
 
 #. js-lingui-id: kx0s+n
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemRecordSubPage.tsx
 #: src/modules/side-panel/pages/search/components/SidePanelSearchRecordsPage.tsx
 msgid "Results"
 msgstr "Αποτελέσματα"
@@ -17448,6 +17575,11 @@ msgstr "Το όνομα του ρόλου δεν μπορεί να είναι κ
 msgid "role permission flag"
 msgstr "σημαία δικαιώματος ρόλου"
 
+#. js-lingui-id: mPGttZ
+#: src/modules/settings/roles/role/components/SettingsRole.tsx
+msgid "Role settings"
+msgstr ""
+
 #. js-lingui-id: jLNGne
 #: src/modules/metadata-error-handler/hooks/useMetadataErrorHandler.ts
 msgid "role target"
@@ -17478,6 +17610,11 @@ msgstr "Μεταφορά υπολοίπου"
 #: src/localization/hooks/useLocaleOptions.ts
 msgid "Romanian"
 msgstr "Ρουμανικά"
+
+#. js-lingui-id: cepC1f
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
+msgid "Root level"
+msgstr ""
 
 #. js-lingui-id: vQrTaX
 #: src/pages/settings/applications/tabs/SettingsApplicationRegistrationOAuthTab.tsx
@@ -17615,14 +17752,16 @@ msgstr "Σάββατο"
 
 #. js-lingui-id: tfDRzk
 #: src/modules/settings/components/SaveAndCancelButtons/SaveButton.tsx
+#: src/modules/settings/config-variables/components/ConfigVariableEdit.tsx
+#: src/modules/settings/profile/components/EmailField.tsx
 #: src/pages/settings/data-model/new-field/SettingsObjectNewFieldConfigure.tsx
 msgid "Save"
 msgstr "Αποθήκευση"
 
-#. js-lingui-id: nvUgnK
+#. js-lingui-id: PI8MEC
 #: src/modules/settings/billing/components/internal/SettingsBillingPlanComparisonTable.tsx
-msgid "Save 25% when billed yearly"
-msgstr "Εξοικονομήστε 25% με ετήσια χρέωση"
+msgid "Save 25% when billed annually"
+msgstr ""
 
 #. js-lingui-id: apLRCm
 #: src/modules/views/components/UpdateViewButtonGroup.tsx
@@ -17633,6 +17772,11 @@ msgstr "Αποθήκευση ως νέα προβολή"
 #: src/modules/layout-customization/hooks/useEnterLayoutCustomizationMode.ts
 msgid "Save or cancel dashboard changes before editing the layout."
 msgstr "Αποθηκεύστε ή ακυρώστε τις αλλαγές του πίνακα ελέγχου πριν επεξεργαστείτε τη διάταξη."
+
+#. js-lingui-id: haaI+P
+#: src/pages/settings/applications/SettingsApplicationDetails.tsx
+msgid "Save settings"
+msgstr ""
 
 #. js-lingui-id: bL2pm9
 #: src/modules/object-record/record-field/ui/form-types/components/FormRecordRichTextFieldInput.tsx
@@ -17754,11 +17898,6 @@ msgstr "Αναζήτηση 1 πεδίου"
 msgid "Search a field..."
 msgstr "Αναζήτηση πεδίου..."
 
-#. js-lingui-id: ITQFzL
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditFolderPickerSubPage.tsx
-msgid "Search a folder..."
-msgstr "Αναζήτηση φακέλου..."
-
 #. js-lingui-id: owAIq9
 #: src/modules/settings/billing/components/SettingsBillingLimitsTable.tsx
 msgid "Search a limit"
@@ -17769,11 +17908,6 @@ msgstr "Αναζήτηση ορίου"
 msgid "Search a model..."
 msgstr "Αναζήτηση μοντέλου..."
 
-#. js-lingui-id: Dm4PFW
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemPage.tsx
-msgid "Search a nav item..."
-msgstr "Αναζήτηση στοιχείου πλοήγησης..."
-
 #. js-lingui-id: WXvlVa
 #: src/modules/settings/roles/components/SettingsRolesList.tsx
 msgid "Search a role..."
@@ -17783,12 +17917,6 @@ msgstr "Αναζήτηση ρόλου..."
 #: src/pages/settings/ai/components/SettingsAgentSkillsTab.tsx
 msgid "Search a skill..."
 msgstr "Αναζήτηση δεξιότητας..."
-
-#. js-lingui-id: hVJ1MP
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewSystemSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelSystemObjectPickerSubView.tsx
-msgid "Search a system object..."
-msgstr "Αναζήτηση αντικειμένου συστήματος..."
 
 #. js-lingui-id: xdl79x
 #: src/pages/settings/members/tabs/SettingsWorkspaceMembersTeamTab.tsx
@@ -17804,11 +17932,6 @@ msgstr "Αναζήτηση εργαλείου..."
 #: src/modules/settings/data-model/fields/forms/components/SettingsObjectNewFieldSelector.tsx
 msgid "Search a type"
 msgstr "Αναζήτηση τύπου"
-
-#. js-lingui-id: +MhOVB
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewPickerSubView.tsx
-msgid "Search a view..."
-msgstr "Αναζήτηση προβολής..."
 
 #. js-lingui-id: +7s4fw
 #: src/modules/settings/roles/role-assignment/components/SettingsRoleAssignmentEntityPickerDropdown.tsx
@@ -17836,12 +17959,6 @@ msgstr "Αναζήτηση ευρετηρίου..."
 #: src/modules/settings/roles/role-permissions/object-level-permissions/components/SettingsRolePermissionsObjectLevelObjectPicker.tsx
 msgid "Search an object"
 msgstr "Αναζήτηση αντικειμένου"
-
-#. js-lingui-id: BoNHR0
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectPickerSubView.tsx
-msgid "Search an object..."
-msgstr "Αναζήτηση αντικειμένου..."
 
 #. js-lingui-id: S+MGem
 #: src/modules/object-record/object-filter-dropdown/components/ObjectFilterDropdownAnyFieldSearchInput.tsx
@@ -17970,7 +18087,7 @@ msgid "Search options"
 msgstr "Επιλογές αναζήτησης"
 
 #. js-lingui-id: rRklUH
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemRecordSubPage.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 msgid "Search records..."
 msgstr "Αναζήτηση εγγραφών..."
 
@@ -17985,6 +18102,7 @@ msgid "Search steps and fields"
 msgstr "Αναζήτηση βημάτων και πεδίων"
 
 #. js-lingui-id: YIix5Y
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/developers/components/WebhookEntitySelect.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationDetailContentTab.tsx
 msgid "Search..."
@@ -18124,6 +18242,7 @@ msgstr "δείτε"
 
 #. js-lingui-id: h+8V38
 #: src/modules/settings/roles/role-permissions/object-level-permissions/field-permissions/components/SettingsRolePermissionsObjectLevelObjectFieldPermissionTable.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailGeneralTab.tsx
 msgid "See"
 msgstr "Δείτε"
 
@@ -18265,10 +18384,11 @@ msgstr "Επιλέξτε ένα γνωστό μοντέλο ή προσθέστ�
 msgid "Select a known provider or create a custom one"
 msgstr "Επιλέξτε έναν γνωστό πάροχο ή δημιουργήστε έναν προσαρμοσμένο"
 
-#. js-lingui-id: dtAvBz
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNavigationMenuItemEditPage.tsx
-msgid "Select a navigation item to edit"
-msgstr "Επιλέξτε ένα στοιχείο πλοήγησης για επεξεργασία"
+#. js-lingui-id: KQtk7u
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemInsertionPreview.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemInsertionPreview.tsx
+msgid "Select a menu item"
+msgstr ""
 
 #. js-lingui-id: p4N5TB
 #: src/modules/object-record/record-picker/multiple-record-picker/components/MultipleRecordPickerCreateTargetSelect.tsx
@@ -18699,7 +18819,7 @@ msgid "Set up MCP"
 msgstr "Ρύθμιση MCP"
 
 #. js-lingui-id: 9HNKkV
-#: src/pages/settings/applications/tabs/SettingsApplicationDetailEnvironmentVariablesTable.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailVariablesTab.tsx
 msgid "Set your application configuration variables"
 msgstr "Ορίστε τις μεταβλητές ρυθμίσεων της εφαρμογής σας"
 
@@ -19623,34 +19743,32 @@ msgstr "Η συνδρομή ενεργοποιήθηκε."
 msgid "Subscription error. Please retry or contact Twenty team"
 msgstr "Σφάλμα συνδρομής. Δοκιμάστε ξανά ή επικοινωνήστε με την ομάδα Twenty"
 
-#. js-lingui-id: FooJUj
-#. placeholder {0}: getTargetPlanLabel(targetPlanKey)
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
-msgid "Subscription has been switched to {0} Plan."
-msgstr "Η συνδρομή έχει αλλάξει στο πρόγραμμα {0}."
+#. js-lingui-id: +QiH+4
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
+msgid "Subscription has been switched to {planLabel} Plan."
+msgstr ""
 
-#. js-lingui-id: WZBvO8
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
-msgid "Subscription has been switched to Monthly."
-msgstr "Η συνδρομή έχει αλλάξει σε μηνιαία."
+#. js-lingui-id: mxY+I+
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
+msgid "Subscription has been switched to annual billing."
+msgstr ""
 
-#. js-lingui-id: A5YO8f
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
-msgid "Subscription has been switched to Yearly."
-msgstr "Η συνδρομή έχει αλλάξει σε ετήσια."
+#. js-lingui-id: 3SS5AR
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
+msgid "Subscription has been switched to monthly billing."
+msgstr ""
 
-#. js-lingui-id: ulJRqh
-#. placeholder {0}: getTargetPlanLabel(targetPlanKey)
-#. placeholder {1}: getBeautifiedRenewDate()
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
-msgid "Subscription will be switched to {0} Plan the {1}."
-msgstr "Η συνδρομή θα αλλάξει στο πλάνο {0} στις {1}."
-
-#. js-lingui-id: 7Vg+lX
+#. js-lingui-id: q2Qf76
 #. placeholder {0}: getBeautifiedRenewDate()
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
-msgid "Subscription will be switched to Monthly the {0}."
-msgstr "Η συνδρομή θα αλλάξει στο Μηνιαίο στις {0}."
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
+msgid "Subscription will be switched to {planLabel} Plan the {0}."
+msgstr ""
+
+#. js-lingui-id: jV9sB2
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
+msgid "Subscription will be switched to monthly billing the {0}."
+msgstr ""
 
 #. js-lingui-id: pEToQK
 #: src/modules/advanced-text-editor/extensions/slash-command/DefaultSlashCommands.ts
@@ -19755,21 +19873,36 @@ msgstr "Υποστηρίζει συλλογιστική"
 msgid "Swedish"
 msgstr "Σουηδικά"
 
+#. js-lingui-id: aOX6Nj
+#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCard.tsx
+#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCard.tsx
+msgid "Switch to annual"
+msgstr ""
+
+#. js-lingui-id: rdZlzY
+#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
+msgid "Switch to monthly"
+msgstr ""
+
+#. js-lingui-id: SVxgrl
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Switch to monthly billing?"
+msgstr ""
+
 #. js-lingui-id: GPKudC
 #: src/modules/settings/billing/hooks/useBillingPlanActions.ts
 msgid "Switch to Pro"
 msgstr "Αλλαγή σε Επαγγελματικό"
 
+#. js-lingui-id: z+Ngx/
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Switch to Pro?"
+msgstr ""
+
 #. js-lingui-id: 13a+Fq
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 msgid "Switch to production instance"
 msgstr "Εναλλαγή σε παραγωγικό instance"
-
-#. js-lingui-id: 1EwZPZ
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCard.tsx
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCard.tsx
-msgid "Switch to yearly"
-msgstr "Αλλαγή σε ετήσια"
 
 #. js-lingui-id: QfzgpH
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
@@ -19855,12 +19988,6 @@ msgid "System fields"
 msgstr "Πεδία Συστήματος"
 
 #. js-lingui-id: 0apULK
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewSystemSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelSystemObjectPickerSubView.tsx
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowAiAgentPermissionsObjectsList.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowAiAgentPermissionsTab.tsx
 #: src/pages/settings/data-model/SettingsObjectTable.tsx
@@ -20175,6 +20302,16 @@ msgstr "Η ημερομηνία λήξης πρέπει να είναι μετά
 msgid "The end time must be after the start time."
 msgstr "Η ώρα λήξης πρέπει να είναι μετά την ώρα έναρξης."
 
+#. js-lingui-id: h9mpr+
+#: src/modules/record-export/utils/createRecordExportConnection.ts
+msgid "The export connection was lost. Please try again."
+msgstr ""
+
+#. js-lingui-id: qc958u
+#: src/modules/record-export/utils/createRecordExportConnection.ts
+msgid "The export was interrupted. Please try again."
+msgstr ""
+
 #. js-lingui-id: 21Xjwu
 #: src/pages/settings/legal/SettingsLegalDpaNew.tsx
 msgid "The full agreement with fields resolved for your deployment."
@@ -20184,6 +20321,11 @@ msgstr "Η πλήρης συμφωνία με τα πεδία συμπληρωμ
 #: src/modules/workflow/workflow-trigger/components/WorkflowEditTriggerManual.tsx
 msgid "The icon your workflow trigger will display in the command menu"
 msgstr "Το εικονίδιο που θα εμφανίζεται για την ενεργοποίηση της ροής εργασιών στο μενού εντολών"
+
+#. js-lingui-id: JNopdb
+#: src/modules/page-layout/widgets/email-thread/components/EmailThreadWidget.tsx
+msgid "The messages in this thread are missing or incomplete."
+msgstr ""
 
 #. js-lingui-id: 4m3QoL
 #: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
@@ -20504,6 +20646,18 @@ msgstr "Αυτή η περίοδος χρέωσης"
 msgid "This call is being recorded…"
 msgstr "Αυτή η κλήση καταγράφεται…"
 
+#. js-lingui-id: C7AzHv
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "This cancels the scheduled switch to {upcomingIntervalAdjective} billing on {0}."
+msgstr ""
+
+#. js-lingui-id: +iT8xP
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "This cancels the scheduled switch to {upcomingPlanLabel} on {0}."
+msgstr ""
+
 #. js-lingui-id: WCa/7U
 #: src/pages/settings/applications/tabs/SettingsApplicationFrontComponentPreviewTab.tsx
 msgid "This component runs without a UI and renders nothing here."
@@ -20518,6 +20672,11 @@ msgstr "Αυτή η σύνδεση δεν υπάρχει ή δεν είναι δ
 #: src/modules/object-record/record-field/ui/form-types/components/FormRecordRichTextFieldInput.tsx
 msgid "This content was saved in an older format and cannot be edited here"
 msgstr "Αυτό το περιεχόμενο αποθηκεύτηκε σε παλαιότερη μορφή και δεν μπορεί να επεξεργαστεί εδώ"
+
+#. js-lingui-id: 5VD/sC
+#: src/modules/settings/domains/components/SettingPublicDomain.tsx
+msgid "This custom domain does not exist or does not belong to this application."
+msgstr ""
 
 #. js-lingui-id: SLIRqz
 #: src/modules/settings/admin-panel/config-variables/components/ConfigVariableHelpText.tsx
@@ -20714,16 +20873,6 @@ msgstr "Αυτό θα ακυρώσει όλες τις τροποποιήσει�
 #: src/modules/side-panel/pages/page-layout/components/WidgetSettingsManageSection.tsx
 msgid "This will cancel all modifications done on the widget. This action cannot be undone."
 msgstr "Αυτό θα ακυρώσει όλες τις τροποποιήσεις που έγιναν στο γραφικό στοιχείο. Αυτή η ενέργεια δεν μπορεί να αναιρεθεί."
-
-#. js-lingui-id: h4VeOo
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "This will cancel the scheduled interval change and keep your current billing interval ({currentIntervalLabel})."
-msgstr "Αυτό θα ακυρώσει την προγραμματισμένη αλλαγή περιόδου και θα διατηρήσει την τρέχουσα τιμολογιακή περίοδο ({currentIntervalLabel})."
-
-#. js-lingui-id: XpARoU
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "This will cancel the scheduled plan change and keep your current plan ({planKeyWord})."
-msgstr "Αυτό θα ακυρώσει την προγραμματισμένη αλλαγή προγράμματος και θα διατηρήσει το τρέχον πρόγραμμα ({planKeyWord})."
 
 #. js-lingui-id: PJ4qQa
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
@@ -20979,6 +21128,11 @@ msgstr "Το εργαλείο δημιουργήθηκε"
 #: src/pages/settings/ai/SettingsToolDetail.tsx
 msgid "Tool deleted"
 msgstr "Το εργαλείο διαγράφηκε"
+
+#. js-lingui-id: RO68oO
+#: src/modules/ai/components/ThinkingStepsDisplay.tsx
+msgid "Tool details: {displayMessage}"
+msgstr ""
 
 #. js-lingui-id: OvFVjH
 #: src/modules/ai/components/ToolStepRenderer.tsx
@@ -21356,11 +21510,6 @@ msgstr "Πληκτρολογήστε οτιδήποτε..."
 msgid "Type something or press \"/\" to see commands"
 msgstr "Πληκτρολογήστε κάτι ή πατήστε \"/\" για να δείτε τις εντολές"
 
-#. js-lingui-id: UhqKcC
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemRecordSubPage.tsx
-msgid "Type to search records"
-msgstr "Πληκτρολογήστε για αναζήτηση εγγραφών"
-
 #. js-lingui-id: SILT51
 #: src/modules/ai/components/internal/AiChatQuestionOtherOption.tsx
 msgid "Type your own answer here"
@@ -21445,13 +21594,13 @@ msgstr ""
 
 #. js-lingui-id: fo0VXg
 #: src/modules/logic-functions/utils/getLogicFunctionTriggerLabel.ts
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
 msgid "Uninstall"
 msgstr ""
 
 #. js-lingui-id: Qtg9Qc
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
 msgid "Uninstall Application?"
 msgstr ""
 
@@ -21461,7 +21610,7 @@ msgid "Uninstall this app from all workspaces before deleting it"
 msgstr "Απεγκαταστήστε αυτήν την εφαρμογή από όλους τους χώρους εργασίας πριν τη διαγράψετε"
 
 #. js-lingui-id: ItfvBz
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
 msgid "Uninstalling..."
 msgstr "Απεγκαθίσταται..."
 
@@ -21546,6 +21695,11 @@ msgstr "Άγνωστο αρχείο"
 #: src/modules/mention/components/MentionRecordChip.tsx
 msgid "Unknown object"
 msgstr "Άγνωστο αντικείμενο"
+
+#. js-lingui-id: lZSo+Q
+#: src/modules/activities/emails/components/EmailThreadMessageSender.tsx
+msgid "Unknown sender"
+msgstr ""
 
 #. js-lingui-id: 0Wy3/1
 #: src/modules/page-layout/widgets/call-recording-transcript/components/CallRecordingTranscriptEntryListItem.tsx
@@ -21666,6 +21820,11 @@ msgstr "Σύνδεσμος κατάργησης εγγραφής"
 #: src/pages/settings/communications/SettingsWorkspaceUnsubscribe.tsx
 msgid "Unsubscribe page"
 msgstr "Σελίδα κατάργησης εγγραφής"
+
+#. js-lingui-id: gOL19R
+#: src/pages/settings/communications/SettingsWorkspaceUnsubscribe.tsx
+msgid "Unsubscribe settings"
+msgstr ""
 
 #. js-lingui-id: BEZcuL
 #: src/modules/activities/emails/components/CampaignDetailsFields.tsx
@@ -21891,7 +22050,6 @@ msgstr "Γίνεται ενημέρωση..."
 #: src/modules/ai/components/AIChatNoMoreBillingCreditsBanner.tsx
 #: src/modules/information-banner/components/billing/InformationBannerNoMoreCredits.tsx
 #: src/modules/settings/billing/components/internal/ResourceCreditPriceSelector.tsx
-#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
 #: src/modules/settings/event-logs/components/SettingsLogs.tsx
 #: src/modules/settings/roles/role-permissions/object-level-permissions/record-level-permissions/components/SettingsRolePermissionsObjectLevelRecordLevelSection.tsx
 msgid "Upgrade"
@@ -21927,7 +22085,7 @@ msgstr "Η κατάσταση αναβάθμισης ανανεώθηκε"
 
 #. js-lingui-id: doMiaH
 #. placeholder {0}: latestAvailableVersion ?? ''
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailGeneralTab.tsx
 msgid "Upgrade to {0}"
 msgstr "Αναβάθμιση σε {0}"
 
@@ -21950,10 +22108,30 @@ msgstr "Αναβαθμίστε για πρόσβαση"
 msgid "Upgrade to access audit logs"
 msgstr "Αναβαθμίστε για πρόσβαση στα αρχεία καταγραφής ελέγχου"
 
+#. js-lingui-id: mjRbV9
+#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
+msgid "Upgrade to annual"
+msgstr ""
+
+#. js-lingui-id: 5gLbcs
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Upgrade to annual billing?"
+msgstr ""
+
+#. js-lingui-id: LiRjC+
+#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
+msgid "Upgrade to Organization"
+msgstr ""
+
 #. js-lingui-id: q10MiT
 #: src/modules/settings/security/components/SettingsSecuritySettings.tsx
 msgid "Upgrade to Organization to access audit logs."
 msgstr "Αναβαθμίστε σε Organization για πρόσβαση στα αρχεία καταγραφής ελέγχου."
+
+#. js-lingui-id: Ic7ooY
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Upgrade to Organization?"
+msgstr ""
 
 #. js-lingui-id: yV3xLN
 #: src/pages/onboarding/UpgradeFreeTrial.tsx
@@ -21971,7 +22149,7 @@ msgid "Upgrading subscription..."
 msgstr "Γίνεται αναβάθμιση συνδρομής..."
 
 #. js-lingui-id: +Gi3x1
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailGeneralTab.tsx
 msgid "Upgrading..."
 msgstr "Γίνεται αναβάθμιση..."
 
@@ -22055,6 +22233,7 @@ msgid "URI is already in redirect URIs list"
 msgstr "Το URI υπάρχει ήδη στη λίστα με τα URI ανακατεύθυνσης"
 
 #. js-lingui-id: IagCbF
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemLinkEditor.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceContent.tsx
 #: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldLinksVariantForm.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/WorkflowEditActionHttpRequest.tsx
@@ -22140,11 +22319,6 @@ msgstr "Συμβάντα χρήσης"
 msgid "Usage period"
 msgstr "Περίοδος χρήσης"
 
-#. js-lingui-id: MNOlLY
-#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
-msgid "Use a dedicated form when creating records."
-msgstr "Χρήση ειδικής φόρμας κατά τη δημιουργία εγγραφών."
-
 #. js-lingui-id: 6kLyt5
 #: src/modules/auth/sign-in-up/components/internal/SignInUpTwoFactorAuthenticationProvision.tsx
 msgid "Use authenticator apps and browser extensions like 1Password, Authy, Microsoft Authenticator to generate one-time passwords"
@@ -22194,11 +22368,6 @@ msgstr "Χρήση της ειδικής σελίδας ευρετηρίου ρ�
 #: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
 msgid "Use the quota engine to enforce credit allowances."
 msgstr "Χρήση της μηχανής ποσοστώσεων για την επιβολή επιτρεπόμενων πιστώσεων."
-
-#. js-lingui-id: 0rr3iW
-#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
-msgid "Use the usage limit engine to enforce API request speed limits."
-msgstr "Χρήση της μηχανής ορίων χρήσης για την επιβολή ορίων ταχύτητας αιτημάτων API."
 
 #. js-lingui-id: z1f4Op
 #: src/modules/workflow/workflow-variables/utils/getWorkflowVariableSpecialItems.ts
@@ -22283,6 +22452,11 @@ msgstr "Ρόλοι χρηστών"
 msgid "User Usage"
 msgstr "Χρήση χρήστη"
 
+#. js-lingui-id: FYgCVU
+#: src/pages/settings/admin-panel/SettingsAdminUserDetail.tsx
+msgid "User workspaces"
+msgstr ""
+
 #. js-lingui-id: Sxm8rQ
 #: src/modules/settings/admin-panel/components/SettingsAdminGeneral.tsx
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useSettingsRolePermissionFlagConfig.ts
@@ -22339,7 +22513,7 @@ msgstr "Το διακριτικό εγκυρότητας ανανεώθηκε μ
 #: src/pages/settings/applications/components/SettingsApplicationVariableInput.tsx
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationCommandMenuItemSettingsTab.tsx
-#: src/pages/settings/applications/tabs/SettingsApplicationDetailEnvironmentVariablesTable.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailVariablesTab.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationFrontComponentSettingsTab.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationRegistrationConfigTab.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationTimelineActivityTypeSettingsTab.tsx
@@ -22381,6 +22555,8 @@ msgstr "Η μεταβλητή δεν βρέθηκε"
 
 #. js-lingui-id: gpmbqk
 #: src/modules/advanced-text-editor/components/AdvancedTextEditorInsertRail.tsx
+#: src/pages/settings/applications/SettingsApplicationDetails.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailVariablesTab.tsx
 msgid "Variables"
 msgstr "Μεταβλητές"
 
@@ -22470,6 +22646,11 @@ msgstr "Βιντεοκλήση"
 msgid "Video conferencing"
 msgstr "Τηλεδιάσκεψη"
 
+#. js-lingui-id: 5LXK/o
+#: src/modules/settings/components/SettingsCustomizeVideoModal.tsx
+msgid "Video tutorials"
+msgstr ""
+
 #. js-lingui-id: fROFIL
 #: src/localization/hooks/useLocaleOptions.ts
 msgid "Vietnamese"
@@ -22482,13 +22663,14 @@ msgid "view"
 msgstr "προβολή"
 
 #. js-lingui-id: jpctdh
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
 #: src/modules/settings/data-model/object-details/components/SettingsObjectFieldDisabledActionDropdown.tsx
 #: src/modules/settings/data-model/objects/components/SettingsObjectInactiveMenuDropDown.tsx
 #: src/modules/settings/developers/components/WebhookEntitySelect.tsx
 #: src/modules/side-panel/components/hooks/usePageLayoutHeaderInfo.ts
-#: src/modules/side-panel/components/SidePanelObjectViewRecordInfo.tsx
 #: src/modules/side-panel/pages/page-layout/components/SidePanelPageLayoutDashboardWidgetTypeSelect.tsx
 #: src/pages/settings/layout/SettingsLayoutViewDetail.tsx
 msgid "View"
@@ -22527,7 +22709,6 @@ msgid "View Docs"
 msgstr "Προβολή τεκμηρίωσης"
 
 #. js-lingui-id: Mv1YVf
-#: src/modules/error-handler/utils/getToastOptionsFromError.tsx
 #: src/modules/error-handler/utils/getToastOptionsFromError.tsx
 msgid "View existing record"
 msgstr "Προβολή υπάρχουσας εγγραφής"
@@ -22608,14 +22789,18 @@ msgstr "Τύπος Προβολής"
 msgid "View types"
 msgstr "Τύποι προβολής"
 
+#. js-lingui-id: sEyiuO
+#: src/modules/views/components/UpdateViewButtonGroup.tsx
+msgid "View update options"
+msgstr ""
+
 #. js-lingui-id: ZjBqNE
 #: src/modules/settings/billing/components/SettingsBillingCreditsSection.tsx
 msgid "View usage"
 msgstr "Προβολή χρήσης"
 
 #. js-lingui-id: 1I6UoR
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemSearchResults.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewPickerSubView.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/layout/components/SettingsLayoutItemsStats.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationDetailContentTab.tsx
 #: src/pages/settings/layout/SettingsLayoutViewDetail.tsx
@@ -23040,6 +23225,11 @@ msgstr "Πότε θα λήξει το κλειδί API."
 msgid "When the key will be disabled"
 msgstr "Όταν το κλειδί θα απενεργοποιηθεί"
 
+#. js-lingui-id: kKHjOh
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "When your trial ends, you will be charged {priceLabel}."
+msgstr ""
+
 #. js-lingui-id: YvwwqC
 #: src/modules/object-record/advanced-filter/components/AdvancedFilterLogicalOperatorCell.tsx
 #: src/modules/object-record/advanced-filter/side-panel/components/AdvancedFilterSidePanelLogicalOperatorCell.tsx
@@ -23137,6 +23327,11 @@ msgstr "Εκτέλεση ροής εργασίας"
 msgid "Workflow index page"
 msgstr "Σελίδα ευρετηρίου ροών εργασίας"
 
+#. js-lingui-id: 1p/qH4
+#: src/modules/side-panel/pages/workflow/step/view-run/components/SidePanelWorkflowRunViewStepContent.tsx
+msgid "Workflow step results"
+msgstr ""
+
 #. js-lingui-id: QHAMlE
 #: src/modules/object-core/workflows/versions/hooks/useOpenCoreWorkflowVersionsSidePanel.ts
 msgid "Workflow versions"
@@ -23233,6 +23428,11 @@ msgstr "Ροές Εργασίας"
 msgid "Workspace"
 msgstr "Περιοχή Εργασίας"
 
+#. js-lingui-id: rxazlH
+#: src/pages/settings/communications/SettingsWorkspaceCommunications.tsx
+msgid "Workspace communications"
+msgstr ""
+
 #. js-lingui-id: fQ8teq
 #: src/modules/auth/sign-in-up/hooks/useSignUpInNewWorkspace.ts
 #: src/pages/onboarding/WorkspaceActivation.tsx
@@ -23243,6 +23443,11 @@ msgstr "Απέτυχε η δημιουργία χώρου εργασίας"
 #: src/modules/settings/profile/components/DeleteWorkspace.tsx
 msgid "Workspace Deletion"
 msgstr "Διαγραφή Workspace"
+
+#. js-lingui-id: KNUGRD
+#: src/pages/settings/admin-panel/SettingsAdminWorkspaceDetail.tsx
+msgid "Workspace details"
+msgstr ""
 
 #. js-lingui-id: Qx8HXb
 #: src/pages/settings/general/SettingsGeneral.tsx
@@ -23284,6 +23489,7 @@ msgstr "Μέλος χώρου εργασίας"
 #. js-lingui-id: wtxjAY
 #: src/modules/settings/event-logs/components/EventLogFilters.tsx
 #: src/pages/settings/admin-panel/SettingsAdminWorkspaceDetail.tsx
+#: src/pages/settings/members/SettingsWorkspaceMembers.tsx
 msgid "Workspace members"
 msgstr "Μέλη Περιοχής Εργασίας"
 
@@ -23380,11 +23586,6 @@ msgstr "έτος"
 msgid "Year"
 msgstr "Έτος"
 
-#. js-lingui-id: dfmB8/
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "yearly"
-msgstr "ετήσια"
-
 #. js-lingui-id: zkWmBh
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceBillingContent.tsx
 #: src/modules/settings/enterprise/components/EnterprisePlanModal.tsx
@@ -23402,7 +23603,7 @@ msgid "Yellow"
 msgstr "Κίτρινο"
 
 #. js-lingui-id: 3d1wCB
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
 #: src/modules/settings/developers/components/SettingsDevelopersWebhookForm.tsx
 #: src/modules/settings/developers/components/SettingsDevelopersWebhookForm.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDangerZone.tsx
@@ -23441,6 +23642,11 @@ msgstr "Ανήκετε ήδη στο workspace {workspaceDisplayName}"
 #: src/modules/auth/sign-in-up/hooks/useWorkspaceFromInviteHash.ts
 msgid "You already belong to this workspace"
 msgstr "Ανήκετε ήδη σε αυτό το workspace"
+
+#. js-lingui-id: uXvWx/
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "You are charged {priceLabel}."
+msgstr ""
 
 #. js-lingui-id: MuS9Gh
 #: src/modules/settings/data-model/object-details/components/SettingsUpdateDataModelObjectAboutForm.tsx
@@ -23513,25 +23719,20 @@ msgstr "Έχετε φτάσει τον μέγιστο αριθμό μεταφο�
 msgid "You have scheduled a credit pack change. Do you want to cancel it?"
 msgstr "Έχετε προγραμματίσει αλλαγή πακέτου πιστώσεων. Θέλετε να την ακυρώσετε;"
 
-#. js-lingui-id: z8eKS7
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "you will be charged ${enterprisePrice} per user per month"
-msgstr "θα χρεωθείτε ${enterprisePrice} ανά χρήστη ανά μήνα"
+#. js-lingui-id: hcG97e
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "You keep {currentIntervalAdjective} billing on the {currentPlanLabel} plan."
+msgstr ""
 
-#. js-lingui-id: u3S6u8
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "You will be charged ${monthlyPrice} per user per month billed monthly. The change will be applied the {beautifiedRenewDate}."
-msgstr "Θα χρεώνεστε ${monthlyPrice} ανά χρήστη ανά μήνα με μηνιαία τιμολόγηση. Η αλλαγή θα εφαρμοστεί στις {beautifiedRenewDate}."
+#. js-lingui-id: JWqQIk
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "You stay on the {currentPlanLabel} plan."
+msgstr ""
 
-#. js-lingui-id: /T5zAB
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "You will be charged ${proPrice} per user per month"
-msgstr "Θα χρεωθείτε ${proPrice} ανά χρήστη ανά μήνα"
-
-#. js-lingui-id: W3k5LA
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "You will be charged ${yearlyPrice} per user per year billed annually. A prorata with your current subscription will be applied."
-msgstr "Θα χρεώνεστε ${yearlyPrice} ανά χρήστη ανά έτος με ετήσια τιμολόγηση. Θα εφαρμοστεί μια αναλογία με την τρέχουσα συνδρομή σας."
+#. js-lingui-id: VW98bk
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "You will be charged {priceLabel}."
+msgstr ""
 
 #. js-lingui-id: 5K1++A
 #: src/modules/settings/billing/components/StartSubscriptionConfirmationModal.tsx
@@ -23563,15 +23764,21 @@ msgstr "Έχετε φτάσει το όριο χρήσης AI."
 msgid "Your app version is out of date. Please refresh the page."
 msgstr "Η έκδοση της εφαρμογής σας είναι παρωχημένη. Παρακαλώ ανανεώστε τη σελίδα."
 
-#. js-lingui-id: dtOZU/
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "Your billing interval will switch to monthly immediately and your trial will continue. When it ends, you will be charged ${monthlyPrice} per user per month billed monthly."
-msgstr "Το διάστημα χρέωσης θα αλλάξει άμεσα σε μηνιαίο και η δοκιμή σας θα συνεχιστεί. Όταν λήξει, θα χρεώνεστε ${monthlyPrice} ανά χρήστη ανά μήνα με μηνιαία χρέωση."
+#. js-lingui-id: V2wkfv
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your billing switches to {intervalAdjective} immediately and your trial continues."
+msgstr ""
 
-#. js-lingui-id: R6FfrK
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "Your billing interval will switch to yearly immediately and your trial will continue. When it ends, you will be charged ${yearlyPrice} per user per year billed annually."
-msgstr "Το διάστημα χρέωσης θα αλλάξει άμεσα σε ετήσιο και η δοκιμή σας θα συνεχιστεί. Όταν λήξει, θα χρεώνεστε ${yearlyPrice} ανά χρήστη ανά έτος με ετήσια χρέωση."
+#. js-lingui-id: 7iuaeY
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your billing switches to annual immediately. A new annual period starts today and the unused part of your current period is credited."
+msgstr ""
+
+#. js-lingui-id: aeKOPV
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your billing switches to monthly on {0}, at the end of your current billing period."
+msgstr ""
 
 #. js-lingui-id: u1O1GV
 #: src/modules/settings/billing/hooks/useWaitForPaymentRecovery.tsx
@@ -23624,15 +23831,21 @@ msgstr "Η συνδρομή Οργανισμού σας έχει ακυρωθε�
 msgid "Your payment details are incomplete. Please review and retry."
 msgstr "Τα στοιχεία πληρωμής σας είναι ελλιπή. Παρακαλούμε ελέγξτε τα και δοκιμάστε ξανά."
 
-#. js-lingui-id: IxG5gy
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "Your plan will switch to Organization immediately and your trial will continue. When it ends, you will be charged ${enterprisePrice} per user per month{suffix}."
-msgstr "Το πλάνο σας θα αλλάξει άμεσα σε Organization και η δοκιμή σας θα συνεχιστεί. Όταν λήξει, θα χρεώνεστε ${enterprisePrice} ανά χρήστη τον μήνα{suffix}."
+#. js-lingui-id: Bz74IS
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your plan switches to {planLabel} immediately and your trial continues."
+msgstr ""
 
-#. js-lingui-id: T2GIPK
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "Your plan will switch to Pro immediately and your trial will continue. When it ends, you will be charged ${proPrice} per user per month{suffix}."
-msgstr "Το πλάνο σας θα αλλάξει άμεσα σε Pro και η δοκιμή σας θα συνεχιστεί. Όταν λήξει, θα χρεώνεστε ${proPrice} ανά χρήστη τον μήνα{suffix}."
+#. js-lingui-id: nc0H/r
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your plan switches to Organization immediately, with a prorated charge for the rest of your current billing period."
+msgstr ""
+
+#. js-lingui-id: A2fEIi
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your plan switches to Pro on {0}, at the end of your current billing period."
+msgstr ""
 
 #. js-lingui-id: iizYt1
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
@@ -23658,6 +23871,18 @@ msgstr "Οι premium δυνατότητές σας θα παραμείνουν �
 #: src/pages/settings/admin-panel/SettingsAdminNewAiProvider.tsx
 msgid "Your provider API key for authentication"
 msgstr "Το κλειδί API του παρόχου σας για πιστοποίηση"
+
+#. js-lingui-id: H0ItDq
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your scheduled switch to {upcomingIntervalAdjective} billing on {0} is kept."
+msgstr ""
+
+#. js-lingui-id: NOJYn4
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your scheduled switch to {upcomingPlanLabel} on {0} is kept."
+msgstr ""
 
 #. js-lingui-id: 319YPG
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx

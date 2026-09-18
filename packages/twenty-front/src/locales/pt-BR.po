@@ -18,14 +18,6 @@ msgstr ""
 "X-Crowdin-File: /packages/twenty-front/src/locales/en.po\n"
 "X-Crowdin-File-ID: 29\n"
 
-#. js-lingui-id: lndIq/
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid " billed annually"
-msgstr "cobrado anualmente"
-
 #. js-lingui-id: /8h/VA
 #: src/modules/object-record/spreadsheet-import/utils/getSpreadSheetFieldValidationDefinitions.ts
 msgid " must be one of {ratingValues} values"
@@ -80,11 +72,6 @@ msgstr ": Passado"
 #: src/modules/object-record/object-filter-dropdown/utils/getOperandLabel.ts
 msgid ": Today{timeZoneAbbreviationSuffix}"
 msgstr ": Hoje{timeZoneAbbreviationSuffix}"
-
-#. js-lingui-id: N/lIUf
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid ". The change will be applied the {beautifiedRenewDate}."
-msgstr ". A alteração será aplicada em {beautifiedRenewDate}."
 
 #. js-lingui-id: 4tCM3o
 #: src/modules/views/components/ViewBarFilterDropdownAnyFieldSearchButtonMenuItem.tsx
@@ -794,10 +781,10 @@ msgstr "/{intervalLabel} após o período de teste"
 msgid "/month"
 msgstr "/mês"
 
-#. js-lingui-id: AkYLhr
+#. js-lingui-id: AqEd8w
 #: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
-msgid "/month billed yearly"
-msgstr "/mês faturado anualmente"
+msgid "/month billed annually"
+msgstr ""
 
 #. js-lingui-id: oz9P7U
 #: src/modules/settings/billing/components/internal/SettingsBillingPlanComparisonTable.tsx
@@ -838,6 +825,16 @@ msgstr "~ {0} tokens"
 #: src/pages/settings/ai/components/SettingsAiModelTiersPreview.tsx
 msgid "${0} / 1M"
 msgstr "${0} / 1M"
+
+#. js-lingui-id: aWz9JJ
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "${price} per user per month"
+msgstr ""
+
+#. js-lingui-id: uycgB4
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "${price} per user per month, billed annually"
+msgstr ""
 
 #. js-lingui-id: Cx0xl3
 #: src/modules/workflow/workflow-steps/workflow-actions/delay-actions/components/WorkflowEditActionDelay.tsx
@@ -1072,7 +1069,6 @@ msgstr "Abortar"
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectSettings.tsx
 #: src/modules/settings/logic-functions/components/SettingsLogicFunctionNewForm.tsx
 #: src/pages/settings/ai/components/SettingsSkillFormContent.tsx
-#: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationFrontComponentSettingsTab.tsx
 #: src/pages/settings/data-model/SettingsNewObject.tsx
@@ -1331,11 +1327,6 @@ msgstr "Adicionar uma nota a este registro: "
 msgid "Add a person with an email to this company first"
 msgstr "Adicione primeiro uma pessoa com um e-mail a esta empresa."
 
-#. js-lingui-id: nGv1DN
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-msgid "Add a record"
-msgstr "Adicionar um registro"
-
 #. js-lingui-id: 4LAQbj
 #: src/modules/activities/calendar/components/CalendarEventComposerTargetsInput.tsx
 msgid "Add a related record"
@@ -1539,27 +1530,21 @@ msgstr "Adicionar item"
 msgid "Add Item"
 msgstr "Adicionar item"
 
-#. js-lingui-id: cI2ZVO
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNavigationMenuItemEditPage.tsx
-msgid "Add item to folder"
-msgstr "Adicionar item à pasta"
-
 #. js-lingui-id: gaZXkv
 #: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderDnd.tsx
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderNavigationDrawerItemDropdown.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/navigation-menu-item/edit/components/WorkspaceSectionAddMenuItemButton.tsx
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
 msgid "Add menu item"
 msgstr "Adicionar item do menu"
 
 #. js-lingui-id: JbORSt
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useNavigationMenuItemEditOrganizeActions.ts
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Add menu item after"
 msgstr "Adicionar item do menu depois"
 
 #. js-lingui-id: DKlI/M
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useNavigationMenuItemEditOrganizeActions.ts
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Add menu item before"
 msgstr "Adicionar item do menu antes"
 
@@ -1878,6 +1863,11 @@ msgstr "Painel de administração - Geral"
 msgid "Admin Panel - Health"
 msgstr "Painel de Administração - Integridade"
 
+#. js-lingui-id: 82sWFi
+#: src/pages/settings/admin-panel/SettingsAdmin.tsx
+msgid "Administration"
+msgstr ""
+
 #. js-lingui-id: Faptqt
 #: src/modules/settings/admin-panel/components/SettingsAdminServerAdmins.tsx
 msgid "Administrator"
@@ -1981,6 +1971,11 @@ msgstr "Agente não encontrado"
 msgid "Agent roles"
 msgstr "Papéis de agente"
 
+#. js-lingui-id: Wfy3rU
+#: src/pages/settings/ai/components/SettingsAgentFormContent.tsx
+msgid "Agent settings"
+msgstr ""
+
 #. js-lingui-id: Nl33Ds
 #: src/modules/ai/components/RoutingDebugDisplay.tsx
 msgid "Agent tokens"
@@ -2027,6 +2022,11 @@ msgstr "IA"
 msgid "AI & Automations"
 msgstr "IA & Automações"
 
+#. js-lingui-id: e8xNdF
+#: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowEditActionAiAgent.tsx
+msgid "AI agent configuration"
+msgstr ""
+
 #. js-lingui-id: oI7HO0
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowRunStepLogsAiAgentDetail.tsx
 msgid "AI agent run"
@@ -2066,6 +2066,11 @@ msgstr "Consumo de IA ao longo do tempo."
 #: src/modules/ai/components/RoutingDebugDisplay.tsx
 msgid "AI request prep"
 msgstr "Preparação da solicitação de IA"
+
+#. js-lingui-id: Bkwb5U
+#: src/pages/settings/ai/SettingsAI.tsx
+msgid "AI settings"
+msgstr ""
 
 #. js-lingui-id: X5Mx4I
 #: src/modules/logic-functions/utils/getLogicFunctionTriggerLabel.ts
@@ -2290,11 +2295,6 @@ msgstr "Todos os objetos"
 msgid "All Objects"
 msgstr "Todos os Objetos"
 
-#. js-lingui-id: RoFE84
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectPickerSubView.tsx
-msgid "All objects are already in the sidebar"
-msgstr "Todos os objetos já estão na barra lateral"
-
 #. js-lingui-id: /D217u
 #: src/modules/settings/billing/components/SettingsBillingLimitUsageSelect.tsx
 #: src/modules/settings/usage/constants/UsageOperationTypeLabels.ts
@@ -2310,11 +2310,6 @@ msgstr "Todos os motivos"
 #: src/modules/settings/roles/components/SettingsRolesList.tsx
 msgid "All roles"
 msgstr "Todas as Funções"
-
-#. js-lingui-id: CHvT6e
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemObjectSystemPickerSubPage.tsx
-msgid "All system objects are already in the sidebar"
-msgstr "Todos os objetos do sistema já estão na barra lateral"
 
 #. js-lingui-id: p+lpde
 #: src/modules/activities/tasks/components/TaskGroupsContent.tsx
@@ -2468,10 +2463,10 @@ msgstr "URIs de redirecionamento permitidas para fluxos OAuth"
 msgid "alphabetical"
 msgstr "alfabética"
 
-#. js-lingui-id: eO7HSp
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectMenuItem.tsx
-msgid "Already in navbar"
-msgstr "Já está na barra de navegação"
+#. js-lingui-id: evXcqr
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemSelectableItem.tsx
+msgid "Already in sidebar"
+msgstr ""
 
 #. js-lingui-id: u/DP73
 #: src/modules/advanced-text-editor/constants/AdvancedTextEditorBlockCatalog.ts
@@ -2584,6 +2579,11 @@ msgstr "e"
 #: src/modules/workflow/workflow-steps/filters/components/WorkflowStepFilterLogicalOperatorCell.tsx
 msgid "And"
 msgstr "E"
+
+#. js-lingui-id: U/L8gq
+#: src/modules/settings/billing/hooks/useBillingWording.ts
+msgid "annual"
+msgstr ""
 
 #. js-lingui-id: YkfDoz
 #: src/modules/settings/billing/components/internal/SettingsBillingPlanComparisonTable.tsx
@@ -2705,11 +2705,6 @@ msgstr "Nome da API (Plural)"
 msgid "API Name (Singular)"
 msgstr "Nome da API (Singular)"
 
-#. js-lingui-id: FXWLlg
-#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
-msgid "API rate limits v2"
-msgstr "Limites de taxa da API v2"
-
 #. js-lingui-id: /eZE05
 #: src/modules/settings/usage/constants/UsageOperationTypeLabels.ts
 msgid "API Request"
@@ -2719,6 +2714,11 @@ msgstr "Requisição de API"
 #: src/modules/settings/data-model/fields/forms/select/components/SettingsDataModelFieldSelectForm.tsx
 msgid "API values"
 msgstr "Valores da API"
+
+#. js-lingui-id: NfgMq7
+#: src/pages/settings/api-webhooks/SettingsApiWebhooks.tsx
+msgid "APIs and webhooks"
+msgstr ""
 
 #. js-lingui-id: 0UMxlw
 #: src/modules/settings/experience/components/NumberFormatSelect.tsx
@@ -2780,12 +2780,14 @@ msgstr "Aplicabilidade"
 #. js-lingui-id: IrC12v
 #: src/modules/settings/billing/constants/UsageLimitSpenderGroups.ts
 #: src/modules/settings/billing/constants/UsageLimitSpenderTypeLabels.ts
+#: src/modules/settings/domains/components/SettingPublicDomain.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/utils/getActionHeaderTypeOrThrow.ts
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 msgid "Application"
 msgstr "Aplicação"
 
 #. js-lingui-id: vdieHo
+#: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
 msgid "Application details"
@@ -2805,6 +2807,12 @@ msgstr "Logs da aplicação"
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
 msgid "Application not listed on the marketplace. It was shared via a direct link"
 msgstr "Este aplicativo não está listado no marketplace. Ele foi compartilhado por um link direto"
+
+#. js-lingui-id: Ko+Gd2
+#: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDetail.tsx
+#: src/pages/settings/applications/SettingsApplicationRegistrationDetails.tsx
+msgid "Application registration"
+msgstr ""
 
 #. js-lingui-id: +tE2x9
 #: src/modules/settings/applications/hooks/useUninstallApplication.ts
@@ -2826,6 +2834,7 @@ msgstr "variável do aplicativo"
 #: src/pages/settings/applications/SettingsApplicationCommandMenuItemDetail.tsx
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 #: src/pages/settings/applications/SettingsApplicationFrontComponentDetail.tsx
+#: src/pages/settings/applications/SettingsApplications.tsx
 #: src/pages/settings/applications/SettingsApplications.tsx
 #: src/pages/settings/applications/SettingsApplications.tsx
 #: src/pages/settings/applications/SettingsApplicationTimelineActivityTypeDetail.tsx
@@ -3096,6 +3105,11 @@ msgstr "Assistente"
 msgid "Asymmetric public keys used to sign and verify access tokens. Revoking a key immediately invalidates every JWT signed with it."
 msgstr "Chaves públicas assimétricas usadas para assinar e verificar tokens de acesso. Revogar uma chave invalida imediatamente todos os JWT assinados com ela."
 
+#. js-lingui-id: uJmPzF
+#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
+msgid "Async CSV export"
+msgstr ""
+
 #. js-lingui-id: UHs3Ds
 #: src/modules/workflow/workflow-trigger/utils/cron-to-human/descriptors/getHoursDescription.ts
 msgid "at {firstTime} and {secondTime}"
@@ -3274,6 +3288,11 @@ msgstr "URL autorizado copiado para a área de transferência"
 msgid "Authorizing..."
 msgstr "Autorizando..."
 
+#. js-lingui-id: KqBvMG
+#: src/pages/settings/applications/tabs/SettingsApplicationAutoUpdateSection.tsx
+msgid "Auto update"
+msgstr ""
+
 #. js-lingui-id: 2zJkmL
 #: src/modules/settings/accounts/components/SettingsAccountsCalendarChannelDetails.tsx
 msgid "Auto-creation"
@@ -3285,7 +3304,7 @@ msgid "Auto-generated role for {agentDisplayName}"
 msgstr "Papel gerado automaticamente para {agentDisplayName}"
 
 #. js-lingui-id: /nv0ml
-#: src/pages/settings/applications/tabs/SettingsApplicationGeneralSection.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationAutoUpdateSection.tsx
 msgid "Auto-upgrade"
 msgstr "Atualização automática"
 
@@ -3321,7 +3340,7 @@ msgid "Automatically selected by Twenty for this mode."
 msgstr "Selecionado automaticamente pelo Twenty para este modo."
 
 #. js-lingui-id: XFGV21
-#: src/pages/settings/applications/tabs/SettingsApplicationGeneralSection.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationAutoUpdateSection.tsx
 msgid "Automatically upgrade this application when a new version is published"
 msgstr "Atualizar automaticamente este aplicativo quando uma nova versão for publicada"
 
@@ -3335,6 +3354,11 @@ msgstr "Automação, IA e acesso que este aplicativo oferece"
 #: src/pages/settings/applications/tabs/SettingsApplicationCommandMenuItemSettingsTab.tsx
 msgid "Availability"
 msgstr "Disponibilidade"
+
+#. js-lingui-id: tSW2mq
+#: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
+msgid "Available application details"
+msgstr ""
 
 #. js-lingui-id: oD38t2
 #: src/modules/ai/components/RoutingDebugDisplay.tsx
@@ -3523,6 +3547,11 @@ msgstr "Período de cobrança"
 #: src/modules/settings/billing/hooks/useBillingPortalSession.ts
 msgid "Billing portal session error. Please retry or contact Twenty team"
 msgstr "Erro na sessão do portal de cobrança. Tente novamente ou entre em contato com a equipe Twenty"
+
+#. js-lingui-id: H++SIW
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Billing stays {upcomingIntervalAdjective}. To switch to {selectedIntervalAdjective} billing, confirm this change first, then switch the billing interval as a second step."
+msgstr ""
 
 #. js-lingui-id: 8kIU+G
 #: src/modules/advanced-text-editor/constants/AdvancedTextEditorBlockCatalog.ts
@@ -3796,6 +3825,11 @@ msgstr "Calendário"
 msgid "Calendar access needs approval"
 msgstr "O acesso ao calendário precisa de aprovação."
 
+#. js-lingui-id: xs1oZl
+#: src/pages/settings/accounts/SettingsAccountsCalendars.tsx
+msgid "Calendar accounts"
+msgstr ""
+
 #. js-lingui-id: 6kmXOY
 #: src/modules/activities/calendar/hooks/useCreateCalendarEvent.ts
 msgid "Calendar event created successfully"
@@ -3936,6 +3970,8 @@ msgstr "Não consegue escanear? Copie o"
 #: src/modules/settings/billing/components/UpdatePaymentMethodModal.tsx
 #: src/modules/settings/components/SaveAndCancelButtons/CancelButton.tsx
 #: src/modules/settings/components/SaveAndCancelButtons/CancelButton.tsx
+#: src/modules/settings/config-variables/components/ConfigVariableEdit.tsx
+#: src/modules/settings/profile/components/EmailField.tsx
 #: src/modules/spreadsheet-import/provider/components/SpreadsheetImport.tsx
 #: src/modules/spreadsheet-import/steps/components/ImportDataStep.tsx
 #: src/modules/spreadsheet-import/steps/components/MatchColumnsStep/MatchColumnsStep.tsx
@@ -3943,7 +3979,7 @@ msgstr "Não consegue escanear? Copie o"
 #: src/modules/spreadsheet-import/steps/components/ValidationStep/ValidationStep.tsx
 #: src/modules/ui/feedback/toast/components/__tests__/AppToaster.test.tsx
 #: src/modules/ui/feedback/toast/utils/getLocalizedToastProps.ts
-#: src/modules/ui/layout/modal/components/ConfirmationModal.tsx
+#: src/modules/ui/layout/dialog/components/ConfirmationDialog.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDangerZone.tsx
 msgid "Cancel"
 msgstr "Cancelar"
@@ -3966,11 +4002,12 @@ msgstr "Cancelar alteração do pacote de créditos?"
 
 #. js-lingui-id: dV4HC5
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCardHeaderActions.tsx
+#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
 msgid "Cancel interval switching"
 msgstr "Cancelar alternância de intervalo"
 
 #. js-lingui-id: M5CqkG
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
 msgid "Cancel interval switching?"
 msgstr "Cancelar alternância de intervalo?"
 
@@ -3982,11 +4019,12 @@ msgstr "Cancelar Plano"
 
 #. js-lingui-id: 8eSMLX
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCardHeaderActions.tsx
+#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
 msgid "Cancel plan switching"
 msgstr "Cancelar alternância de plano"
 
 #. js-lingui-id: f6KFEf
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
 msgid "Cancel plan switching?"
 msgstr "Cancelar alternância de plano?"
 
@@ -4042,6 +4080,11 @@ msgstr "Não é possível excluir a única visualização"
 #: src/pages/settings/members/SettingsWorkspaceMember.tsx
 msgid "Cannot impersonate selected user"
 msgstr "Não é possível personificar o usuário selecionado"
+
+#. js-lingui-id: lbmcW3
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
+msgid "Cannot nest folders into folders"
+msgstr ""
 
 #. js-lingui-id: H1Ddy9
 #: src/modules/object-record/record-field/ui/meta-types/input/components/FilesFieldInput.tsx
@@ -4123,6 +4166,11 @@ msgstr "Alterar nó"
 msgid "Change node type"
 msgstr "Alterar tipo de nó"
 
+#. js-lingui-id: VYPUgO
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemObjectColorEditor.tsx
+msgid "Change object color"
+msgstr ""
+
 #. js-lingui-id: GptGxg
 #: src/modules/settings/accounts/components/SettingsAccountsPasswordController.tsx
 msgid "Change password"
@@ -4153,26 +4201,6 @@ msgstr "Alterar tema para claro"
 #: src/modules/command-menu-item/display/hooks/useCommandMenuAppActions.ts
 msgid "Change theme to system"
 msgstr "Alterar tema para o sistema"
-
-#. js-lingui-id: 9m7pJA
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
-msgid "Change to Monthly?"
-msgstr "Mudar para Mensal?"
-
-#. js-lingui-id: C8G9Mq
-#: src/modules/settings/billing/components/internal/SettingsBillingPlansWithSubscription.tsx
-msgid "Change to Organization Plan?"
-msgstr "Alterar para o Plano Organizacional?"
-
-#. js-lingui-id: t7uUc+
-#: src/modules/settings/billing/components/internal/SettingsBillingPlansWithSubscription.tsx
-msgid "Change to Pro Plan?"
-msgstr "Mudar para o Plano Pro?"
-
-#. js-lingui-id: N8mUQE
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
-msgid "Change to Yearly?"
-msgstr "Mudar para anual?"
 
 #. js-lingui-id: lfFsZ4
 #: src/modules/settings/workspace/components/SettingsWorkspaceEmailGroupSection.tsx
@@ -4320,6 +4348,11 @@ msgstr "Escolha entre Curto e Completo"
 #: src/modules/settings/components/__stories__/SettingsRadioCards.stories.tsx
 msgid "Choose folders to sync"
 msgstr "Escolha as pastas para sincronizar"
+
+#. js-lingui-id: SJ1Aum
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemInlineEditor.tsx
+msgid "Choose icon and color"
+msgstr ""
 
 #. js-lingui-id: 5EMoSo
 #: src/modules/settings/billing/components/internal/SettingsBillingPlansWithoutSubscription.tsx
@@ -4491,6 +4524,11 @@ msgstr "Clique na marca de seleção para aplicar suas alterações."
 msgid "Click to add your first widget"
 msgstr "Clique para adicionar o seu primeiro widget"
 
+#. js-lingui-id: cwMTjO
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+msgid "Click to edit"
+msgstr ""
+
 #. js-lingui-id: d0rtA5
 #: src/modules/page-layout/widgets/graph/components/GraphWidgetTooltip.tsx
 msgid "Click to see data"
@@ -4563,15 +4601,41 @@ msgstr "Fechar"
 msgid "Close banner"
 msgstr "Fechar banner"
 
+#. js-lingui-id: c2EYjZ
+#: src/modules/spreadsheet-import/components/SpreadSheetImportModalCloseButton.tsx
+msgid "Close import"
+msgstr ""
+
+#. js-lingui-id: aYX0za
+#: src/modules/keyboard-shortcut-menu/components/KeyboardShortcutMenuDialog.tsx
+msgid "Close keyboard shortcuts"
+msgstr ""
+
 #. js-lingui-id: vcpc5o
 #: src/modules/blocknote-editor/components/BlockEditor.tsx
 msgid "Close menu"
 msgstr "Fechar menu"
 
+#. js-lingui-id: sUQBA7
+#: src/modules/settings/data-model/graph-overview/components/SettingsDataModelOverview.tsx
+msgid "Close overview"
+msgstr ""
+
+#. js-lingui-id: fJGhA7
+#: src/modules/activities/files/components/AttachmentList.tsx
+#: src/modules/ui/field/display/components/GlobalFilePreviewModal.tsx
+msgid "Close preview"
+msgstr ""
+
 #. js-lingui-id: saip/v
 #: src/modules/side-panel/components/SidePanelCloseButton.tsx
 msgid "Close side panel"
 msgstr "Fechar painel lateral"
+
+#. js-lingui-id: H4meUz
+#: src/modules/settings/components/SettingsCustomizeVideoModal.tsx
+msgid "Close video"
+msgstr ""
 
 #. js-lingui-id: 1Lxtdt
 #: src/modules/advanced-text-editor/constants/AdvancedTextEditorBlockCatalog.ts
@@ -4604,6 +4668,11 @@ msgstr "Execução de código"
 msgid "Code Interpreter"
 msgstr "Interpretador de código"
 
+#. js-lingui-id: FXSsRm
+#: src/modules/workflow/workflow-steps/workflow-actions/code-action/components/WorkflowEditActionCode.tsx
+msgid "Code step"
+msgstr ""
+
 #. js-lingui-id: bKJYIa
 #: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionCodeEditorTab.tsx
 msgid "Code your function"
@@ -4635,6 +4704,7 @@ msgid "Collapse details"
 msgstr "Recolher detalhes"
 
 #. js-lingui-id: 086gvz
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderChevronButton.tsx
 #: src/modules/settings/accounts/components/message-folders/SettingsMessageFoldersTreeItem.tsx
 msgid "Collapse folder"
 msgstr "Recolher pasta"
@@ -4646,7 +4716,6 @@ msgstr "Recolher barra lateral"
 
 #. js-lingui-id: jZlrte
 #: src/modules/advanced-text-editor/constants/AdvancedTextEditorBlockCatalog.ts
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditColorOption.tsx
 msgid "Color"
 msgstr "Cor"
 
@@ -4875,7 +4944,6 @@ msgstr "Campos de pesquisa configuráveis"
 
 #. js-lingui-id: ywFj2D
 #: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/WorkflowEditActionHttpRequest.tsx
-#: src/pages/settings/applications/tabs/SettingsApplicationDetailEnvironmentVariablesTable.tsx
 msgid "Configuration"
 msgstr "Configuração"
 
@@ -4992,7 +5060,6 @@ msgstr "Configurado"
 #: src/modules/settings/admin-panel/components/SettingsAdminServerAdminAccess.tsx
 #: src/modules/settings/billing/components/internal/ResourceCreditPackagePickerModal.tsx
 #: src/modules/settings/billing/components/internal/SettingsBillingPlansWithSubscription.tsx
-#: src/modules/settings/billing/components/internal/SettingsBillingPlansWithSubscription.tsx
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
 #: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoModals.tsx
@@ -5003,7 +5070,7 @@ msgstr "Configurado"
 #: src/modules/settings/roles/role-assignment/components/SettingsRoleAssignmentConfirmationModal.tsx
 #: src/modules/settings/roles/role-settings/components/SettingsRoleSettingsDeleteRoleConfirmationModal.tsx
 #: src/modules/spreadsheet-import/steps/components/ValidationStep/ValidationStep.tsx
-#: src/modules/ui/layout/modal/components/ConfirmationModal.tsx
+#: src/modules/ui/layout/dialog/components/ConfirmationDialog.tsx
 msgid "Confirm"
 msgstr "Confirmar"
 
@@ -5187,7 +5254,6 @@ msgid "Contains"
 msgstr "Contém"
 
 #. js-lingui-id: 4b3oEV
-#: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
 msgid "Content"
 msgstr "Conteúdo"
@@ -5589,6 +5655,11 @@ msgstr "Não foi possível copiar para a área de transferência"
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationInstalledWorkspaces.tsx
 msgid "Couldn't load installed workspaces"
 msgstr "Não foi possível carregar os espaços de trabalho instalados"
+
+#. js-lingui-id: zaNpE4
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+msgid "Couldn't load pages"
+msgstr ""
 
 #. js-lingui-id: kjbTwZ
 #: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemEditController.ts
@@ -6182,6 +6253,11 @@ msgstr "Domínio Personalizado"
 msgid "Custom domain (crm.yourco.com)"
 msgstr "Domínio personalizado (crm.yourco.com)"
 
+#. js-lingui-id: +ub6QN
+#: src/modules/settings/domains/components/SettingPublicDomain.tsx
+msgid "Custom domain not found"
+msgstr ""
+
 #. js-lingui-id: Lo/oRJ
 #: src/modules/settings/domains/components/SettingPublicDomain.tsx
 msgid "Custom domain successfully created"
@@ -6280,9 +6356,6 @@ msgid "Customization"
 msgstr "Personalização"
 
 #. js-lingui-id: srRMnJ
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditLinkItemView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditObjectViewBase.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNavigationMenuItemEditPage.tsx
 #: src/modules/settings/data-model/object-details/components/tabs/ObjectLayout.tsx
 #: src/pages/settings/layout/SettingsLayout.tsx
 msgid "Customize"
@@ -6399,7 +6472,6 @@ msgid "Dashboard duplicated successfully"
 msgstr "Painel duplicado com sucesso"
 
 #. js-lingui-id: HKH+W+
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
 #: src/modules/side-panel/pages/page-layout/constants/ChartSettingsHeadings.ts
 #: src/modules/side-panel/pages/workflow/action/components/SidePanelWorkflowSelectAction.tsx
 #: src/modules/side-panel/pages/workflow/trigger-type/components/SidePanelWorkflowSelectTriggerTypeContent.tsx
@@ -6639,6 +6711,11 @@ msgstr "Informações de depuração"
 msgid "Decide which Sub-address fields you want to display"
 msgstr "Decidir quais campos de sub-endereço você deseja exibir"
 
+#. js-lingui-id: NdfaZV
+#: src/modules/settings/components/SettingsCounter.tsx
+msgid "Decrease value"
+msgstr ""
+
 #. js-lingui-id: ovBPCi
 #: src/modules/ai/components/AiModelTierInformationButton.tsx
 #: src/modules/settings/ai/components/AiModelPinSelect.tsx
@@ -6740,7 +6817,6 @@ msgstr "excluir"
 #: src/modules/ai/components/AiChatThreadDeleteConfirmationModal.tsx
 #: src/modules/ai/components/AiChatThreadItemMenu.tsx
 #: src/modules/blocknote-editor/components/CustomSideMenu.tsx
-#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderNavigationDrawerItemDropdown.tsx
 #: src/modules/object-record/record-field-list/record-detail-section/relation/components/RecordDetailRelationRecordsListItem.tsx
 #: src/modules/object-record/record-field/ui/meta-types/input/components/MultiItemFieldMenuItem.tsx
 #: src/modules/page-layout/widgets/fields/components/FieldsConfigurationGroupDropdown.tsx
@@ -6755,8 +6831,11 @@ msgstr "excluir"
 #: src/modules/settings/data-model/objects/components/SettingsObjectInactiveMenuDropDown.tsx
 #: src/modules/settings/developers/components/SettingsDevelopersWebhookForm.tsx
 #: src/modules/settings/developers/components/SettingsDevelopersWebhookForm.tsx
+#: src/modules/settings/domains/components/SettingPublicDomain.tsx
 #: src/modules/settings/domains/components/SettingPublicDomainRowDropdownMenu.tsx
+#: src/modules/settings/domains/components/SettingsCustomDomain.tsx
 #: src/modules/settings/security/components/sso/SettingsSecuritySsoRowDropdownMenu.tsx
+#: src/modules/side-panel/pages/page-layout/components/record-table-settings/RecordTableSettingsSortsContent.tsx
 #: src/modules/side-panel/pages/page-layout/components/RegularTabSettingsContent.tsx
 #: src/modules/side-panel/pages/page-layout/components/SingleWidgetTabSettingsContent.tsx
 #: src/modules/views/view-picker/components/ViewPickerCreateButton.tsx
@@ -6764,6 +6843,9 @@ msgstr "excluir"
 #: src/modules/views/view-picker/components/ViewPickerOptionDropdown.tsx
 #: src/modules/workflow/workflow-steps/components/WorkflowStepFooter.tsx
 #: src/modules/workflow/workflow-steps/filters/components/WorkflowStepFilterOptionsDropdown.tsx
+#: src/modules/workflow/workflow-steps/workflow-actions/find-records-action/components/WorkflowFindRecordsSorts.tsx
+#: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/KeyValuePairInput.tsx
+#: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/KeyValuePairInput.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDangerZone.tsx
 #: src/pages/settings/ai/components/SettingsAgentEvalsTab.tsx
 #: src/pages/settings/ai/components/SettingsAgentEvalsTab.tsx
@@ -7418,8 +7500,14 @@ msgstr "Baixar"
 msgid "Download {filename}"
 msgstr "Baixar {filename}"
 
+#. js-lingui-id: ueLv9s
+#: src/modules/activities/files/components/AttachmentList.tsx
+msgid "Download attachment"
+msgstr ""
+
 #. js-lingui-id: WcWS//
 #: src/modules/settings/security/components/sso/SettingsSsoSamlForm.tsx
+#: src/modules/ui/field/display/components/GlobalFilePreviewModal.tsx
 msgid "Download file"
 msgstr "Baixar arquivo"
 
@@ -7479,11 +7567,6 @@ msgstr "Redigindo e-mail"
 #: src/modules/activities/files/components/DropZone.tsx
 msgid "Drag and Drop Here"
 msgstr "Arraste e solte aqui"
-
-#. js-lingui-id: oSoaUV
-#: src/modules/side-panel/components/SidePanelItemWithAddToNavigationDrag.tsx
-msgid "Drag to add to navbar"
-msgstr "Arraste para adicionar à barra de navegação"
 
 #. js-lingui-id: VIbDgE
 #: src/modules/page-layout/widgets/fields/components/FieldsConfigurationGroupEditor.tsx
@@ -7637,15 +7720,16 @@ msgstr "eddy@gmail.com, @apple.com"
 
 #. js-lingui-id: ePK91l
 #: src/modules/activities/emails/recipients/components/EmailRecipientChipMenuContent.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useNavigationMenuItemEditOrganizeActions.ts
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderNavigationDrawerItemDropdown.tsx
 #: src/modules/object-record/record-field/ui/form-types/components/FormMultiSelectFieldInput.tsx
 #: src/modules/object-record/record-field/ui/meta-types/input/components/MultiItemFieldMenuItem.tsx
 #: src/modules/object-record/record-group/hooks/useRecordGroupActions.ts
+#: src/modules/settings/config-variables/components/ConfigVariableEdit.tsx
 #: src/modules/settings/data-model/object-details/components/SettingsObjectFieldDisabledActionDropdown.tsx
 #: src/modules/settings/data-model/objects/components/SettingsObjectInactiveMenuDropDown.tsx
+#: src/modules/settings/profile/components/EmailField.tsx
 #: src/modules/settings/roles/role-permissions/object-level-permissions/components/SettingsRolePermissionsObjectLevelTableRowOptionsDropdown.tsx
 #: src/modules/settings/roles/role-permissions/object-level-permissions/field-permissions/components/SettingsRolePermissionsObjectLevelObjectFieldPermissionTable.tsx
-#: src/modules/side-panel/hooks/useSidePanelMenu.ts
 #: src/modules/views/view-picker/components/ViewPickerOptionDropdown.tsx
 msgid "Edit"
 msgstr "Editar"
@@ -7678,6 +7762,11 @@ msgstr "Editar estrutura de dados e campos"
 msgid "Edit each side"
 msgstr "Editar cada lado"
 
+#. js-lingui-id: 48e2R8
+#: src/modules/settings/profile/components/EmailField.tsx
+msgid "Edit email"
+msgstr ""
+
 #. js-lingui-id: 9QCQIc
 #: src/modules/object-record/object-options-dropdown/components/ObjectOptionsDropdownHiddenRecordGroupsContent.tsx
 msgid "Edit field values"
@@ -7689,13 +7778,6 @@ msgstr "Editar valores dos campos"
 #: src/modules/side-panel/hooks/useOpenWidgetSettingsInSidePanel.ts
 msgid "Edit Fields"
 msgstr "Editar Campos"
-
-#. js-lingui-id: uPHscS
-#: src/modules/navigation-menu-item/display/dnd/hooks/useHandleAddToNavigationDrop.ts
-#: src/modules/navigation-menu-item/display/sections/workspace/components/WorkspaceSection.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useAddFolderToNavigationMenu.ts
-msgid "Edit folder"
-msgstr "Editar pasta"
 
 #. js-lingui-id: JTcEch
 #: src/modules/side-panel/hooks/useOpenWidgetSettingsInSidePanel.ts
@@ -7714,9 +7796,7 @@ msgid "Edit limit"
 msgstr "Editar limite"
 
 #. js-lingui-id: /PoNoq
-#: src/modules/navigation-menu-item/display/dnd/hooks/useHandleAddToNavigationDrop.ts
-#: src/modules/navigation-menu-item/display/sections/workspace/components/WorkspaceSection.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useAddLinkToNavigationMenu.ts
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemInlineEditor.tsx
 msgid "Edit link"
 msgstr "Editar link"
 
@@ -7724,11 +7804,6 @@ msgstr "Editar link"
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useActionRolePermissionFlagConfig.ts
 msgid "Edit own profile information"
 msgstr "Editar informações do próprio perfil"
-
-#. js-lingui-id: QNi+Eq
-#: src/modules/navigation-menu-item/display/sections/workspace/components/WorkspaceSection.tsx
-msgid "Edit page"
-msgstr "Editar página"
 
 #. js-lingui-id: h2KoTu
 #: src/modules/settings/billing/components/SettingsBillingContent.tsx
@@ -7767,6 +7842,11 @@ msgstr "Editar relação"
 #: src/modules/settings/translations/components/SettingsTranslationsButton.tsx
 msgid "Edit translations"
 msgstr "Editar traduções"
+
+#. js-lingui-id: 8TA4hU
+#: src/modules/settings/config-variables/components/ConfigVariableEdit.tsx
+msgid "Edit variable"
+msgstr ""
 
 #. js-lingui-id: eMFB6/
 #: src/modules/views/view-picker/components/ViewPickerContentEditMode.tsx
@@ -7828,6 +7908,11 @@ msgstr "senão se"
 #: src/pages/settings/profile/SettingsProfile.tsx
 msgid "Email"
 msgstr "E-mail"
+
+#. js-lingui-id: 6SIWKr
+#: src/pages/settings/accounts/SettingsAccountsEmails.tsx
+msgid "Email accounts"
+msgstr ""
 
 #. js-lingui-id: ATGYL1
 #: src/modules/settings/unsubscribers/components/SettingsUnsubscribersList.tsx
@@ -8181,6 +8266,11 @@ msgstr "Insira um número"
 #: src/modules/object-record/record-field/ui/form-types/components/FormUuidFieldInput.tsx
 msgid "Enter a UUID"
 msgstr "Insira um UUID"
+
+#. js-lingui-id: DXBlEM
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemLinkEditor.tsx
+msgid "Enter a valid URL"
+msgstr ""
 
 #. js-lingui-id: oiVP/+
 #: src/modules/settings/admin-panel/config-variables/components/ConfigVariableValueInput.tsx
@@ -8558,12 +8648,12 @@ msgid "Error while cancelling credit pack switching."
 msgstr "Erro ao cancelar a alteração do pacote de créditos."
 
 #. js-lingui-id: pt7mmi
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
 msgid "Error while cancelling interval switching."
 msgstr "Erro ao cancelar a alternância de intervalo."
 
 #. js-lingui-id: FS6DQK
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
 msgid "Error while cancelling plan switching."
 msgstr "Erro ao cancelar a alternância de plano."
 
@@ -8578,9 +8668,7 @@ msgid "Error while saving the name"
 msgstr "Erro ao salvar o nome"
 
 #. js-lingui-id: QPJi2W
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
 msgid "Error while switching subscription."
 msgstr "Erro ao trocar a assinatura."
 
@@ -8789,6 +8877,7 @@ msgid "Expand details"
 msgstr "Expandir detalhes"
 
 #. js-lingui-id: /QYKta
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderChevronButton.tsx
 #: src/modules/settings/accounts/components/message-folders/SettingsMessageFoldersTreeItem.tsx
 msgid "Expand folder"
 msgstr "Expandir pasta"
@@ -9219,6 +9308,11 @@ msgstr "Falha ao salvar a personalização do layout"
 msgid "Failed to save role permissions: {errorMessage}"
 msgstr "Falha ao salvar as permissões do papel: {errorMessage}"
 
+#. js-lingui-id: bH624/
+#: src/pages/settings/applications/hooks/useApplicationVariablesDraft.ts
+msgid "Failed to save the app settings."
+msgstr ""
+
 #. js-lingui-id: LxqS9I
 #: src/modules/activities/emails/hooks/usePersistedCampaignDraft.ts
 msgid "Failed to save the campaign"
@@ -9261,7 +9355,7 @@ msgid "Failed to transfer ownership. Check that the subdomain is correct."
 msgstr "Falha ao transferir a propriedade. Verifique se o subdomínio está correto."
 
 #. js-lingui-id: UNwpjb
-#: src/pages/settings/applications/tabs/SettingsApplicationGeneralSection.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationAutoUpdateSection.tsx
 msgid "Failed to update auto-upgrade setting."
 msgstr "Falha ao atualizar a configuração de atualização automática."
 
@@ -9577,6 +9671,11 @@ msgstr "Rótulo do arquivo"
 msgid "File no longer exists - {label}"
 msgstr "Arquivo não existe mais - {label}"
 
+#. js-lingui-id: OyBE3I
+#: src/modules/ui/field/display/components/GlobalFilePreviewModal.tsx
+msgid "File preview"
+msgstr ""
+
 #. js-lingui-id: BZGmTs
 #: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionTestTab.tsx
 msgid "Fill with sample input from"
@@ -9775,17 +9874,13 @@ msgid "Flow"
 msgstr "Fluxo"
 
 #. js-lingui-id: kNqMMd
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
-#: src/modules/side-panel/components/SidePanelFolderInfo.tsx
 msgid "Folder"
 msgstr "Pasta"
-
-#. js-lingui-id: cqQyPB
-#: src/modules/side-panel/components/SidePanelFolderInfo.tsx
-msgid "Folder name"
-msgstr "Nome da Pasta"
 
 #. js-lingui-id: wdVyxi
 #: src/modules/settings/billing/constants/SettingsBillingPlanComparisonRows.ts
@@ -9793,7 +9888,6 @@ msgid "Folder/Label import"
 msgstr "Importação de Pasta/Rótulo"
 
 #. js-lingui-id: HSh8u/
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditFolderPickerSubPage.tsx
 #: src/modules/settings/accounts/components/message-folders/SettingsAccountsMessageFoldersCard.tsx
 msgid "Folders"
 msgstr "Pastas"
@@ -9911,6 +10005,12 @@ msgstr "Francês"
 msgid "From"
 msgstr "De"
 
+#. js-lingui-id: DHlfWg
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "From {0}, you will be charged {priceLabel}."
+msgstr ""
+
 #. js-lingui-id: qR8gT9
 #: src/modules/workflow/workflow-trigger/utils/cron-to-human/descriptors/getDayOfWeekDescription.ts
 msgid "from {startDay} to {endDay}"
@@ -9928,6 +10028,11 @@ msgstr "componente de front-end"
 #: src/pages/settings/applications/tabs/SettingsApplicationTimelineActivityTypeSettingsTab.tsx
 msgid "Front component"
 msgstr "Componente de front-end"
+
+#. js-lingui-id: NEVf2d
+#: src/pages/settings/applications/SettingsApplicationFrontComponentDetail.tsx
+msgid "Front component details"
+msgstr ""
 
 #. js-lingui-id: IvIKDS
 #: src/pages/settings/applications/SettingsApplicationFrontComponentDetail.tsx
@@ -9984,6 +10089,16 @@ msgstr "Totalmente personalizável"
 msgid "Function"
 msgstr "Função"
 
+#. js-lingui-id: 3KlJeH
+#: src/pages/settings/logic-functions/SettingsLogicFunctionDetail.tsx
+msgid "Function details"
+msgstr ""
+
+#. js-lingui-id: Gr1GVh
+#: src/modules/settings/logic-functions/components/tabs/SettingsLogicFunctionCodeEditorTab.tsx
+msgid "Function files"
+msgstr ""
+
 #. js-lingui-id: AHOl4W
 #: src/modules/settings/logic-functions/components/SettingsLogicFunctionLabelContainer.tsx
 msgid "Function name"
@@ -9993,6 +10108,11 @@ msgstr "Nome da função"
 #: src/modules/workflow/workflow-steps/workflow-actions/code-action/components/WorkflowRunStepLogsCodeDetail.tsx
 msgid "Function run"
 msgstr "Execução da função"
+
+#. js-lingui-id: Tn94cL
+#: src/modules/workflow/workflow-steps/workflow-actions/logic-function-action/components/WorkflowEditActionLogicFunction.tsx
+msgid "Function step"
+msgstr ""
 
 #. js-lingui-id: tkr79G
 #: src/utils/title-utils.ts
@@ -10014,8 +10134,8 @@ msgstr "Gemini CLI"
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDetail.tsx
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationGeneralInfo.tsx
+#: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsApplicationRegistrationDetails.tsx
-#: src/pages/settings/applications/tabs/SettingsApplicationGeneralSection.tsx
 #: src/pages/settings/general/SettingsGeneral.tsx
 #: src/pages/settings/general/SettingsGeneral.tsx
 #: src/pages/settings/general/SettingsGeneral.tsx
@@ -10027,10 +10147,20 @@ msgstr "Geral"
 msgid "General - Settings"
 msgstr "Geral - Configurações"
 
+#. js-lingui-id: Ye6I4I
+#: src/pages/settings/general/SettingsGeneral.tsx
+msgid "General settings"
+msgstr ""
+
 #. js-lingui-id: ziAjHi
 #: src/pages/settings/legal/SettingsLegalDpaNew.tsx
 msgid "Generate"
 msgstr "Gerar"
+
+#. js-lingui-id: /Sq+WF
+#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
+msgid "Generate CSV exports in the background with progress and automatic downloads."
+msgstr ""
 
 #. js-lingui-id: H3rta9
 #: src/pages/settings/legal/SettingsLegalDpa.tsx
@@ -10070,6 +10200,7 @@ msgid "Get more credits"
 msgstr "Obter mais créditos"
 
 #. js-lingui-id: AvbPI1
+#: src/modules/settings/enterprise/components/EnterprisePlanModal.tsx
 #: src/modules/settings/enterprise/components/EnterprisePlanModal.tsx
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
@@ -10116,7 +10247,6 @@ msgid "Go back"
 msgstr "Voltar"
 
 #. js-lingui-id: y0SPQU
-#: src/modules/settings/billing/hooks/useWaitForPaymentRecovery.tsx
 #: src/modules/settings/billing/hooks/useWaitForPaymentRecovery.tsx
 msgid "Go to billing"
 msgstr "Ir para faturamento"
@@ -10649,6 +10779,7 @@ msgid "HTTP Method"
 msgstr "Método HTTP"
 
 #. js-lingui-id: PmknJS
+#: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/WorkflowEditActionHttpRequest.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/WorkflowRunStepLogsHttpRequestDetail.tsx
 msgid "HTTP request"
 msgstr "Requisição HTTP"
@@ -10905,6 +11036,11 @@ msgstr "Importar todos os e-mails"
 msgid "Import CSV"
 msgstr "Importar CSV"
 
+#. js-lingui-id: CKnl/+
+#: src/modules/spreadsheet-import/components/SpreadSheetImportModalWrapper.tsx
+msgid "Import data"
+msgstr ""
+
 #. js-lingui-id: D5QSQM
 #: src/modules/settings/accounts/components/SettingsAccountsMessageFolderCard.tsx
 msgid "Import only selected folders/labels"
@@ -10993,6 +11129,11 @@ msgstr "Incompleto expirado"
 #: src/modules/settings/billing/components/internal/ResourceCreditPriceSelector.tsx
 msgid "Increase to ${priceDisplay}"
 msgstr "Aumentar para ${priceDisplay}"
+
+#. js-lingui-id: lUmbtf
+#: src/modules/settings/components/SettingsCounter.tsx
+msgid "Increase value"
+msgstr ""
 
 #. js-lingui-id: O5wNUa
 #: src/modules/metadata-error-handler/hooks/useMetadataErrorHandler.ts
@@ -11127,6 +11268,7 @@ msgstr "Instalar"
 
 #. js-lingui-id: XOHdRf
 #: src/modules/marketplace/components/SettingsApplicationInstallPermissionValidationModal.tsx
+#: src/modules/marketplace/components/SettingsApplicationInstallPermissionValidationModal.tsx
 msgid "Install {appDisplayName} on your workspace"
 msgstr "Instalar {appDisplayName} no seu espaço de trabalho"
 
@@ -11170,7 +11312,6 @@ msgid "Installation"
 msgstr "Instalação"
 
 #. js-lingui-id: eQkgKV
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationGeneralInfo.tsx
 #: src/pages/settings/applications/SettingsApplications.tsx
 msgid "Installed"
@@ -11236,7 +11377,7 @@ msgid "Internet accounts per user"
 msgstr "Contas de internet por usuário"
 
 #. js-lingui-id: jyjroS
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
 msgid "Interval switching has been cancelled."
 msgstr "Alternância de intervalo foi cancelada."
 
@@ -12221,10 +12362,10 @@ msgid "link"
 msgstr "link"
 
 #. js-lingui-id: yzF66j
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/admin-panel/health-status/maintenance-mode/components/SettingsAdminMaintenanceMode.tsx
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
-#: src/modules/side-panel/components/SidePanelLinkInfo.tsx
 msgid "Link"
 msgstr "Link"
 
@@ -12247,12 +12388,7 @@ msgid "Link copied to clipboard"
 msgstr "Link copiado para a área de transferência"
 
 #. js-lingui-id: vH3ZQY
-#: src/modules/navigation-menu-item/display/dnd/hooks/useHandleAddToNavigationDrop.ts
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditLinkItemView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useAddLinkToNavigationMenu.ts
-#: src/modules/side-panel/components/SidePanelLinkInfo.tsx
-#: src/modules/side-panel/components/SidePanelLinkInfo.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemLinkEditor.tsx
 msgid "Link label"
 msgstr "Rótulo do link"
 
@@ -12416,6 +12552,8 @@ msgstr "Carregando tópico"
 #. js-lingui-id: Z3FXyt
 #: src/modules/activities/timeline-activities/rows/calendar/components/EventCardCalendarEvent.tsx
 #: src/modules/activities/timeline-activities/rows/message/components/EventCardMessage.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminVersionDisplay.tsx
 #: src/modules/settings/roles/role-assignment/components/SettingsRoleAssignmentEntityPickerDropdown.tsx
 #: src/modules/views/hooks/useComputeRecordRelationFilterDisplayValue.tsx
@@ -12846,6 +12984,11 @@ msgstr "Médio"
 msgid "Medium section heading"
 msgstr "Título de seção médio"
 
+#. js-lingui-id: lXyaAg
+#: src/pages/settings/members/SettingsWorkspaceMember.tsx
+msgid "Member details"
+msgstr ""
+
 #. js-lingui-id: Sma10A
 #: src/modules/ui/navigation/navigation-drawer/components/MultiWorkspaceDropdown/internal/components/WorkspacesForSignIn.tsx
 msgid "Member of"
@@ -12887,6 +13030,11 @@ msgstr "Membros - Configurações"
 msgid "Members & invitees"
 msgstr "Membros e convidados"
 
+#. js-lingui-id: hFJP7z
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemRowActions.tsx
+msgid "Menu item actions"
+msgstr ""
+
 #. js-lingui-id: UODtG8
 #: src/modules/object-record/record-merge/components/MergeRecordsFooter.tsx
 msgid "Merge"
@@ -12898,6 +13046,7 @@ msgid "Merge preview"
 msgstr "Visualizar mesclagem"
 
 #. js-lingui-id: Cmeamd
+#: src/modules/object-record/record-merge/components/MergeRecordsContainer.tsx
 #: src/modules/side-panel/hooks/useOpenMergeRecordsPageInSidePanel.tsx
 msgid "Merge records"
 msgstr "Mesclar registros"
@@ -13208,7 +13357,7 @@ msgid "Mostly empty"
 msgstr "Principalmente vazio"
 
 #. js-lingui-id: 3Ib6FN
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Move down"
 msgstr "Mover para baixo"
 
@@ -13231,23 +13380,19 @@ msgstr "Mover para a esquerda"
 msgid "Move right"
 msgstr "Mover para a direita"
 
-#. js-lingui-id: 6qDVmw
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-msgid "Move to a folder"
-msgstr "Mover para uma pasta"
-
 #. js-lingui-id: TH+XKl
 #: src/modules/side-panel/pages/page-layout/components/WidgetSettingsPlacementSection.tsx
 msgid "Move to another tab"
 msgstr "Mover para outra aba"
 
 #. js-lingui-id: JCPOml
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Move to folder"
 msgstr "Mover para pasta"
 
 #. js-lingui-id: QyioBP
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Move up"
 msgstr "Mover para cima"
 
@@ -13550,11 +13695,6 @@ msgstr "Novo e-mail"
 msgid "New Email Channel"
 msgstr "Novo canal de e-mail"
 
-#. js-lingui-id: k6B3QD
-#: src/modules/navigation-menu-item/display/sections/favorites/components/FavoritesSection.tsx
-msgid "New favorite"
-msgstr "Novo favorito"
-
 #. js-lingui-id: kV1LSq
 #: src/pages/settings/data-model/new-field/SettingsObjectNewFieldConfigure.tsx
 #: src/pages/settings/data-model/new-field/SettingsObjectNewFieldSelect.tsx
@@ -13568,9 +13708,7 @@ msgid "New Field"
 msgstr "Novo campo"
 
 #. js-lingui-id: 96G6Re
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/hooks/useAddFolderToNavigationMenu.ts
-#: src/modules/side-panel/components/SidePanelFolderInfo.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 msgid "New folder"
 msgstr "Nova pasta"
 
@@ -13608,14 +13746,6 @@ msgstr "Nova Chave"
 #: src/pages/settings/billing/SettingsBillingNewLimit.tsx
 msgid "New limit"
 msgstr "Novo limite"
-
-#. js-lingui-id: K2wBR9
-#: src/modules/navigation-menu-item/display/sections/workspace/components/WorkspaceSection.tsx
-#: src/modules/navigation-menu-item/edit/components/WorkspaceSectionAddMenuItemButton.tsx
-#: src/modules/navigation-menu-item/edit/hooks/useOpenAddItemToFolderPage.ts
-#: src/modules/side-panel/hooks/useSidePanelMenu.ts
-msgid "New menu item"
-msgstr "Novo item do menu"
 
 #. js-lingui-id: ROxeMs
 #: src/pages/settings/admin-panel/SettingsAdminNewAiModel.tsx
@@ -13718,6 +13848,11 @@ msgstr "Próximo"
 #: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
 msgid "Next charge {totalRenewDate}. Invoice amount may vary if you add members or credits between periods"
 msgstr "Próxima cobrança {totalRenewDate}. O valor da fatura pode variar se você adicionar membros ou créditos entre os períodos"
+
+#. js-lingui-id: LTn6w8
+#: src/modules/workflow/workflow-steps/workflow-actions/iterator-action/components/WorkflowIteratorSubStepSwitcher.tsx
+msgid "Next iteration"
+msgstr ""
 
 #. js-lingui-id: 8+lM81
 #: src/modules/object-record/record-calendar/components/RecordCalendarTopBar.tsx
@@ -13987,11 +14122,6 @@ msgstr "Nenhum consumo de créditos registrado para este usuário."
 msgid "No currency"
 msgstr "Nenhuma moeda"
 
-#. js-lingui-id: DKVJFE
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewPickerSubView.tsx
-msgid "No custom views available"
-msgstr "Nenhuma visualização personalizada disponível"
-
 #. js-lingui-id: plhHQt
 #: src/modules/page-layout/widgets/graph/components/GraphWidgetTooltip.tsx
 #: src/modules/page-layout/widgets/graph/components/NoDataLayer.tsx
@@ -14110,16 +14240,6 @@ msgstr "Nenhum campo para exibir"
 msgid "No Files"
 msgstr "Nenhum arquivo"
 
-#. js-lingui-id: pYblOw
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditFolderPickerSubPage.tsx
-msgid "No folder"
-msgstr "Nenhuma pasta"
-
-#. js-lingui-id: 6XMhqL
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditFolderPickerSubPage.tsx
-msgid "No folders available"
-msgstr "Nenhuma pasta disponível"
-
 #. js-lingui-id: 1jgsYC
 #: src/modules/settings/accounts/components/message-folders/SettingsMessageFoldersEmptyStateCard.tsx
 msgid "No folders found for this account"
@@ -14219,6 +14339,11 @@ msgstr "Nenhuma mensagem encontrada para esta interação"
 msgid "No messages found."
 msgstr "Nenhuma mensagem encontrada."
 
+#. js-lingui-id: KPWxKD
+#: src/modules/page-layout/widgets/email-thread/components/EmailThreadWidget.tsx
+msgid "No messages to show"
+msgstr ""
+
 #. js-lingui-id: 0NudpV
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminWorkerMetricsGraph.tsx
 msgid "No metrics data available"
@@ -14243,11 +14368,6 @@ msgstr "Nenhum modelo está disponível para este modo."
 #: src/modules/activities/notes/components/NotesCardContent.tsx
 msgid "No notes"
 msgstr "Nenhuma nota"
-
-#. js-lingui-id: YFHO2u
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewObjectPickerSubView.tsx
-msgid "No objects with views found"
-msgstr "Nenhum objeto com visualizações encontrado"
 
 #. js-lingui-id: daCzI1
 #: src/modules/ui/field/input/components/MultiSelectInput.tsx
@@ -14276,11 +14396,6 @@ msgstr "Sem parâmetros"
 #: src/modules/settings/billing/hooks/useEndSubscriptionTrialPeriod.ts
 msgid "No payment method found. Please update your billing details."
 msgstr "Nenhum método de pagamento encontrado. Por favor, atualize suas informações de faturamento."
-
-#. js-lingui-id: orE/ux
-#: src/pages/settings/applications/SettingsApplicationDetails.tsx
-msgid "No permission defined for this application"
-msgstr "Nenhuma permissão definida para este aplicativo"
 
 #. js-lingui-id: Od1X93
 #: src/pages/settings/applications/tabs/SettingsApplicationPermissionsTab.tsx
@@ -14371,14 +14486,7 @@ msgid "No Results"
 msgstr "Nenhum resultado"
 
 #. js-lingui-id: AxPAXW
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditFolderPickerSubPage.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemRecordSubPage.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemSearchResults.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewSystemSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelSystemObjectPickerSubView.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/side-panel/components/SidePanelList.tsx
 msgid "No results found"
 msgstr "Nenhum resultado encontrado"
@@ -14424,16 +14532,6 @@ msgstr "Nenhum administrador de servidor encontrado."
 #: src/modules/side-panel/pages/send-campaign/components/SendCampaignForm.tsx
 msgid "No subject"
 msgstr "Sem assunto"
-
-#. js-lingui-id: RQ6tfU
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelSystemObjectPickerSubView.tsx
-msgid "No system objects available"
-msgstr "Nenhum objeto do sistema disponível"
-
-#. js-lingui-id: Yf4rVG
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewSystemSubView.tsx
-msgid "No system objects with views found"
-msgstr "Nenhum objeto do sistema com visualizações encontrado"
 
 #. js-lingui-id: L4Miic
 #: src/modules/side-panel/pages/page-layout/components/dropdown-content/ChartGroupByFieldSelectionMorphRelationFieldView.tsx
@@ -14531,7 +14629,7 @@ msgid "No variables found"
 msgstr "Nenhuma variável encontrada"
 
 #. js-lingui-id: OCektF
-#: src/pages/settings/applications/tabs/SettingsApplicationDetailEnvironmentVariablesTable.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailVariablesTab.tsx
 msgid "No variables to set for this application"
 msgstr "Não há variáveis para configurar para este aplicativo"
 
@@ -14757,11 +14855,6 @@ msgstr "Ainda não houve nada contabilizado neste escopo"
 msgid "Nothing has gone out yet. The campaign returns to your drafts and you can edit or schedule it again."
 msgstr "Ainda nada foi enviado. A campanha retorna aos seus rascunhos e você pode editá-la ou agendá-la novamente."
 
-#. js-lingui-id: VngD1z
-#: src/pages/settings/applications/SettingsApplicationDetails.tsx
-msgid "Nothing to configure for this application"
-msgstr "Nada para configurar neste aplicativo"
-
 #. js-lingui-id: DYCPYF
 #: src/modules/page-layout/widgets/components/StandaloneWidgetPlaceholder.tsx
 msgid "Nothing to see"
@@ -14861,11 +14954,12 @@ msgid "object"
 msgstr "objeto"
 
 #. js-lingui-id: W0i24j
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
 #: src/modules/settings/developers/components/WebhookEntitySelect.tsx
 #: src/modules/side-panel/components/SidePanelObjectFilterDropdownContent.tsx
-#: src/modules/side-panel/components/SidePanelObjectViewRecordInfo.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionCreateRecord.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionDeleteRecord.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionUpdateRecord.tsx
@@ -14916,6 +15010,11 @@ msgstr "permissão de objeto"
 msgid "Object permission options"
 msgstr "Opções de permissão de objeto"
 
+#. js-lingui-id: HN7O/H
+#: src/pages/settings/data-model/SettingsObjectDetailPage.tsx
+msgid "Object settings"
+msgstr ""
+
 #. js-lingui-id: gaqIMK
 #: src/modules/settings/event-logs/components/EventLogFilters.tsx
 msgid "Object type"
@@ -14933,9 +15032,7 @@ msgid "Object-Level"
 msgstr "Nível do Objeto"
 
 #. js-lingui-id: B3toQF
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemSearchResults.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectPickerSubView.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/roles/role-permissions/objects-permissions/components/SettingsRolePermissionsObjectsSection.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowAiAgentPermissionsObjectsList.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationDetailContentTab.tsx
@@ -15252,6 +15349,16 @@ msgstr "Abrir registros em uma página dedicada"
 msgid "Open Replit with the Twenty remote server config."
 msgstr "Abra o Replit com a configuração de servidor remoto do Twenty."
 
+#. js-lingui-id: Yp+Hi/
+#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+msgid "Open settings"
+msgstr ""
+
+#. js-lingui-id: bY2Xkv
+#: src/modules/sign-in-background-mock/components/BackgroundMockPage.tsx
+msgid "Open side panel"
+msgstr ""
+
 #. js-lingui-id: sBd/cl
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Open Twenty's official ChatGPT integration for your workspace."
@@ -15346,9 +15453,7 @@ msgstr "Lista ordenada"
 #: src/modules/settings/admin-panel/hooks/useSettingsAdminTabs.ts
 #: src/modules/settings/billing/components/internal/PlansTags.tsx
 #: src/modules/settings/billing/components/internal/SettingsBillingPlanComparisonTable.tsx
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
 #: src/modules/settings/billing/hooks/useBillingWording.ts
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
 #: src/pages/settings/enterprise/components/OrganizationAdornment.tsx
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
@@ -15396,16 +15501,11 @@ msgstr "plano da Organização"
 msgid "Organization plan"
 msgstr "Plano da Organização"
 
-#. js-lingui-id: nV6twc
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
-msgid "Organize"
-msgstr "Organizar"
-
 #. js-lingui-id: /IX/7x
 #: src/modules/ai/components/internal/AiChatQuestionOtherOption.tsx
 #: src/modules/command-menu-item/display/components/SidePanelCommandMenuItemDisplayPage.tsx
 #: src/modules/command-menu-item/edit/components/SidePanelCommandMenuItemEditPage.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminChatAskQuestionsQuestion.tsx
 #: src/modules/settings/hooks/useSettingsNavigationItems.tsx
 #: src/modules/settings/security/components/SettingsSecuritySettings.tsx
@@ -15509,7 +15609,6 @@ msgid "Overview"
 msgstr "Visão geral"
 
 #. js-lingui-id: LtI9AS
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOwnerSection.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationClaims.tsx
 #: src/pages/settings/applications/components/SettingsApplicationRegistrationGeneralInfo.tsx
 #: src/pages/settings/applications/SettingsApplicationRegistrationDetails.tsx
@@ -15561,6 +15660,9 @@ msgid "Padding"
 msgstr "Preenchimento"
 
 #. js-lingui-id: 6WdDG7
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/admin-panel/health-status/components/SettingsAdminQueueJobsTable.tsx
 msgid "Page"
 msgstr "Página"
@@ -15620,6 +15722,7 @@ msgid "Page Views"
 msgstr "Visualizações de página"
 
 #. js-lingui-id: wRR604
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/layout/components/SettingsLayoutItemsStats.tsx
 msgid "Pages"
 msgstr "Páginas"
@@ -15820,7 +15923,6 @@ msgstr "sinalizador de permissão"
 #. js-lingui-id: 9cDpsw
 #: src/modules/settings/roles/role/components/SettingsRole.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowEditActionAiAgent.tsx
-#: src/pages/settings/applications/SettingsApplicationDetails.tsx
 #: src/pages/settings/applications/SettingsAvailableApplicationDetails.tsx
 #: src/pages/settings/members/SettingsWorkspaceMember.tsx
 msgid "Permissions"
@@ -15871,21 +15973,10 @@ msgstr "Escolha um registro {0}"
 msgid "Pick a send time in the future."
 msgstr "Escolha um horário de envio no futuro."
 
-#. js-lingui-id: JqqNlC
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-msgid "Pick a view"
-msgstr "Selecione uma visualização"
-
 #. js-lingui-id: rV71K7
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionEmailBase.tsx
 msgid "Pick an address to send from or set a workspace member as variable"
 msgstr "Escolha um endereço para enviar ou defina um membro do espaço de trabalho como variável"
-
-#. js-lingui-id: Wlba2h
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-msgid "Pick an object"
-msgstr "Selecione um objeto"
 
 #. js-lingui-id: c1JeA3
 #: src/modules/workflow/workflow-steps/workflow-actions/pick-record-action/components/WorkflowEditActionPickRecord.tsx
@@ -15971,7 +16062,7 @@ msgid "Plan"
 msgstr "Plano"
 
 #. js-lingui-id: XduPHC
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
 msgid "Plan switching has been cancelled."
 msgstr "Alternância de plano foi cancelada."
 
@@ -16040,7 +16131,7 @@ msgid "Please type \"{confirmationValue}\" to confirm you want to delete this ap
 msgstr "Digite \"{confirmationValue}\" para confirmar que você quer excluir este aplicativo. Todas as instalações de espaços de trabalho vinculadas a ele perderão suas credenciais OAuth."
 
 #. js-lingui-id: L0SEpC
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
 msgid "Please type \"{confirmationValue}\" to confirm you want to uninstall this application."
 msgstr "Digite \"{confirmationValue}\" para confirmar que deseja desinstalar este aplicativo."
 
@@ -16143,6 +16234,11 @@ msgstr "Prefixo"
 msgid "Preparing Transcript"
 msgstr "Preparando transcrição"
 
+#. js-lingui-id: FA0aDS
+#: src/modules/command-menu-item/utils/getCommandMenuItemProgressLabel.ts
+msgid "Preparing…"
+msgstr ""
+
 #. js-lingui-id: NwnQoz
 #: src/modules/settings/mcp-and-apis/utils/buildMcpSetupCategories.tsx
 msgid "Preset link"
@@ -16182,6 +16278,11 @@ msgstr "Anterior"
 #: src/modules/ai/utils/groupThreadsByDate.ts
 msgid "Previous 7 days"
 msgstr "Últimos 7 dias"
+
+#. js-lingui-id: +Qcc/o
+#: src/modules/workflow/workflow-steps/workflow-actions/iterator-action/components/WorkflowIteratorSubStepSwitcher.tsx
+msgid "Previous iteration"
+msgstr ""
 
 #. js-lingui-id: KaMwgJ
 #: src/modules/object-record/record-calendar/components/RecordCalendarTopBar.tsx
@@ -16245,9 +16346,7 @@ msgstr "Privado"
 
 #. js-lingui-id: 3fPjUY
 #: src/modules/settings/billing/components/internal/PlansTags.tsx
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
 #: src/modules/settings/billing/hooks/useBillingWording.ts
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
 msgid "Pro"
 msgstr "Pro"
 
@@ -16649,7 +16748,10 @@ msgstr "registro"
 
 #. js-lingui-id: w80YWM
 #: src/modules/navigation-menu-item/display/object/components/NavigationDrawerItemForObjectMetadataItem.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
 #: src/modules/side-panel/pages/page-layout/components/dropdown-content/ChartGroupByFieldSelectionTargetObjectFieldsView.tsx
@@ -16663,11 +16765,6 @@ msgstr "Gravação"
 #: src/modules/workflow/workflow-steps/workflow-actions/components/WorkflowEditActionUpsertRecord.tsx
 msgid "Record (ID)"
 msgstr "Registro (ID)"
-
-#. js-lingui-id: zod7Md
-#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
-msgid "Record creation form"
-msgstr "Formulário de criação de registro"
 
 #. js-lingui-id: 2CUci6
 #: src/modules/object-record/hooks/useBatchCreateManyRecords.ts
@@ -16750,7 +16847,7 @@ msgid "Recording Scheduled"
 msgstr "Gravação agendada"
 
 #. js-lingui-id: PWlTvh
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemSearchResults.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/billing/constants/SettingsBillingPlanComparisonRows.ts
 #: src/modules/settings/roles/role-permissions/object-level-permissions/components/SettingsRolePermissionsObjectLevelTableHeader.tsx
 #: src/pages/settings/data-model/constants/SettingsObjectTableMetadata.ts
@@ -16974,10 +17071,21 @@ msgstr "Remover campo"
 msgid "Remove filter"
 msgstr "Remover filtro"
 
+#. js-lingui-id: bKjweg
+#: src/modules/settings/accounts/components/SettingsAccountsBlocklistTableRow.tsx
+msgid "Remove from blocklist"
+msgstr ""
+
 #. js-lingui-id: 9VZ6f0
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditOrganizeActions.tsx
+#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderNavigationDrawerItemDropdown.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
 msgid "Remove from sidebar"
 msgstr "Remover da barra lateral"
+
+#. js-lingui-id: np3jVO
+#: src/pages/settings/members/tabs/SettingsWorkspaceMembersInviteTab.tsx
+msgid "Remove invitation"
+msgstr ""
 
 #. js-lingui-id: O90CN2
 #: src/modules/auth/sign-in-up/components/internal/SignInUpWorkspaceCreationForm.tsx
@@ -16993,6 +17101,11 @@ msgstr "Remover membro"
 #: src/pages/settings/members/SettingsWorkspaceMember.tsx
 msgid "Remove member from workspace"
 msgstr "Remover membro do espaço de trabalho"
+
+#. js-lingui-id: RlqUBz
+#: src/modules/settings/ai/components/SettingsAiModelsTable.tsx
+msgid "Remove model"
+msgstr ""
 
 #. js-lingui-id: FeQ/sf
 #. placeholder {0}: modelToRemove?.label ?? ''
@@ -17015,6 +17128,11 @@ msgstr "Remover provedor"
 #: src/pages/settings/admin-panel/SettingsAdminAiProviderDetail.tsx
 msgid "Remove provider \"{0}\""
 msgstr "Remover o provedor \"{0}\""
+
+#. js-lingui-id: PhLz3E
+#: src/pages/settings/applications/components/SettingsApplicationRegistrationRedirectURIsTable.tsx
+msgid "Remove redirect URI"
+msgstr ""
 
 #. js-lingui-id: SjxzXf
 #: src/modules/object-record/advanced-filter/components/AdvancedFilterRecordFilterOptionsDropdown.tsx
@@ -17053,15 +17171,20 @@ msgstr "Remover este provedor e desconectar todos os seus modelos"
 msgid "Remove variable"
 msgstr "Remover variável"
 
+#. js-lingui-id: Rkg5R1
+#: src/modules/page-layout/widgets/widget-card/components/WidgetCardHeader.tsx
+msgid "Remove widget"
+msgstr ""
+
 #. js-lingui-id: 2wxgft
 #: src/modules/activities/files/components/AttachmentDropdown.tsx
 #: src/modules/ai/components/AiChatThreadItemMenu.tsx
-#: src/modules/navigation-menu-item/display/folder/components/NavigationMenuItemFolderNavigationDrawerItemDropdown.tsx
 #: src/modules/page-layout/widgets/fields/components/FieldsConfigurationGroupDropdown.tsx
 msgid "Rename"
 msgstr "Renomear"
 
 #. js-lingui-id: 6PsaMr
+#: src/modules/ai/components/AiChatPageThreadHeader.tsx
 #: src/modules/ai/components/AiChatThreadListItem.tsx
 msgid "Rename chat"
 msgstr "Renomear chat"
@@ -17173,6 +17296,11 @@ msgstr "Pesquise esta empresa e resuma o que ela faz, seu tamanho e quaisquer no
 #: src/modules/auth/sign-in-up/components/EmailVerificationSent.tsx
 msgid "Resend email"
 msgstr "Reenviar email"
+
+#. js-lingui-id: wIa8Qe
+#: src/pages/settings/members/tabs/SettingsWorkspaceMembersInviteTab.tsx
+msgid "Resend invitation"
+msgstr ""
 
 #. js-lingui-id: OfhWJH
 #: src/modules/layout-customization/components/LayoutCustomizationBarResetConfirmationModal.tsx
@@ -17311,7 +17439,6 @@ msgid "Result"
 msgstr "Resultado"
 
 #. js-lingui-id: kx0s+n
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemRecordSubPage.tsx
 #: src/modules/side-panel/pages/search/components/SidePanelSearchRecordsPage.tsx
 msgid "Results"
 msgstr "Resultados"
@@ -17448,6 +17575,11 @@ msgstr "O nome da função não pode estar vazio"
 msgid "role permission flag"
 msgstr "sinalizador de permissão de função"
 
+#. js-lingui-id: mPGttZ
+#: src/modules/settings/roles/role/components/SettingsRole.tsx
+msgid "Role settings"
+msgstr ""
+
 #. js-lingui-id: jLNGne
 #: src/modules/metadata-error-handler/hooks/useMetadataErrorHandler.ts
 msgid "role target"
@@ -17478,6 +17610,11 @@ msgstr "Acúmulo"
 #: src/localization/hooks/useLocaleOptions.ts
 msgid "Romanian"
 msgstr "Romeno"
+
+#. js-lingui-id: cepC1f
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemActions.tsx
+msgid "Root level"
+msgstr ""
 
 #. js-lingui-id: vQrTaX
 #: src/pages/settings/applications/tabs/SettingsApplicationRegistrationOAuthTab.tsx
@@ -17615,14 +17752,16 @@ msgstr "Sábado"
 
 #. js-lingui-id: tfDRzk
 #: src/modules/settings/components/SaveAndCancelButtons/SaveButton.tsx
+#: src/modules/settings/config-variables/components/ConfigVariableEdit.tsx
+#: src/modules/settings/profile/components/EmailField.tsx
 #: src/pages/settings/data-model/new-field/SettingsObjectNewFieldConfigure.tsx
 msgid "Save"
 msgstr "Salvar"
 
-#. js-lingui-id: nvUgnK
+#. js-lingui-id: PI8MEC
 #: src/modules/settings/billing/components/internal/SettingsBillingPlanComparisonTable.tsx
-msgid "Save 25% when billed yearly"
-msgstr "Economize 25% com faturamento anual"
+msgid "Save 25% when billed annually"
+msgstr ""
 
 #. js-lingui-id: apLRCm
 #: src/modules/views/components/UpdateViewButtonGroup.tsx
@@ -17633,6 +17772,11 @@ msgstr "Salvar como nova visualização"
 #: src/modules/layout-customization/hooks/useEnterLayoutCustomizationMode.ts
 msgid "Save or cancel dashboard changes before editing the layout."
 msgstr "Salve ou cancele as alterações do painel antes de editar o layout."
+
+#. js-lingui-id: haaI+P
+#: src/pages/settings/applications/SettingsApplicationDetails.tsx
+msgid "Save settings"
+msgstr ""
 
 #. js-lingui-id: bL2pm9
 #: src/modules/object-record/record-field/ui/form-types/components/FormRecordRichTextFieldInput.tsx
@@ -17754,11 +17898,6 @@ msgstr "Pesquisar 1 campo"
 msgid "Search a field..."
 msgstr "Pesquisar um campo..."
 
-#. js-lingui-id: ITQFzL
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelEditFolderPickerSubPage.tsx
-msgid "Search a folder..."
-msgstr "Pesquisar uma pasta..."
-
 #. js-lingui-id: owAIq9
 #: src/modules/settings/billing/components/SettingsBillingLimitsTable.tsx
 msgid "Search a limit"
@@ -17769,11 +17908,6 @@ msgstr "Pesquisar um limite de uso."
 msgid "Search a model..."
 msgstr "Pesquisar um modelo..."
 
-#. js-lingui-id: Dm4PFW
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemPage.tsx
-msgid "Search a nav item..."
-msgstr "Pesquisar um item de navegação..."
-
 #. js-lingui-id: WXvlVa
 #: src/modules/settings/roles/components/SettingsRolesList.tsx
 msgid "Search a role..."
@@ -17783,12 +17917,6 @@ msgstr "Pesquise um papel..."
 #: src/pages/settings/ai/components/SettingsAgentSkillsTab.tsx
 msgid "Search a skill..."
 msgstr "Pesquisar uma habilidade..."
-
-#. js-lingui-id: hVJ1MP
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewSystemSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelSystemObjectPickerSubView.tsx
-msgid "Search a system object..."
-msgstr "Pesquisar um objeto do sistema..."
 
 #. js-lingui-id: xdl79x
 #: src/pages/settings/members/tabs/SettingsWorkspaceMembersTeamTab.tsx
@@ -17804,11 +17932,6 @@ msgstr "Pesquisar uma ferramenta..."
 #: src/modules/settings/data-model/fields/forms/components/SettingsObjectNewFieldSelector.tsx
 msgid "Search a type"
 msgstr "Pesquisar um tipo"
-
-#. js-lingui-id: +MhOVB
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewPickerSubView.tsx
-msgid "Search a view..."
-msgstr "Pesquisar uma visualização..."
 
 #. js-lingui-id: +7s4fw
 #: src/modules/settings/roles/role-assignment/components/SettingsRoleAssignmentEntityPickerDropdown.tsx
@@ -17836,12 +17959,6 @@ msgstr "Pesquisar um índice..."
 #: src/modules/settings/roles/role-permissions/object-level-permissions/components/SettingsRolePermissionsObjectLevelObjectPicker.tsx
 msgid "Search an object"
 msgstr "Pesquisar um objeto"
-
-#. js-lingui-id: BoNHR0
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectPickerSubView.tsx
-msgid "Search an object..."
-msgstr "Pesquisar um objeto..."
 
 #. js-lingui-id: S+MGem
 #: src/modules/object-record/object-filter-dropdown/components/ObjectFilterDropdownAnyFieldSearchInput.tsx
@@ -17970,7 +18087,7 @@ msgid "Search options"
 msgstr "Pesquisar opções"
 
 #. js-lingui-id: rRklUH
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemRecordSubPage.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 msgid "Search records..."
 msgstr "Pesquisar registros..."
 
@@ -17985,6 +18102,7 @@ msgid "Search steps and fields"
 msgstr "Pesquisar etapas e campos"
 
 #. js-lingui-id: YIix5Y
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/developers/components/WebhookEntitySelect.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationDetailContentTab.tsx
 msgid "Search..."
@@ -18124,6 +18242,7 @@ msgstr "ver"
 
 #. js-lingui-id: h+8V38
 #: src/modules/settings/roles/role-permissions/object-level-permissions/field-permissions/components/SettingsRolePermissionsObjectLevelObjectFieldPermissionTable.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailGeneralTab.tsx
 msgid "See"
 msgstr "Ver"
 
@@ -18265,10 +18384,11 @@ msgstr "Selecione um modelo conhecido ou adicione um personalizado"
 msgid "Select a known provider or create a custom one"
 msgstr "Selecione um provedor conhecido ou crie um personalizado"
 
-#. js-lingui-id: dtAvBz
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNavigationMenuItemEditPage.tsx
-msgid "Select a navigation item to edit"
-msgstr "Selecione um item de navegação para editar"
+#. js-lingui-id: KQtk7u
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemInsertionPreview.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemInsertionPreview.tsx
+msgid "Select a menu item"
+msgstr ""
 
 #. js-lingui-id: p4N5TB
 #: src/modules/object-record/record-picker/multiple-record-picker/components/MultipleRecordPickerCreateTargetSelect.tsx
@@ -18699,7 +18819,7 @@ msgid "Set up MCP"
 msgstr "Configurar MCP"
 
 #. js-lingui-id: 9HNKkV
-#: src/pages/settings/applications/tabs/SettingsApplicationDetailEnvironmentVariablesTable.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailVariablesTab.tsx
 msgid "Set your application configuration variables"
 msgstr "Configure as variáveis de configuração do seu aplicativo"
 
@@ -19623,34 +19743,32 @@ msgstr "Assinatura ativada."
 msgid "Subscription error. Please retry or contact Twenty team"
 msgstr "Erro de assinatura. Por favor, tente novamente ou contate a equipe Twenty"
 
-#. js-lingui-id: FooJUj
-#. placeholder {0}: getTargetPlanLabel(targetPlanKey)
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
-msgid "Subscription has been switched to {0} Plan."
-msgstr "A assinatura foi alterada para o plano {0}."
+#. js-lingui-id: +QiH+4
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
+msgid "Subscription has been switched to {planLabel} Plan."
+msgstr ""
 
-#. js-lingui-id: WZBvO8
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
-msgid "Subscription has been switched to Monthly."
-msgstr "A assinatura foi alterada para mensal."
+#. js-lingui-id: mxY+I+
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
+msgid "Subscription has been switched to annual billing."
+msgstr ""
 
-#. js-lingui-id: A5YO8f
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
-msgid "Subscription has been switched to Yearly."
-msgstr "A assinatura foi alterada para anual."
+#. js-lingui-id: 3SS5AR
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
+msgid "Subscription has been switched to monthly billing."
+msgstr ""
 
-#. js-lingui-id: ulJRqh
-#. placeholder {0}: getTargetPlanLabel(targetPlanKey)
-#. placeholder {1}: getBeautifiedRenewDate()
-#: src/modules/settings/billing/hooks/useSwitchBillingPlan.ts
-msgid "Subscription will be switched to {0} Plan the {1}."
-msgstr "A assinatura será alterada para o plano {0} em {1}."
-
-#. js-lingui-id: 7Vg+lX
+#. js-lingui-id: q2Qf76
 #. placeholder {0}: getBeautifiedRenewDate()
-#: src/modules/settings/billing/components/SettingsBillingSubscriptionInfo.tsx
-msgid "Subscription will be switched to Monthly the {0}."
-msgstr "A assinatura será alterada para mensal em {0}."
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
+msgid "Subscription will be switched to {planLabel} Plan the {0}."
+msgstr ""
+
+#. js-lingui-id: jV9sB2
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useApplyBillingSubscriptionChange.ts
+msgid "Subscription will be switched to monthly billing the {0}."
+msgstr ""
 
 #. js-lingui-id: pEToQK
 #: src/modules/advanced-text-editor/extensions/slash-command/DefaultSlashCommands.ts
@@ -19755,21 +19873,36 @@ msgstr "Suporta raciocínio"
 msgid "Swedish"
 msgstr "Sueco"
 
+#. js-lingui-id: aOX6Nj
+#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCard.tsx
+#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCard.tsx
+msgid "Switch to annual"
+msgstr ""
+
+#. js-lingui-id: rdZlzY
+#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
+msgid "Switch to monthly"
+msgstr ""
+
+#. js-lingui-id: SVxgrl
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Switch to monthly billing?"
+msgstr ""
+
 #. js-lingui-id: GPKudC
 #: src/modules/settings/billing/hooks/useBillingPlanActions.ts
 msgid "Switch to Pro"
 msgstr "Alternar para Pro"
 
+#. js-lingui-id: z+Ngx/
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Switch to Pro?"
+msgstr ""
+
 #. js-lingui-id: 13a+Fq
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
 msgid "Switch to production instance"
 msgstr "Mudar para instância de produção"
-
-#. js-lingui-id: 1EwZPZ
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCard.tsx
-#: src/modules/settings/billing/components/internal/SettingsBillingSubscriptionInfoCard.tsx
-msgid "Switch to yearly"
-msgstr "Mudar para anual"
 
 #. js-lingui-id: QfzgpH
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
@@ -19855,12 +19988,6 @@ msgid "System fields"
 msgstr "Campos do Sistema"
 
 #. js-lingui-id: 0apULK
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewSystemSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelObjectPickerSubView.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelSystemObjectPickerSubView.tsx
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
-#: src/modules/side-panel/utils/getSidePanelSubPageTitle.ts
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowAiAgentPermissionsObjectsList.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/ai-agent-action/components/WorkflowAiAgentPermissionsTab.tsx
 #: src/pages/settings/data-model/SettingsObjectTable.tsx
@@ -20175,6 +20302,16 @@ msgstr "A data de término deve ser posterior à data de início."
 msgid "The end time must be after the start time."
 msgstr "O horário de término deve ser posterior ao horário de início."
 
+#. js-lingui-id: h9mpr+
+#: src/modules/record-export/utils/createRecordExportConnection.ts
+msgid "The export connection was lost. Please try again."
+msgstr ""
+
+#. js-lingui-id: qc958u
+#: src/modules/record-export/utils/createRecordExportConnection.ts
+msgid "The export was interrupted. Please try again."
+msgstr ""
+
 #. js-lingui-id: 21Xjwu
 #: src/pages/settings/legal/SettingsLegalDpaNew.tsx
 msgid "The full agreement with fields resolved for your deployment."
@@ -20184,6 +20321,11 @@ msgstr "O contrato completo com campos preenchidos para sua implantação."
 #: src/modules/workflow/workflow-trigger/components/WorkflowEditTriggerManual.tsx
 msgid "The icon your workflow trigger will display in the command menu"
 msgstr "O ícone que o seu acionador de fluxo de trabalho irá exibir no menu de comando"
+
+#. js-lingui-id: JNopdb
+#: src/modules/page-layout/widgets/email-thread/components/EmailThreadWidget.tsx
+msgid "The messages in this thread are missing or incomplete."
+msgstr ""
 
 #. js-lingui-id: 4m3QoL
 #: src/modules/settings/admin-panel/ai/components/SettingsAdminAI.tsx
@@ -20502,6 +20644,18 @@ msgstr "Este período de cobrança"
 msgid "This call is being recorded…"
 msgstr "Esta chamada está sendo gravada…"
 
+#. js-lingui-id: C7AzHv
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "This cancels the scheduled switch to {upcomingIntervalAdjective} billing on {0}."
+msgstr ""
+
+#. js-lingui-id: +iT8xP
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "This cancels the scheduled switch to {upcomingPlanLabel} on {0}."
+msgstr ""
+
 #. js-lingui-id: WCa/7U
 #: src/pages/settings/applications/tabs/SettingsApplicationFrontComponentPreviewTab.tsx
 msgid "This component runs without a UI and renders nothing here."
@@ -20516,6 +20670,11 @@ msgstr "Essa conexão não existe ou não está disponível para este aplicativo
 #: src/modules/object-record/record-field/ui/form-types/components/FormRecordRichTextFieldInput.tsx
 msgid "This content was saved in an older format and cannot be edited here"
 msgstr "Este conteúdo foi salvo em um formato mais antigo e não pode ser editado aqui"
+
+#. js-lingui-id: 5VD/sC
+#: src/modules/settings/domains/components/SettingPublicDomain.tsx
+msgid "This custom domain does not exist or does not belong to this application."
+msgstr ""
 
 #. js-lingui-id: SLIRqz
 #: src/modules/settings/admin-panel/config-variables/components/ConfigVariableHelpText.tsx
@@ -20712,16 +20871,6 @@ msgstr "Isso cancelará todas as modificações feitas na aba e em seus widgets.
 #: src/modules/side-panel/pages/page-layout/components/WidgetSettingsManageSection.tsx
 msgid "This will cancel all modifications done on the widget. This action cannot be undone."
 msgstr "Isso cancelará todas as modificações feitas no widget. Esta ação não pode ser desfeita."
-
-#. js-lingui-id: h4VeOo
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "This will cancel the scheduled interval change and keep your current billing interval ({currentIntervalLabel})."
-msgstr "Isso cancelará a alteração de intervalo programada e manterá seu intervalo de cobrança atual ({currentIntervalLabel})."
-
-#. js-lingui-id: XpARoU
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "This will cancel the scheduled plan change and keep your current plan ({planKeyWord})."
-msgstr "Isso cancelará a alteração de plano programada e manterá seu plano atual ({planKeyWord})."
 
 #. js-lingui-id: PJ4qQa
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
@@ -20977,6 +21126,11 @@ msgstr "Ferramenta criada"
 #: src/pages/settings/ai/SettingsToolDetail.tsx
 msgid "Tool deleted"
 msgstr "Ferramenta excluída"
+
+#. js-lingui-id: RO68oO
+#: src/modules/ai/components/ThinkingStepsDisplay.tsx
+msgid "Tool details: {displayMessage}"
+msgstr ""
 
 #. js-lingui-id: OvFVjH
 #: src/modules/ai/components/ToolStepRenderer.tsx
@@ -21354,11 +21508,6 @@ msgstr "Digite qualquer coisa..."
 msgid "Type something or press \"/\" to see commands"
 msgstr "Digite algo ou pressione \"/\" para ver os comandos"
 
-#. js-lingui-id: UhqKcC
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemRecordSubPage.tsx
-msgid "Type to search records"
-msgstr "Digite para pesquisar registros"
-
 #. js-lingui-id: SILT51
 #: src/modules/ai/components/internal/AiChatQuestionOtherOption.tsx
 msgid "Type your own answer here"
@@ -21443,13 +21592,13 @@ msgstr "Dados não exibidos: máximo de {maxItems} fatias por gráfico."
 
 #. js-lingui-id: fo0VXg
 #: src/modules/logic-functions/utils/getLogicFunctionTriggerLabel.ts
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
 msgid "Uninstall"
 msgstr "Desinstalar"
 
 #. js-lingui-id: Qtg9Qc
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
 msgid "Uninstall Application?"
 msgstr "Desinstalar aplicativo?"
 
@@ -21459,7 +21608,7 @@ msgid "Uninstall this app from all workspaces before deleting it"
 msgstr "Desinstale este aplicativo de todos os espaços de trabalho antes de excluí-lo"
 
 #. js-lingui-id: ItfvBz
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
 msgid "Uninstalling..."
 msgstr "Desinstalando..."
 
@@ -21544,6 +21693,11 @@ msgstr "Arquivo desconhecido"
 #: src/modules/mention/components/MentionRecordChip.tsx
 msgid "Unknown object"
 msgstr "Objeto desconhecido"
+
+#. js-lingui-id: lZSo+Q
+#: src/modules/activities/emails/components/EmailThreadMessageSender.tsx
+msgid "Unknown sender"
+msgstr ""
 
 #. js-lingui-id: 0Wy3/1
 #: src/modules/page-layout/widgets/call-recording-transcript/components/CallRecordingTranscriptEntryListItem.tsx
@@ -21664,6 +21818,11 @@ msgstr "Link para cancelar a inscrição"
 #: src/pages/settings/communications/SettingsWorkspaceUnsubscribe.tsx
 msgid "Unsubscribe page"
 msgstr "Página de cancelamento de inscrição"
+
+#. js-lingui-id: gOL19R
+#: src/pages/settings/communications/SettingsWorkspaceUnsubscribe.tsx
+msgid "Unsubscribe settings"
+msgstr ""
 
 #. js-lingui-id: BEZcuL
 #: src/modules/activities/emails/components/CampaignDetailsFields.tsx
@@ -21889,7 +22048,6 @@ msgstr "Atualizando..."
 #: src/modules/ai/components/AIChatNoMoreBillingCreditsBanner.tsx
 #: src/modules/information-banner/components/billing/InformationBannerNoMoreCredits.tsx
 #: src/modules/settings/billing/components/internal/ResourceCreditPriceSelector.tsx
-#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
 #: src/modules/settings/event-logs/components/SettingsLogs.tsx
 #: src/modules/settings/roles/role-permissions/object-level-permissions/record-level-permissions/components/SettingsRolePermissionsObjectLevelRecordLevelSection.tsx
 msgid "Upgrade"
@@ -21925,7 +22083,7 @@ msgstr "Status da atualização atualizado"
 
 #. js-lingui-id: doMiaH
 #. placeholder {0}: latestAvailableVersion ?? ''
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailGeneralTab.tsx
 msgid "Upgrade to {0}"
 msgstr "Atualizar para {0}"
 
@@ -21948,10 +22106,30 @@ msgstr "Atualize para acessar"
 msgid "Upgrade to access audit logs"
 msgstr "Atualize para acessar os logs de auditoria"
 
+#. js-lingui-id: mjRbV9
+#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
+msgid "Upgrade to annual"
+msgstr ""
+
+#. js-lingui-id: 5gLbcs
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Upgrade to annual billing?"
+msgstr ""
+
+#. js-lingui-id: LiRjC+
+#: src/modules/settings/billing/hooks/useBillingPlanActions.ts
+msgid "Upgrade to Organization"
+msgstr ""
+
 #. js-lingui-id: q10MiT
 #: src/modules/settings/security/components/SettingsSecuritySettings.tsx
 msgid "Upgrade to Organization to access audit logs."
 msgstr "Atualize para o plano Organization para acessar os logs de auditoria."
+
+#. js-lingui-id: Ic7ooY
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Upgrade to Organization?"
+msgstr ""
 
 #. js-lingui-id: yV3xLN
 #: src/pages/onboarding/UpgradeFreeTrial.tsx
@@ -21969,7 +22147,7 @@ msgid "Upgrading subscription..."
 msgstr "Atualizando assinatura..."
 
 #. js-lingui-id: +Gi3x1
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailGeneralTab.tsx
 msgid "Upgrading..."
 msgstr "Atualizando..."
 
@@ -22053,6 +22231,7 @@ msgid "URI is already in redirect URIs list"
 msgstr "A URI já está na lista de URIs de redirecionamento"
 
 #. js-lingui-id: IagCbF
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemLinkEditor.tsx
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceContent.tsx
 #: src/modules/settings/data-model/fields/forms/components/SettingsDataModelFieldLinksVariantForm.tsx
 #: src/modules/workflow/workflow-steps/workflow-actions/http-request-action/components/WorkflowEditActionHttpRequest.tsx
@@ -22138,11 +22317,6 @@ msgstr "Eventos de uso"
 msgid "Usage period"
 msgstr "Período de uso"
 
-#. js-lingui-id: MNOlLY
-#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
-msgid "Use a dedicated form when creating records."
-msgstr "Usar um formulário dedicado ao criar registros."
-
 #. js-lingui-id: 6kLyt5
 #: src/modules/auth/sign-in-up/components/internal/SignInUpTwoFactorAuthenticationProvision.tsx
 msgid "Use authenticator apps and browser extensions like 1Password, Authy, Microsoft Authenticator to generate one-time passwords"
@@ -22192,11 +22366,6 @@ msgstr "Usar a página de índice de workflows dedicada para navegar pelos workf
 #: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
 msgid "Use the quota engine to enforce credit allowances."
 msgstr "Usar o mecanismo de cotas para aplicar as concessões de créditos."
-
-#. js-lingui-id: 0rr3iW
-#: src/modules/settings/admin-panel/constants/SettingsAdminFeatureFlagMetadata.ts
-msgid "Use the usage limit engine to enforce API request speed limits."
-msgstr "Usar o mecanismo de limites de uso para aplicar limites de velocidade de solicitações de API."
 
 #. js-lingui-id: z1f4Op
 #: src/modules/workflow/workflow-variables/utils/getWorkflowVariableSpecialItems.ts
@@ -22281,6 +22450,11 @@ msgstr "Funções de usuário"
 msgid "User Usage"
 msgstr "Uso do usuário"
 
+#. js-lingui-id: FYgCVU
+#: src/pages/settings/admin-panel/SettingsAdminUserDetail.tsx
+msgid "User workspaces"
+msgstr ""
+
 #. js-lingui-id: Sxm8rQ
 #: src/modules/settings/admin-panel/components/SettingsAdminGeneral.tsx
 #: src/modules/settings/roles/role-permissions/permission-flags/hooks/useSettingsRolePermissionFlagConfig.ts
@@ -22337,7 +22511,7 @@ msgstr "Token de validade atualizado com sucesso"
 #: src/pages/settings/applications/components/SettingsApplicationVariableInput.tsx
 #: src/pages/settings/applications/SettingsApplicationConnectionDetail.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationCommandMenuItemSettingsTab.tsx
-#: src/pages/settings/applications/tabs/SettingsApplicationDetailEnvironmentVariablesTable.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailVariablesTab.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationFrontComponentSettingsTab.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationRegistrationConfigTab.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationTimelineActivityTypeSettingsTab.tsx
@@ -22379,6 +22553,8 @@ msgstr "Variável não encontrada"
 
 #. js-lingui-id: gpmbqk
 #: src/modules/advanced-text-editor/components/AdvancedTextEditorInsertRail.tsx
+#: src/pages/settings/applications/SettingsApplicationDetails.tsx
+#: src/pages/settings/applications/tabs/SettingsApplicationDetailVariablesTab.tsx
 msgid "Variables"
 msgstr "Variáveis"
 
@@ -22468,6 +22644,11 @@ msgstr "Chamada de vídeo"
 msgid "Video conferencing"
 msgstr "Videoconferência"
 
+#. js-lingui-id: 5LXK/o
+#: src/modules/settings/components/SettingsCustomizeVideoModal.tsx
+msgid "Video tutorials"
+msgstr ""
+
 #. js-lingui-id: fROFIL
 #: src/localization/hooks/useLocaleOptions.ts
 msgid "Vietnamese"
@@ -22480,13 +22661,14 @@ msgid "view"
 msgstr "visualização"
 
 #. js-lingui-id: jpctdh
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemMainMenu.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemTypeTooltip.tsx
+#: src/modules/navigation-menu-item/edit/hooks/useNavigationMenuItemAddOptions.tsx
 #: src/modules/settings/applications/hooks/useComputeApplicationContentForLayoutAndLogic.ts
 #: src/modules/settings/data-model/object-details/components/SettingsObjectFieldDisabledActionDropdown.tsx
 #: src/modules/settings/data-model/objects/components/SettingsObjectInactiveMenuDropDown.tsx
 #: src/modules/settings/developers/components/WebhookEntitySelect.tsx
 #: src/modules/side-panel/components/hooks/usePageLayoutHeaderInfo.ts
-#: src/modules/side-panel/components/SidePanelObjectViewRecordInfo.tsx
 #: src/modules/side-panel/pages/page-layout/components/SidePanelPageLayoutDashboardWidgetTypeSelect.tsx
 #: src/pages/settings/layout/SettingsLayoutViewDetail.tsx
 msgid "View"
@@ -22525,7 +22707,6 @@ msgid "View Docs"
 msgstr "Ver documentação"
 
 #. js-lingui-id: Mv1YVf
-#: src/modules/error-handler/utils/getToastOptionsFromError.tsx
 #: src/modules/error-handler/utils/getToastOptionsFromError.tsx
 msgid "View existing record"
 msgstr "Ver registro existente"
@@ -22606,14 +22787,18 @@ msgstr "Tipo de visualização"
 msgid "View types"
 msgstr "Tipos de visualização"
 
+#. js-lingui-id: sEyiuO
+#: src/modules/views/components/UpdateViewButtonGroup.tsx
+msgid "View update options"
+msgstr ""
+
 #. js-lingui-id: ZjBqNE
 #: src/modules/settings/billing/components/SettingsBillingCreditsSection.tsx
 msgid "View usage"
 msgstr "Ver uso"
 
 #. js-lingui-id: 1I6UoR
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemSearchResults.tsx
-#: src/modules/navigation-menu-item/edit/side-panel/components/SidePanelNewSidebarItemViewPickerSubView.tsx
+#: src/modules/navigation-menu-item/edit/components/NavigationMenuItemAddDropdownContent.tsx
 #: src/modules/settings/layout/components/SettingsLayoutItemsStats.tsx
 #: src/pages/settings/applications/tabs/SettingsApplicationDetailContentTab.tsx
 #: src/pages/settings/layout/SettingsLayoutViewDetail.tsx
@@ -23038,6 +23223,11 @@ msgstr "Quando a chave de API expirará."
 msgid "When the key will be disabled"
 msgstr "Quando a chave será desativada"
 
+#. js-lingui-id: kKHjOh
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "When your trial ends, you will be charged {priceLabel}."
+msgstr ""
+
 #. js-lingui-id: YvwwqC
 #: src/modules/object-record/advanced-filter/components/AdvancedFilterLogicalOperatorCell.tsx
 #: src/modules/object-record/advanced-filter/side-panel/components/AdvancedFilterSidePanelLogicalOperatorCell.tsx
@@ -23135,6 +23325,11 @@ msgstr "Execução de fluxo de trabalho"
 msgid "Workflow index page"
 msgstr "Página de índice de workflows"
 
+#. js-lingui-id: 1p/qH4
+#: src/modules/side-panel/pages/workflow/step/view-run/components/SidePanelWorkflowRunViewStepContent.tsx
+msgid "Workflow step results"
+msgstr ""
+
 #. js-lingui-id: QHAMlE
 #: src/modules/object-core/workflows/versions/hooks/useOpenCoreWorkflowVersionsSidePanel.ts
 msgid "Workflow versions"
@@ -23231,6 +23426,11 @@ msgstr "Workflows"
 msgid "Workspace"
 msgstr "Workspace"
 
+#. js-lingui-id: rxazlH
+#: src/pages/settings/communications/SettingsWorkspaceCommunications.tsx
+msgid "Workspace communications"
+msgstr ""
+
 #. js-lingui-id: fQ8teq
 #: src/modules/auth/sign-in-up/hooks/useSignUpInNewWorkspace.ts
 #: src/pages/onboarding/WorkspaceActivation.tsx
@@ -23241,6 +23441,11 @@ msgstr "Falha na criação do espaço de trabalho"
 #: src/modules/settings/profile/components/DeleteWorkspace.tsx
 msgid "Workspace Deletion"
 msgstr "Exclusão do Workspace"
+
+#. js-lingui-id: KNUGRD
+#: src/pages/settings/admin-panel/SettingsAdminWorkspaceDetail.tsx
+msgid "Workspace details"
+msgstr ""
 
 #. js-lingui-id: Qx8HXb
 #: src/pages/settings/general/SettingsGeneral.tsx
@@ -23282,6 +23487,7 @@ msgstr "Membro do espaço de trabalho"
 #. js-lingui-id: wtxjAY
 #: src/modules/settings/event-logs/components/EventLogFilters.tsx
 #: src/pages/settings/admin-panel/SettingsAdminWorkspaceDetail.tsx
+#: src/pages/settings/members/SettingsWorkspaceMembers.tsx
 msgid "Workspace members"
 msgstr "Membros do espaço de trabalho"
 
@@ -23378,11 +23584,6 @@ msgstr "ano"
 msgid "Year"
 msgstr "Ano"
 
-#. js-lingui-id: dfmB8/
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "yearly"
-msgstr "anual"
-
 #. js-lingui-id: zkWmBh
 #: src/modules/settings/admin-panel/components/SettingsAdminWorkspaceBillingContent.tsx
 #: src/modules/settings/enterprise/components/EnterprisePlanModal.tsx
@@ -23400,7 +23601,7 @@ msgid "Yellow"
 msgstr "Amarelo"
 
 #. js-lingui-id: 3d1wCB
-#: src/modules/settings/applications/components/SettingsApplicationActionButton.tsx
+#: src/modules/settings/applications/components/SettingsApplicationUninstallButton.tsx
 #: src/modules/settings/developers/components/SettingsDevelopersWebhookForm.tsx
 #: src/modules/settings/developers/components/SettingsDevelopersWebhookForm.tsx
 #: src/pages/settings/admin-panel/SettingsAdminApplicationRegistrationDangerZone.tsx
@@ -23439,6 +23640,11 @@ msgstr "Você já pertence ao workspace {workspaceDisplayName}"
 #: src/modules/auth/sign-in-up/hooks/useWorkspaceFromInviteHash.ts
 msgid "You already belong to this workspace"
 msgstr "Você já pertence a este workspace"
+
+#. js-lingui-id: uXvWx/
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "You are charged {priceLabel}."
+msgstr ""
 
 #. js-lingui-id: MuS9Gh
 #: src/modules/settings/data-model/object-details/components/SettingsUpdateDataModelObjectAboutForm.tsx
@@ -23511,25 +23717,20 @@ msgstr "Você atingiu o número máximo de transferências de servidor permitido
 msgid "You have scheduled a credit pack change. Do you want to cancel it?"
 msgstr "Você agendou uma alteração do pacote de créditos. Deseja cancelá-la?"
 
-#. js-lingui-id: z8eKS7
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "you will be charged ${enterprisePrice} per user per month"
-msgstr "você será cobrado ${enterprisePrice} por usuário por mês"
+#. js-lingui-id: hcG97e
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "You keep {currentIntervalAdjective} billing on the {currentPlanLabel} plan."
+msgstr ""
 
-#. js-lingui-id: u3S6u8
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "You will be charged ${monthlyPrice} per user per month billed monthly. The change will be applied the {beautifiedRenewDate}."
-msgstr "Você será cobrado ${monthlyPrice} por usuário por mês cobrado mensalmente. A mudança será aplicada em {beautifiedRenewDate}."
+#. js-lingui-id: JWqQIk
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "You stay on the {currentPlanLabel} plan."
+msgstr ""
 
-#. js-lingui-id: /T5zAB
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "You will be charged ${proPrice} per user per month"
-msgstr "Você será cobrado ${proPrice} por usuário por mês"
-
-#. js-lingui-id: W3k5LA
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "You will be charged ${yearlyPrice} per user per year billed annually. A prorata with your current subscription will be applied."
-msgstr "Você será cobrado ${yearlyPrice} por usuário por ano cobrado anualmente. Um pró-rata com sua assinatura atual será aplicado."
+#. js-lingui-id: VW98bk
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "You will be charged {priceLabel}."
+msgstr ""
 
 #. js-lingui-id: 5K1++A
 #: src/modules/settings/billing/components/StartSubscriptionConfirmationModal.tsx
@@ -23561,15 +23762,21 @@ msgstr "Você atingiu seu limite de uso de IA."
 msgid "Your app version is out of date. Please refresh the page."
 msgstr "Sua versão do aplicativo está desatualizada. Por favor, atualize a página."
 
-#. js-lingui-id: dtOZU/
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "Your billing interval will switch to monthly immediately and your trial will continue. When it ends, you will be charged ${monthlyPrice} per user per month billed monthly."
-msgstr "Seu intervalo de cobrança será alterado para mensal imediatamente e sua avaliação continuará. Quando terminar, será cobrado ${monthlyPrice} por usuário por mês, com faturamento mensal."
+#. js-lingui-id: V2wkfv
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your billing switches to {intervalAdjective} immediately and your trial continues."
+msgstr ""
 
-#. js-lingui-id: R6FfrK
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "Your billing interval will switch to yearly immediately and your trial will continue. When it ends, you will be charged ${yearlyPrice} per user per year billed annually."
-msgstr "Seu intervalo de cobrança será alterado para anual imediatamente e sua avaliação continuará. Quando terminar, será cobrado ${yearlyPrice} por usuário por ano, com faturamento anual."
+#. js-lingui-id: 7iuaeY
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your billing switches to annual immediately. A new annual period starts today and the unused part of your current period is credited."
+msgstr ""
+
+#. js-lingui-id: aeKOPV
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your billing switches to monthly on {0}, at the end of your current billing period."
+msgstr ""
 
 #. js-lingui-id: u1O1GV
 #: src/modules/settings/billing/hooks/useWaitForPaymentRecovery.tsx
@@ -23622,15 +23829,21 @@ msgstr "Sua assinatura da Organização foi cancelada."
 msgid "Your payment details are incomplete. Please review and retry."
 msgstr "Os detalhes do seu pagamento estão incompletos. Revise e tente novamente."
 
-#. js-lingui-id: IxG5gy
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "Your plan will switch to Organization immediately and your trial will continue. When it ends, you will be charged ${enterprisePrice} per user per month{suffix}."
-msgstr "Seu plano será alterado para Organization imediatamente e sua avaliação continuará. Quando terminar, será cobrado ${enterprisePrice} por usuário por mês{suffix}."
+#. js-lingui-id: Bz74IS
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your plan switches to {planLabel} immediately and your trial continues."
+msgstr ""
 
-#. js-lingui-id: T2GIPK
-#: src/modules/settings/billing/hooks/useBillingWording.ts
-msgid "Your plan will switch to Pro immediately and your trial will continue. When it ends, you will be charged ${proPrice} per user per month{suffix}."
-msgstr "Seu plano será alterado para Pro imediatamente e sua avaliação continuará. Quando terminar, será cobrado ${proPrice} por usuário por mês{suffix}."
+#. js-lingui-id: nc0H/r
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your plan switches to Organization immediately, with a prorated charge for the rest of your current billing period."
+msgstr ""
+
+#. js-lingui-id: A2fEIi
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your plan switches to Pro on {0}, at the end of your current billing period."
+msgstr ""
 
 #. js-lingui-id: iizYt1
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
@@ -23656,6 +23869,18 @@ msgstr "Seus recursos premium permanecerão ativos até {cancelAtDate}."
 #: src/pages/settings/admin-panel/SettingsAdminNewAiProvider.tsx
 msgid "Your provider API key for authentication"
 msgstr "A chave de API do seu provedor para autenticação"
+
+#. js-lingui-id: H0ItDq
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your scheduled switch to {upcomingIntervalAdjective} billing on {0} is kept."
+msgstr ""
+
+#. js-lingui-id: NOJYn4
+#. placeholder {0}: getBeautifiedRenewDate()
+#: src/modules/settings/billing/hooks/useBillingSubscriptionChangeWording.ts
+msgid "Your scheduled switch to {upcomingPlanLabel} on {0} is kept."
+msgstr ""
 
 #. js-lingui-id: 319YPG
 #: src/pages/settings/enterprise/SettingsEnterprise.tsx
